@@ -8,16 +8,16 @@ function Main() {
          <div className={styles.wrapper1}>
 
 
-             <h1 className="main-text-drawer">
-                 <span className="blue-daltter">daltter</span>
+             <h1 className={styles.mainTextDrawer}>
+                 <span className={styles.blueDaltter}>daltter</span>
                  <br /> - is the future <br /> of marketing.
              </h1>
              <p>Email advertising has never been so <br /> effective and affordable for everyone!</p>
 
-             <button className="btn-try">
+             <button className={styles.btnTry}>
                  Try it now
              </button>
-             <button className="btn-why">
+             <button className={styles.btnWhy}>
                  Why us?
              </button>
 
