@@ -4,7 +4,7 @@ function Main() {
     return (
        <div className="flex">
 
-         <div className="flex">
+         <div className="">
 
 
              <h1 className="main-text-drawer">
@@ -20,16 +20,16 @@ function Main() {
                  Why us?
              </button>
 
-           <div className="d-flex">
+           <div className="">
                <img className="p-50px" src="/img/Hello-right.svg" alt="" />
            </div>
 
          </div>
 
-           <div className="d-flex">
+           <div className="">
 
 
-               <div className="secondLeft d-flex">
+               <div className="secondLeft ">
                    <img className="" src="/img/Second-left.svg" alt="" />
                </div>
                <div className="future-main p-0 align-center">
