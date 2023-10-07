@@ -2,7 +2,7 @@ import React from 'react';
 
 function Main() {
     return (
-        <div className="wrapper d-flex flex-column justify-center align-center">
+        <div className="wrapper d-flex  justify-center align-center">
             <div className="future-main p-0 align-center">
                 <h1 className="main-text-drawer">
                     <span className="blue-daltter">daltter</span>
