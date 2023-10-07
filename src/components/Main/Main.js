@@ -1,10 +1,10 @@
 import React from 'react';
-
+import styles from "./Main.module.scss"
 function Main() {
     return (
-       <div className="flex">
+       <div className={styles.wrapper}>
 
-         <div className="">
+         <div className={styles.wrapper1}>
 
 
              <h1 className="main-text-drawer">
@@ -26,7 +26,7 @@ function Main() {
 
          </div>
 
-           <div className="">
+           <div className={styles.wrapper2}>
 
 
                <div className="secondLeft ">

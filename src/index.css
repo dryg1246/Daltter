@@ -125,36 +125,6 @@ header {
   line-height: 104.4%; /* 79.344px */
 }
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FFF;
-  margin-top: 8em;
-}
-.wrapper .future-main {
-  padding-right: 16em;
-  margin-bottom: 4em;
-}
-.wrapper p {
-  color: rgba(31, 45, 73, 0.86);
-  font-family: Raleway;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 108.4%; /* 21.68px */
-  margin-top: 40px;
-}
-
-.wrapper h1 {
-  max-width: 3000px;
-  max-height: 2876px;
-  font-family: Raleway;
-  font-size: 76px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 104.4%;
-}
 
 .blue-daltter {
   background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
