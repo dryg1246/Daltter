@@ -2,6 +2,7 @@ import React from 'react';
 import styles from "./Main.module.scss"
 function Main() {
     return (
+        <>
        <div className={styles.wrapper}>
 
          <div className={styles.wrapper1}>
@@ -45,8 +46,17 @@ function Main() {
                </div>
            </div>
 
-
        </div>
+            <h1 className="mainTextIndex">
+                We have several different <br/> plans to suit all customers:
+            </h1>
+
+            <div className="d-flex">
+                <div>
+
+                </div>
+            </div>
+        </>
     );
 }
 
