@@ -1,0 +1,272 @@
+@charset "UTF-8";
+body {
+  margin: 0 auto;
+  font-family: "Raleway", system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #FFF;
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar-block {
+  padding-right: 15.375em; /* 246px converted to em */
+}
+
+.span-text {
+  color: black;
+  font-family: Raleway;
+  font-size: 1.25em; /* 20px converted to em */
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.dallter-text {
+  font-size: 1.25em; /* 20px converted to em */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 0.75em; /* 12px converted to em */
+}
+
+.Rectangle {
+  border-bottom: 1px solid rgba(82, 128, 198, 0.12);
+  background: #FFF;
+}
+
+.but-on {
+  padding: 3em;
+  margin-left: 8.625em;
+}
+.but-on .sing-up {
+  border-radius: 1.0625em;
+  width: 7.75em;
+  height: 2.375em;
+  border: none;
+  background: #3C72FF;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+.but-on .sing-up:hover {
+  background: #5684ff;
+}
+.but-on .sing-up:active {
+  background: #2360ff;
+}
+.but-on .sing-up-text {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1em; /* 16px converted to em */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.but-on .login {
+  border-radius: 1.0625em; /* 17px converted to em */
+  background: #E4ECFF;
+  width: 6.3828em; /* 102.105px converted to em */
+  height: 2.375em; /* 38px converted to em */
+  border: none;
+  background: #E4ECFF;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+.but-on .login:hover {
+  background: #eef3ff;
+}
+.but-on .login:active {
+  background: #cbdaff;
+}
+.but-on .login-text {
+  color: #3C72FF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1em; /* 16px converted to em */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+button {
+  margin-right: 1em; /* 16px converted to em */
+}
+
+header {
+  border-bottom: 1px solid rgba(82, 128, 198, 0.12);
+}
+
+.main-text-drawer {
+  font-family: Raleway;
+  font-size: 4.75em; /* 76px converted to em */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.368; /* 104.4% converted to em */
+}
+
+.blue-daltter {
+  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Raleway;
+  font-size: 76px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 104.4%; /* 79.344px */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  margin-top: 8em;
+}
+.wrapper .future-main {
+  padding-right: 16em;
+  margin-bottom: 4em;
+}
+.wrapper p {
+  color: rgba(31, 45, 73, 0.86);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 108.4%; /* 21.68px */
+  margin-top: 40px;
+}
+
+.wrapper h1 {
+  max-width: 3000px;
+  max-height: 2876px;
+  font-family: Raleway;
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.4%;
+}
+
+.blue-daltter {
+  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Raleway;
+  font-size: 76px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 104.4%;
+}
+
+/* Добавьте стили для остальных элементов, таких как текста параграфа и кнопок */
+button {
+  /* Ваши стили для кнопок */
+}
+
+img {
+  /* Ваши стили для изображения */
+}
+
+.btn-try {
+  width: 15.75rem;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  border-radius: 1.0625rem;
+  background: #3C72FF;
+  border: none;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+.btn-try:hover {
+  background: #5684ff;
+}
+.btn-try:active {
+  background: #2360ff;
+}
+.btn-try div {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.btn-why {
+  width: 8.8125rem;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  border-radius: 0.375rem;
+  background: #E4ECFF;
+  border: none;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+.btn-why:hover {
+  background: #eef3ff;
+}
+.btn-why:active {
+  background: #cbdaff;
+}
+.btn-why div {
+  color: #3C72FF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.secondLeft img {
+  padding: 12em;
+}
+
+.card {
+  width: 21.9375rem;
+  height: 28.25rem;
+  flex-shrink: 0;
+  border-radius: 3rem;
+  background: #E4ECFF;
+  padding-top: 5em;
+  margin-right: 2.12em;
+}
+
+.mainTextIndex {
+  color: #3C72FF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 104.4%;
+  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Standard {
+  display: flex;
+  justify-content: space-between;
+}
+.Standard h3 {
+  padding-top: 5em;
+  margin-right: 11em;
+}
+
+.textStand {
+  color: #1F2D49;
+  font-family: Raleway;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.4%; /* 2.61rem */
+}
+
+/*# sourceMappingURL=index.css.map */
