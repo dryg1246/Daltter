@@ -1,11 +1,12 @@
-*{
+@charset "UTF-8";
+* {
   box-sizing: border-box;
 }
 
 body {
   margin: 0 auto;
   box-sizing: border-box;
-  font-family: 'Raleway', system-ui;
+  font-family: "Raleway", system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #FFF;
@@ -18,6 +19,7 @@ ul {
 
 .navbar-block {
   padding-right: 15.375em; /* 246px converted to em */
+  flex-wrap: nowrap;
 }
 
 .span-text {
@@ -28,7 +30,6 @@ ul {
   font-weight: 500;
   line-height: normal;
 }
-
 
 .dallter-text {
   font-size: 1.25em; /* 20px converted to em */
@@ -46,63 +47,55 @@ ul {
 .but-on {
   padding: 3em;
   margin-left: 8.625em;
-
-  .sing-up {
-    border-radius: 1.0625em;
-    width: 7.75em;
-    height: 2.375em;
-    border: none;
-    background: #3C72FF;
-    cursor: pointer;
-    transition: background 0.1s ease-in-out;
-
-    &:hover {
-      background: lighten(#3C72FF, 5%);
-    }
-
-    &:active {
-      background: darken(#3C72FF, 5%);
-    }
-  }
-
-  .sing-up-text {
-    color: #FFF;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 1em; /* 16px converted to em */
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  .login {
-    border-radius: 1.0625em; /* 17px converted to em */
-    background: #E4ECFF;
-    width: 6.3828em; /* 102.105px converted to em */
-    height: 2.375em; /* 38px converted to em */
-    border: none;
-    background: #E4ECFF;
-    cursor: pointer;
-    transition: background 0.1s ease-in-out;
-
-    &:hover {
-      background: lighten(#E4ECFF, 2%);
-    }
-
-    &:active {
-      background: darken(#E4ECFF, 5%);
-    }
-  }
-
-  .login-text {
-    color: #3C72FF;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 1em; /* 16px converted to em */
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
+}
+.but-on .sing-up {
+  border-radius: 1.0625em;
+  width: 7.75em;
+  height: 2.375em;
+  border: none;
+  background: #3C72FF;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+.but-on .sing-up:hover {
+  background: #5684ff;
+}
+.but-on .sing-up:active {
+  background: #2360ff;
+}
+.but-on .sing-up-text {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1em; /* 16px converted to em */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.but-on .login {
+  border-radius: 1.0625em; /* 17px converted to em */
+  background: #E4ECFF;
+  width: 6.3828em; /* 102.105px converted to em */
+  height: 2.375em; /* 38px converted to em */
+  border: none;
+  background: #E4ECFF;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+.but-on .login:hover {
+  background: #eef3ff;
+}
+.but-on .login:active {
+  background: #cbdaff;
+}
+.but-on .login-text {
+  color: #3C72FF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1em; /* 16px converted to em */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 button {
@@ -113,26 +106,25 @@ header {
   border-bottom: 1px solid rgba(82, 128, 198, 0.12);
 }
 
-
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #FFF;
   margin-top: 8em;
-  .future-main {
-    padding-right: 16em;
-    margin-bottom: 4em;
-  }
-  p{
-    color: rgba(31, 45, 73, 0.86);
-    font-family: Raleway;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 108.4%; /* 21.68px */
-    margin-top: 40px;
-  }
+}
+.wrapper .future-main {
+  padding-right: 16em;
+  margin-bottom: 4em;
+}
+.wrapper p {
+  color: rgba(31, 45, 73, 0.86);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 108.4%; /* 21.68px */
+  margin-top: 40px;
 }
 
 .wrapper h1 {
@@ -158,7 +150,6 @@ header {
 }
 
 /* Добавьте стили для остальных элементов, таких как текста параграфа и кнопок */
-
 button {
   /* Ваши стили для кнопок */
 }
@@ -167,34 +158,22 @@ img {
   /* Ваши стили для изображения */
 }
 
-  div {
-    color: #3C72FF;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-.secondLeft{
-  img {
-    padding: 12em;
-  }
+div {
+  color: #3C72FF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.card {
-  width: 21.9375rem;
-  height: 28.25rem;
-  flex-shrink: 0;
-  border-radius: 3rem;
-  background: #E4ECFF;
-  padding-top: 5em;
-  margin-right: 2.12em;
+.secondLeft img {
+  padding: 12em;
 }
 
 
-.mainTextIndex{
+.mainTextIndex {
   color: #3C72FF;
   text-align: center;
   font-family: Raleway;
@@ -207,16 +186,16 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
-.Standard{
-  h3{
-    padding-top: 5em;
-    margin-right: 11em;
-  }
+.Standard {
   display: flex;
   justify-content: space-between;
 }
+.Standard h3 {
+  padding-top: 5em;
+  margin-right: 11em;
+}
 
-.textStand{
+.textStand {
   color: #1F2D49;
   font-family: Raleway;
   font-size: 2.5rem;
@@ -224,3 +203,8 @@ img {
   font-weight: 700;
   line-height: 104.4%; /* 2.61rem */
 }
+footer {
+  display: flex;
+  align-items: flex-end;
+}
+/*# sourceMappingURL=index.css.map */

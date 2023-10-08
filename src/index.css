@@ -19,6 +19,7 @@ ul {
 
 .navbar-block {
   padding-right: 15.375em; /* 246px converted to em */
+  flex-wrap: nowrap;
 }
 
 .span-text {
@@ -47,6 +48,7 @@ ul {
   padding: 3em;
   margin-left: 8.625em;
 }
+
 .but-on .sing-up {
   border-radius: 1.0625em;
   width: 7.75em;
@@ -56,12 +58,15 @@ ul {
   cursor: pointer;
   transition: background 0.1s ease-in-out;
 }
+
 .but-on .sing-up:hover {
   background: #5684ff;
 }
+
 .but-on .sing-up:active {
   background: #2360ff;
 }
+
 .but-on .sing-up-text {
   color: #FFF;
   text-align: center;
@@ -71,6 +76,7 @@ ul {
   font-weight: 700;
   line-height: normal;
 }
+
 .but-on .login {
   border-radius: 1.0625em; /* 17px converted to em */
   background: #E4ECFF;
@@ -81,12 +87,15 @@ ul {
   cursor: pointer;
   transition: background 0.1s ease-in-out;
 }
+
 .but-on .login:hover {
   background: #eef3ff;
 }
+
 .but-on .login:active {
   background: #cbdaff;
 }
+
 .but-on .login-text {
   color: #3C72FF;
   text-align: center;
@@ -112,10 +121,12 @@ header {
   background: #FFF;
   margin-top: 8em;
 }
+
 .wrapper .future-main {
   padding-right: 16em;
   margin-bottom: 4em;
 }
+
 .wrapper p {
   color: rgba(31, 45, 73, 0.86);
   font-family: Raleway;
@@ -171,16 +182,6 @@ div {
   padding: 12em;
 }
 
-.card {
-  width: 21.9375rem;
-  height: 28.25rem;
-  flex-shrink: 0;
-  border-radius: 3rem;
-  background: #E4ECFF;
-  padding-top: 5em;
-  margin-right: 2.12em;
-}
-
 .mainTextIndex {
   color: #3C72FF;
   text-align: center;
@@ -198,6 +199,7 @@ div {
   display: flex;
   justify-content: space-between;
 }
+
 .Standard h3 {
   padding-top: 5em;
   margin-right: 11em;
@@ -211,5 +213,12 @@ div {
   font-weight: 700;
   line-height: 104.4%; /* 2.61rem */
 }
+
+footer {
+  display: flex;
+  align-items: flex-end;
+}
+
+
 
 /*# sourceMappingURL=index.css.map */

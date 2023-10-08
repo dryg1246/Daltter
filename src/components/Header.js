@@ -1,7 +1,7 @@
 function Header() {
     return (
         <header>
-            <div className="d-flex justify-center   ">
+            <div className="d-flex justify-center  align-center">
 
             <div className="navbar-block  d-flex align-center">
                 <img className=" logo pl-12px" width={50} height={50} src="/img/logo.png" />

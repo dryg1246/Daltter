@@ -1,84 +1,230 @@
-.wrapper2{
-  border: 1px solid red;
-}
-.wrapper1{
-  border: 1px solid red;
-}
-
-
-.wrapper {
+.horisontal1 {
   display: flex;
-  align-items: center;
-  justify-content: center;
   background: #FFFFFF;
   margin-top: 10.37rem;
-  margin-left: 4em;
-  margin-bottom: 17rem;
-}
 
-.mainTextDrawer {
-  font-family: Raleway;
-  font-size: 4.75em; /* 76px converted to em */
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.368; /* 104.4% converted to em */
-}
-
-.blueDaltter{
-  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Raleway;
-  font-size: 76px;
-  font-style: italic;
-  font-weight: 800;
-  line-height: 104.4%; /* 79.344px */
-}
-
-.btnTry{
-  width: 15.75rem;
-  height: 3.0625rem;
-  flex-shrink: 0;
-  border-radius: 1.0625rem;
-  background: #3C72FF;
-  border: none;
-  cursor: pointer;
-  transition: background 0.1s ease-in-out;
-
-  &:hover {
-    background: lighten(#3C72FF, 5%);
+  .card1 {
+    border: 1px solid red;
+    margin-left: 396px;
+    width: 520px;
   }
 
-  &:active {
-    background: darken(#3C72FF, 5%);
+  .card2 {
+    border: 1px solid red;
   }
-  div {
-    color: #FFF;
-    text-align: center;
+
+  .mainTextDrawer {
     font-family: Raleway;
-    font-size: 1.5rem;
+    font-size: 4.75em; /* 76px converted to em */
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 1.368; /* 104.4% converted to em */
+  }
+
+  .btnTry {
+    width: 15.75rem;
+    height: 3.0625rem;
+    flex-shrink: 0;
+    border-radius: 1.0625rem;
+    background: #3C72FF;
+    border: none;
+    cursor: pointer;
+    transition: background 0.1s ease-in-out;
+
+    h2 {
+      color: #FFF;
+      text-align: center;
+      font-family: Raleway;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &:hover {
+      background: lighten(#3C72FF, 5%);
+    }
+
+    &:active {
+      background: darken(#3C72FF, 5%);
+    }
+
+    .btnLearn {
+      width: 15.75rem;
+      height: 3.0625rem;
+      flex-shrink: 0;
+      border-radius: 1.0625rem;
+      background: #3C72FF;
+      border: none;
+      cursor: pointer;
+      transition: background 0.1s ease-in-out;
+
+
+      &:hover {
+        background: lighten(#3C72FF, 5%);
+      }
+
+      &:active {
+        background: darken(#3C72FF, 5%);
+      }
+
+      div {
+        color: #FFF;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+
+    .btnWhy {
+      width: 8.8125rem;
+      height: 3.0625rem;
+      flex-shrink: 0;
+      border-radius: 0.375rem;
+      background: #E4ECFF;
+      border: none;
+      cursor: pointer;
+      transition: background 0.1s ease-in-out;
+
+      &:hover {
+        background: lighten(#E4ECFF, 2%);
+      }
+
+      &:active {
+        background: darken(#E4ECFF, 5%);
+      }
+    }
+  }
+
+
+  .blueDaltter {
+    margin-top: 87px;
+    background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
+   margin-left: 20px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Raleway;
+    font-size: 76px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 104.4%; /* 79.344px */
+  }
+
+
+  .horisontal2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .textFuture {
+    color: #1F2D49;
+    font-family: Raleway;
+    font-size: 4.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 104.4%;
+  }
+
+  .paragraf {
+    color: rgba(31, 45, 73, 0.86);
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 108.4%; /* 1.355rem */
+  }
+
+  .secondLeft {
+    padding: 30px;
+    margin-right: 28em;
+
+  }
+
+  .mainTextDrawer {
+    color: #1F2D49;
+    font-family: Raleway;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 104.4%; /* 4.176rem */
+  }
+
+  .clicks {
+    color: #cbdaff;
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 114.9%; /* 1.43625rem */
+    width: 29.5rem;
   }
 }
-.btnWhy {
-  width: 8.8125rem;
-  height: 3.0625rem;
+.card {
+  width: 21.9375rem;
+  height: 28.25rem;
   flex-shrink: 0;
-  border-radius: 0.375rem;
+  border-radius: 3rem;
+  background: #E4ECFF;
+  padding-top: 5em;
+  margin-right: 2.12em;
+}
+
+.standart {
+  color: #1F2D49;
+  font-family: Raleway;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.4%; /* 2.61rem */
+}
+
+.Professional{
+  color: #1F2D49;
+  font-family: Raleway;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.4%; /* 2.61rem */
+}
+
+.Personal{
+  color: #1F2D49;
+  font-family: Raleway;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.4%; /* 2.61rem */
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.textSure{
+justify-content: center;
+}
+
+.inputEmails{
+  width: 30.25rem;
+  height: 5.25rem;
+  flex-shrink: 0;
+  border-radius: 1.6875rem 0rem 0rem 1.6875rem;
   background: #E4ECFF;
   border: none;
-  cursor: pointer;
-  transition: background 0.1s ease-in-out;
-
-  &:hover {
-    background: lighten(#E4ECFF, 2%);
-  }
-
-  &:active {
-    background: darken(#E4ECFF, 5%);
-  }
 }
 
+.btnBracket{
+  width: 5.25rem;
+  height: 5.25rem;
+  flex-shrink: 0;
+  border-radius: 0rem 1.6875rem 1.6875rem 0rem;
+  background: #779DFF;
+  border: none;
+  cursor: pointer;
+}
