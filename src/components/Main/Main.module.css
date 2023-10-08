@@ -1,24 +1,32 @@
-.horisontal1 {
+.horizontal1 {
   display: flex;
   background: #FFFFFF;
   margin-top: 10.37rem;
 }
-.horisontal1 .card1 {
+.horizontal1 .card1 {
   border: 1px solid red;
   margin-left: 396px;
   width: 520px;
 }
-.horisontal1 .card2 {
+.horizontal1 .card2 {
   border: 1px solid red;
 }
-.horisontal1 .mainTextDrawer {
+.horizontal1 .mainTextBody {
+  color: #1F2D49;
   font-family: Raleway;
   font-size: 4.75em; /* 76px converted to em */
   font-style: normal;
   font-weight: 700;
   line-height: 1.368; /* 104.4% converted to em */
 }
-.horisontal1 .btnTry {
+.horizontal1 .mainTextDrawer {
+  color: #1F2D49;
+}
+.horizontal1 .aboveBlocks {
+  position: absolute;
+  display: flex;
+}
+.horizontal1 .btnTry {
   width: 15.75rem;
   height: 3.0625rem;
   flex-shrink: 0;
@@ -28,7 +36,7 @@
   cursor: pointer;
   transition: background 0.1s ease-in-out;
 }
-.horisontal1 .btnTry h2 {
+.horizontal1 .btnTry h2 {
   color: #FFF;
   text-align: center;
   font-family: Raleway;
@@ -37,13 +45,13 @@
   font-weight: 700;
   line-height: normal;
 }
-.horisontal1 .btnTry:hover {
+.horizontal1 .btnTry:hover {
   background: #5684ff;
 }
-.horisontal1 .btnTry:active {
+.horizontal1 .btnTry:active {
   background: #2360ff;
 }
-.horisontal1 .btnTry .btnLearn {
+.horizontal1 .btnTry .btnLearn {
   width: 15.75rem;
   height: 3.0625rem;
   flex-shrink: 0;
@@ -53,13 +61,13 @@
   cursor: pointer;
   transition: background 0.1s ease-in-out;
 }
-.horisontal1 .btnTry .btnLearn:hover {
+.horizontal1 .btnTry .btnLearn:hover {
   background: #5684ff;
 }
-.horisontal1 .btnTry .btnLearn:active {
+.horizontal1 .btnTry .btnLearn:active {
   background: #2360ff;
 }
-.horisontal1 .btnTry .btnLearn div {
+.horizontal1 .btnTry .btnLearn div {
   color: #FFF;
   text-align: center;
   font-family: Raleway;
@@ -68,7 +76,7 @@
   font-weight: 700;
   line-height: normal;
 }
-.horisontal1 .btnTry .btnWhy {
+.horizontal1 .btnTry .btnWhy {
   width: 8.8125rem;
   height: 3.0625rem;
   flex-shrink: 0;
@@ -78,13 +86,13 @@
   cursor: pointer;
   transition: background 0.1s ease-in-out;
 }
-.horisontal1 .btnTry .btnWhy:hover {
+.horizontal1 .btnTry .btnWhy:hover {
   background: #eef3ff;
 }
-.horisontal1 .btnTry .btnWhy:active {
+.horizontal1 .btnTry .btnWhy:active {
   background: #cbdaff;
 }
-.horisontal1 .blueDaltter {
+.horizontal1 .blueDater {
   margin-top: 87px;
   background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
   margin-left: 20px;
@@ -97,11 +105,11 @@
   font-weight: 800;
   line-height: 104.4%; /* 79.344px */
 }
-.horisontal1 .horisontal2 {
+.horizontal1 .horizontal2 {
   display: flex;
   align-items: center;
 }
-.horisontal1 .textFuture {
+.horizontal1 .textFuture {
   color: #1F2D49;
   font-family: Raleway;
   font-size: 4.75rem;
@@ -109,7 +117,7 @@
   font-weight: 700;
   line-height: 104.4%;
 }
-.horisontal1 .paragraf {
+.horizontal1 .paragraph {
   color: rgba(31, 45, 73, 0.86);
   font-family: Raleway;
   font-size: 1.25rem;
@@ -117,19 +125,11 @@
   font-weight: 600;
   line-height: 108.4%; /* 1.355rem */
 }
-.horisontal1 .secondLeft {
+.horizontal1 .secondLeft {
   padding: 30px;
   margin-right: 28em;
 }
-.horisontal1 .mainTextDrawer {
-  color: #1F2D49;
-  font-family: Raleway;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 104.4%; /* 4.176rem */
-}
-.horisontal1 .clicks {
+.horizontal1 .clicks {
   color: #cbdaff;
   font-family: Raleway;
   font-size: 1.25rem;
@@ -149,31 +149,15 @@
   margin-right: 2.12em;
 }
 
-.standart {
+.textP {
+  display: flex;
   color: #1F2D49;
   font-family: Raleway;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: 104.4%; /* 2.61rem */
-}
-
-.Professional {
-  color: #1F2D49;
-  font-family: Raleway;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 104.4%; /* 2.61rem */
-}
-
-.Personal {
-  color: #1F2D49;
-  font-family: Raleway;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 104.4%; /* 2.61rem */
+  display: flex;
 }
 
 .container {
@@ -203,6 +187,10 @@
   background: #779DFF;
   border: none;
   cursor: pointer;
+}
+
+.email {
+  display: contents;
 }
 
 /*# sourceMappingURL=Main.module.css.map */

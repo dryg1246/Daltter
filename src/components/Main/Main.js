@@ -4,10 +4,10 @@ import styles from "./Main.module.scss";
 function Main() {
     return (
         <div>
-            <div className={styles.horisontal1}>
+            <div className={styles.horizontal1}>
                 <div className={styles.card1}>
-                    <div className={styles.mainTextDrawer}>
-                        <div className={styles.blueDaltter}>daltter</div>
+                    <div className={styles.mainTextBody}>
+                        <div className={styles.blueDater}>daltter</div>
                         <div className={styles.textFuture}>
                             - is the future of marketing
                         </div>
@@ -28,13 +28,13 @@ function Main() {
                 </div>
             </div>
 
-            <div className={styles.horisontal2}>
+            <div className={styles.horizontal2}>
                 <div>
                     <img className={styles.secondLeft} src="/img/Second-left.svg" alt=""/>
                 </div>
-                <div className="future-main p-0 align-center">
-                    <h1 className={styles.mainTextDrawer}>
-                        Our <span className={styles.blueDaltter}>service</span>
+                <div className="">
+                        <h1 className={styles.mainTextDrawer}>
+                        Our <span className={styles.blueDater}>service</span>
                         <br/> is fully automated
                     </h1>
                     <p className={styles.clicks}>All you need is just a few clicks - and your clients <br /> will be in your hands. Forget about tens of different <br />  services for one ad.</p>
@@ -48,9 +48,14 @@ function Main() {
             <h1 className="mainTextIndex">
                 We have several different <br/> plans to suit all customers:
             </h1>
+            <div className={styles.aboveBlocks}>
+                <h2 className={styles.textP}>Standard</h2>
+                <h2 className={styles.textP}>Professional</h2>
+                <h2 className={styles.textP}>Personal*</h2>
+            </div>
 
             <div className={styles.container}>
-                <h2 className={styles.standard}>Standard</h2>
+            s
                 <div className={styles.card}>
                     <p>$45.00</p>
                     <div>
@@ -71,7 +76,6 @@ function Main() {
                     </button>
                 </div>
 
-                <h2 className={styles.professional}>Professional</h2>
                 <div className={styles.card}>
                     <p>$45.00</p>
                     <div>
@@ -90,7 +94,6 @@ function Main() {
                     </button>
                 </div>
 
-                <h2 className={styles.personal}>Personal*</h2>
                 <div className={styles.card}>
                     <p>$??.??</p>
                     <div>
@@ -104,7 +107,7 @@ function Main() {
                 </div>
             </div>
 
-            <div className="d-flex justify-center mb-40">
+            <div className={styles.email}>
                 <h2 className={styles.textSure}>Not sure if our service is right for you?</h2>
                 <h2> <br />Leave us your email and we will write to you </h2>
                 <input className={styles.inputEmails} type="text"/>

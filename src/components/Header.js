@@ -13,7 +13,8 @@ function Header() {
                     <nav className="p-30">Pricing</nav>
                     <nav className="p-30">Contact Us</nav>
                 </li>
-                <li className="but-on ">
+                <div className="login1">
+                <li className="but-on">
                     <button className="login" >
                           <div className="login-text">
                                 Login
@@ -25,6 +26,8 @@ function Header() {
                         </div>
                     </button>
                 </li>
+                </div>
+
                 <div className="Rectangle">
 
                 </div>

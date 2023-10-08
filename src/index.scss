@@ -49,6 +49,12 @@ ul {
   background: #FFF;
 }
 
+.login1{
+ div{
+
+ }
+}
+
 .but-on {
   padding: 3em;
   margin-left: 8.625em;
@@ -83,6 +89,7 @@ ul {
   width: 6.3828em; /* 102.105px converted to em */
   height: 2.375em; /* 38px converted to em */
   border: none;
+
   background: #E4ECFF;
   cursor: pointer;
   transition: background 0.1s ease-in-out;
@@ -163,12 +170,9 @@ img {
 }
 
 div {
-  color: #3C72FF;
   text-align: center;
   font-family: Raleway;
-  font-size: 1.5rem;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
 }
 

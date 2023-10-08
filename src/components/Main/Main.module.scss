@@ -1,4 +1,4 @@
-.horisontal1 {
+.horizontal1 {
   display: flex;
   background: #FFFFFF;
   margin-top: 10.37rem;
@@ -13,12 +13,22 @@
     border: 1px solid red;
   }
 
-  .mainTextDrawer {
+  .mainTextBody {
+    color: #1F2D49;
     font-family: Raleway;
     font-size: 4.75em; /* 76px converted to em */
     font-style: normal;
     font-weight: 700;
     line-height: 1.368; /* 104.4% converted to em */
+  }
+
+  .mainTextDrawer {
+    color: #1F2D49;
+  }
+
+  .aboveBlocks{
+    position: absolute;
+    display: flex;
   }
 
   .btnTry {
@@ -100,7 +110,7 @@
   }
 
 
-  .blueDaltter {
+  .blueDater {
     margin-top: 87px;
     background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
    margin-left: 20px;
@@ -115,7 +125,7 @@
   }
 
 
-  .horisontal2 {
+  .horizontal2 {
     display: flex;
     align-items: center;
   }
@@ -129,7 +139,7 @@
     line-height: 104.4%;
   }
 
-  .paragraf {
+  .paragraph {
     color: rgba(31, 45, 73, 0.86);
     font-family: Raleway;
     font-size: 1.25rem;
@@ -144,14 +154,6 @@
 
   }
 
-  .mainTextDrawer {
-    color: #1F2D49;
-    font-family: Raleway;
-    font-size: 4rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 104.4%; /* 4.176rem */
-  }
 
   .clicks {
     color: #cbdaff;
@@ -173,32 +175,18 @@
   margin-right: 2.12em;
 }
 
-.standart {
+.textP {
+  display: flex;
   color: #1F2D49;
   font-family: Raleway;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: 104.4%; /* 2.61rem */
+  display: flex;
+
 }
 
-.Professional{
-  color: #1F2D49;
-  font-family: Raleway;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 104.4%; /* 2.61rem */
-}
-
-.Personal{
-  color: #1F2D49;
-  font-family: Raleway;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 104.4%; /* 2.61rem */
-}
 
 .container{
   display: flex;
@@ -227,5 +215,9 @@ justify-content: center;
   background: #779DFF;
   border: none;
   cursor: pointer;
+}
+
+.email{
+  display: contents;
 }
 
