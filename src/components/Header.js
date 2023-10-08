@@ -1,18 +1,19 @@
 function Header() {
     return (
         <header>
-            <div className="d-flex justify-center  align-center">
+
+            <div className="header-container">
 
             <div className="navbar-block  d-flex align-center">
                 <img className=" logo pl-12px" width={50} height={50} src="/img/logo.png" />
                  <h1 className="dallter-text">daltter</h1>
             </div>
             <ul className="d-flex">
-                <li className=" d-flex span-text p-30">
-                    <nav className="p-30">Features</nav>
-                    <nav className="p-30">Pricing</nav>
-                    <nav className="p-30">Contact Us</nav>
-                </li>
+                    <a href="/" className="d-flex span-text p-30 text-decoration-none">
+                    <li className="p-30">Features</li>
+                    <li className="p-30">Pricing</li>
+                    <li className="p-30">Contact Us</li>
+                    </a>
                 <div className="login1">
                 <li className="but-on">
                     <button className="login" >

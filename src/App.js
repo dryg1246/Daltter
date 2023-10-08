@@ -3,6 +3,7 @@ import "./index.scss"
 import Main from "./components/Main/Main";
 import styles from './App.module.scss'
 import Footer from "./components/Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

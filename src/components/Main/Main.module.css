@@ -1,17 +1,17 @@
-.horizontal1 {
+.main {
   display: flex;
   background: #FFFFFF;
   margin-top: 10.37rem;
 }
-.horizontal1 .card1 {
+.main .card1 {
   border: 1px solid red;
   margin-left: 396px;
   width: 520px;
 }
-.horizontal1 .card2 {
+.main .card2 {
   border: 1px solid red;
 }
-.horizontal1 .mainTextBody {
+.main .mainTextBody {
   color: #1F2D49;
   font-family: Raleway;
   font-size: 4.75em; /* 76px converted to em */
@@ -19,14 +19,14 @@
   font-weight: 700;
   line-height: 1.368; /* 104.4% converted to em */
 }
-.horizontal1 .mainTextDrawer {
+.main .mainTextDrawer {
   color: #1F2D49;
 }
-.horizontal1 .aboveBlocks {
+.main .aboveBlocks {
   position: absolute;
   display: flex;
 }
-.horizontal1 .btnTry {
+.main .btnTry {
   width: 15.75rem;
   height: 3.0625rem;
   flex-shrink: 0;
@@ -36,7 +36,7 @@
   cursor: pointer;
   transition: background 0.1s ease-in-out;
 }
-.horizontal1 .btnTry h2 {
+.main .btnTry h2 {
   color: #FFF;
   text-align: center;
   font-family: Raleway;
@@ -45,13 +45,13 @@
   font-weight: 700;
   line-height: normal;
 }
-.horizontal1 .btnTry:hover {
+.main .btnTry:hover {
   background: #5684ff;
 }
-.horizontal1 .btnTry:active {
+.main .btnTry:active {
   background: #2360ff;
 }
-.horizontal1 .btnTry .btnLearn {
+.main .btnTry .btnLearn {
   width: 15.75rem;
   height: 3.0625rem;
   flex-shrink: 0;
@@ -61,13 +61,13 @@
   cursor: pointer;
   transition: background 0.1s ease-in-out;
 }
-.horizontal1 .btnTry .btnLearn:hover {
+.main .btnTry .btnLearn:hover {
   background: #5684ff;
 }
-.horizontal1 .btnTry .btnLearn:active {
+.main .btnTry .btnLearn:active {
   background: #2360ff;
 }
-.horizontal1 .btnTry .btnLearn div {
+.main .btnTry .btnLearn div {
   color: #FFF;
   text-align: center;
   font-family: Raleway;
@@ -76,7 +76,7 @@
   font-weight: 700;
   line-height: normal;
 }
-.horizontal1 .btnTry .btnWhy {
+.main .btnTry .btnWhy {
   width: 8.8125rem;
   height: 3.0625rem;
   flex-shrink: 0;
@@ -86,13 +86,13 @@
   cursor: pointer;
   transition: background 0.1s ease-in-out;
 }
-.horizontal1 .btnTry .btnWhy:hover {
+.main .btnTry .btnWhy:hover {
   background: #eef3ff;
 }
-.horizontal1 .btnTry .btnWhy:active {
+.main .btnTry .btnWhy:active {
   background: #cbdaff;
 }
-.horizontal1 .blueDater {
+.main .blueDater {
   margin-top: 87px;
   background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
   margin-left: 20px;
@@ -105,11 +105,11 @@
   font-weight: 800;
   line-height: 104.4%; /* 79.344px */
 }
-.horizontal1 .horizontal2 {
+.main .horizontal2 {
   display: flex;
   align-items: center;
 }
-.horizontal1 .textFuture {
+.main .textFuture {
   color: #1F2D49;
   font-family: Raleway;
   font-size: 4.75rem;
@@ -117,7 +117,7 @@
   font-weight: 700;
   line-height: 104.4%;
 }
-.horizontal1 .paragraph {
+.main .paragraph {
   color: rgba(31, 45, 73, 0.86);
   font-family: Raleway;
   font-size: 1.25rem;
@@ -125,11 +125,11 @@
   font-weight: 600;
   line-height: 108.4%; /* 1.355rem */
 }
-.horizontal1 .secondLeft {
+.main .secondLeft {
   padding: 30px;
   margin-right: 28em;
 }
-.horizontal1 .clicks {
+.main .clicks {
   color: #cbdaff;
   font-family: Raleway;
   font-size: 1.25rem;

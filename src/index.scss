@@ -3,7 +3,9 @@
   box-sizing: border-box;
 }
 
-body {
+
+
+.body {
   margin: 0 auto;
   max-width:  1920px;
   min-height: 100%;
@@ -21,6 +23,16 @@ body {
 ul {
   list-style-type: none;
 }
+.header-container{
+  align-items: center;
+  display: flex;
+  height: 80px;
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+
+
 
 .navbar-block {
   padding-right: 15.375em; /* 246px converted to em */
@@ -48,16 +60,10 @@ ul {
   border-bottom: 1px solid rgba(82, 128, 198, 0.12);
   background: #FFF;
 }
-
-.login1{
- div{
-
- }
-}
-
 .but-on {
   padding: 3em;
-  margin-left: 8.625em;
+  display: flex;
+  margin: 0 auto 0 8.625em;
 }
 .but-on .sing-up {
   border-radius: 1.0625em;
@@ -111,107 +117,111 @@ ul {
 }
 
 button {
-  margin-right: 1em; /* 16px converted to em */
+margin-right: 1em; /* 16px converted to em */
 }
 
 header {
   border-bottom: 1px solid rgba(82, 128, 198, 0.12);
 }
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FFF;
-  margin-top: 8em;
-}
-.wrapper .future-main {
-  padding-right: 16em;
-  margin-bottom: 4em;
-}
-.wrapper p {
-  color: rgba(31, 45, 73, 0.86);
-  font-family: Raleway;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 108.4%; /* 21.68px */
-  margin-top: 40px;
-}
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+    margin-top: 8em;
+  }
 
-.wrapper h1 {
-  max-width: 3000px;
-  max-height: 2876px;
-  font-family: Raleway;
-  font-size: 76px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 104.4%;
-}
+  .wrapper .future-main {
+    padding-right: 16em;
+    margin-bottom: 4em;
+  }
 
-.blue-daltter {
-  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Raleway;
-  font-size: 76px;
-  font-style: italic;
-  font-weight: 800;
-  line-height: 104.4%;
-}
+  .wrapper p {
+    color: rgba(31, 45, 73, 0.86);
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 108.4%; /* 21.68px */
+    margin-top: 40px;
+  }
 
-/* Добавьте стили для остальных элементов, таких как текста параграфа и кнопок */
-button {
-  /* Ваши стили для кнопок */
-}
+  .wrapper h1 {
+    max-width: 3000px;
+    max-height: 2876px;
+    font-family: Raleway;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 104.4%;
+  }
 
-img {
-  /* Ваши стили для изображения */
-}
+  .blue-daltter {
+    background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Raleway;
+    font-size: 76px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 104.4%;
+  }
 
-div {
-  text-align: center;
-  font-family: Raleway;
-  font-style: normal;
-  line-height: normal;
-}
+  /* Добавьте стили для остальных элементов, таких как текста параграфа и кнопок */
+  button {
+    /* Ваши стили для кнопок */
+  }
 
-.secondLeft img {
-  padding: 12em;
-}
+  img {
+    /* Ваши стили для изображения */
+  }
+
+  div {
+    text-align: center;
+    font-family: Raleway;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  .secondLeft img {
+    padding: 12em;
+  }
 
 
-.mainTextIndex {
-  color: #3C72FF;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 104.4%;
-  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  .mainTextIndex {
+    color: #3C72FF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 104.4%;
+    background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.Standard {
-  display: flex;
-  justify-content: space-between;
-}
-.Standard h3 {
-  padding-top: 5em;
-  margin-right: 11em;
-}
+  .Standard {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.textStand {
-  color: #1F2D49;
-  font-family: Raleway;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 104.4%; /* 2.61rem */
-}
-footer {
-  border-top: 1px solid rgba(82, 128, 198, 0.12);
-  background: #FFF;
-}
+  .Standard h3 {
+    padding-top: 5em;
+    margin-right: 11em;
+  }
+
+  .textStand {
+    color: #1F2D49;
+    font-family: Raleway;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 104.4%; /* 2.61rem */
+  }
+
+  footer {
+    border-top: 1px solid rgba(82, 128, 198, 0.12);
+    background: #FFF;
+  }

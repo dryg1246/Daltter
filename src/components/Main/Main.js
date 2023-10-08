@@ -4,7 +4,8 @@ import styles from "./Main.module.scss";
 function Main() {
     return (
         <div>
-            <div className={styles.horizontal1}>
+            <div></div>
+            <div className={styles.main}>
                 <div className={styles.card1}>
                     <div className={styles.mainTextBody}>
                         <div className={styles.blueDater}>daltter</div>
