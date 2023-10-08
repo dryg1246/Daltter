@@ -5,12 +5,17 @@
 
 body {
   margin: 0 auto;
+  max-width:  1920px;
+  min-height: 100%;
+  overflow: hidden;
+  overflow: scroll;
   box-sizing: border-box;
   font-family: "Raleway", system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #FFF;
   list-style-type: none;
+  align-items: stretch;
 }
 
 ul {
@@ -139,7 +144,6 @@ header {
 
 .blue-daltter {
   background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: Raleway;
@@ -204,7 +208,6 @@ div {
   line-height: 104.4%; /* 2.61rem */
 }
 footer {
-  display: flex;
-  align-items: flex-end;
+  border-top: 1px solid rgba(82, 128, 198, 0.12);
+  background: #FFF;
 }
-/*# sourceMappingURL=index.css.map */

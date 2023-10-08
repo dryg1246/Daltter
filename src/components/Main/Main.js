@@ -57,30 +57,15 @@ function Main() {
                         <p>SAVE 67%</p>
                     </div>
                     <h3>$15.00/100 ads</h3>
-                    <div>
-                        <img src="/img/check.png" alt=""/>
-                        <p>Without queues</p>
-                    </div>
-                    <div>
-                        <img src="/img/check.png" alt=""/>
-                        <p>Without queues</p>
-                    </div>
-                    <div>
-                        <img src="/img/check.png" alt=""/>
-                        <p>Detailed statistics</p>
-                    </div>
-                    <div>
-                        <img src="/img/check.png" alt=""/>
-                        <p>Guarantee</p>
-                    </div>
-                    <div>
-                        <img src="/img/plans-false.svg" alt=""/>
-                        <p>Customization</p>
-                    </div>
-                    <div>
-                        <img src="/img/plans-false.svg" alt=""/>
-                        <p>Clients-filters</p>
-                    </div>
+                    <ul className="listChecked" >
+
+                        <li>Without queues</li>
+                        <li>Detailed statistics</li>
+                        <li>Guarantee</li>
+                        <li>Customization</li>
+                        <li>Clients-filters</li>
+
+                    </ul>
                     <button className="">
                         <p>Try it now</p>
                     </button>
@@ -93,30 +78,13 @@ function Main() {
                         <p>SAVE 67%</p>
                     </div>
                     <h3>$15.00/100 ads</h3>
-                    <div>
-                        <img src="/img/check.png" alt=""/>
-                        <p>Without queues</p>
-                    </div>
-                    <div>
-                        <img src="/img/check.png" alt=""/>
-                        <p>Without queues</p>
-                    </div>
-                    <div>
-                        <img src="/img/check.png" alt=""/>
-                        <p>Detailed statistics</p>
-                    </div>
-                    <div>
-                        <img src="/img/check.png" alt=""/>
-                        <p>Guarantee</p>
-                    </div>
-                    <div>
-                        <img src="/img/check.png" alt=""/>
-                        <p>Customization</p>
-                    </div>
-                    <div>
-                        <img src="/img/check.png" alt=""/>
-                        <p>Clients-filters</p>
-                    </div>
+                    <ul>
+                        <li>Without queues</li>
+                        <li>Detailed statistics</li>
+                        <li>Guarantee</li>
+                        <li>Customization</li>
+                        <li>Clients-filters</li>
+                    </ul>
                     <button className="">
                         <p>Try it now</p>
                     </button>
