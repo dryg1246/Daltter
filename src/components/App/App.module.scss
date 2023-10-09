@@ -1,0 +1,27 @@
+  .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+  }
+
+  @media screen and (max-width: 1120px) {
+    .container {
+      max-width: 1532px;
+    }
+  }
+  @media (max-width: 1532px) {
+    .container {
+      max-width: 1350px;
+    }
+  }
+
+  @media (max-width: 1350px) {
+    .container {
+      max-width: 875px;
+    }
+  }

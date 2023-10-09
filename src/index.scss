@@ -1,9 +1,8 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
+  font-family: Raleway;
 }
-
-
 
 .body {
   margin: 0 auto;
@@ -23,19 +22,9 @@
 ul {
   list-style-type: none;
 }
-.header-container{
-  align-items: center;
-  display: flex;
-  height: 80px;
-  margin: 0 auto;
-  max-width: 1120px;
-  width: 100%;
-}
 
 
-
-.navbar-block {
-  padding-right: 15.375em; /* 246px converted to em */
+.navbarBlock {
   flex-wrap: nowrap;
 }
 
@@ -60,14 +49,9 @@ ul {
   border-bottom: 1px solid rgba(82, 128, 198, 0.12);
   background: #FFF;
 }
-.but-on {
-  padding: 3em;
-  display: flex;
-  margin: 0 auto 0 8.625em;
-}
+
 .but-on .sing-up {
   border-radius: 1.0625em;
-  width: 7.75em;
   height: 2.375em;
   border: none;
   background: #3C72FF;
@@ -92,7 +76,6 @@ ul {
 .but-on .login {
   border-radius: 1.0625em; /* 17px converted to em */
   background: #E4ECFF;
-  width: 6.3828em; /* 102.105px converted to em */
   height: 2.375em; /* 38px converted to em */
   border: none;
 
@@ -120,9 +103,7 @@ button {
 margin-right: 1em; /* 16px converted to em */
 }
 
-header {
-  border-bottom: 1px solid rgba(82, 128, 198, 0.12);
-}
+
 
   .wrapper {
     display: flex;
@@ -157,16 +138,6 @@ header {
     line-height: 104.4%;
   }
 
-  .blue-daltter {
-    background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Raleway;
-    font-size: 76px;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 104.4%;
-  }
 
   /* Добавьте стили для остальных элементов, таких как текста параграфа и кнопок */
   button {
@@ -189,18 +160,6 @@ header {
   }
 
 
-  .mainTextIndex {
-    color: #3C72FF;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 104.4%;
-    background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 
   .Standard {
     display: flex;
@@ -219,9 +178,4 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: 104.4%; /* 2.61rem */
-  }
-
-  footer {
-    border-top: 1px solid rgba(82, 128, 198, 0.12);
-    background: #FFF;
   }

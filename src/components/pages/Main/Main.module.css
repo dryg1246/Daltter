@@ -1,0 +1,469 @@
+.main {
+  justify-content: center;
+  display: flex;
+  background: #FFFFFF;
+  margin-top: 10.37rem;
+}
+.main .card1 {
+  border: 1px solid red;
+  width: 520px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.main .card2 {
+  border: 1px solid red;
+}
+.main .mainTextBody {
+  color: #1F2D49;
+  font-family: Raleway;
+  font-size: 4.75em; /* 76px converted to em */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.368; /* 104.4% converted to em */
+}
+.main .mainTextDrawer {
+  color: #1F2D49;
+}
+.main .aboveBlocks {
+  justify-content: center;
+  padding: 30px;
+}
+.main .mainBtn {
+  align-items: center;
+  display: flex;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  height: 49px;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.2s;
+  padding-left: 10px;
+}
+.main .mainTextBody {
+  align-items: center;
+}
+.main .btnWhyUs {
+  width: 141px;
+  height: 49px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #E4ECFF;
+  border: none;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+.main .btnWhyUs h2 {
+  color: #3C72FF;
+  text-align: center;
+  margin: 0;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .btnTry {
+  width: 15.75rem;
+  margin-left: 20px;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  border-radius: 1.0625rem;
+  background: #3C72FF;
+  border: none;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+.main .btnTry h2 {
+  color: #FFF;
+  text-align: center;
+  margin: 0;
+  font-family: Raleway;
+  align-items: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .btnTry:hover {
+  background: #5684ff;
+}
+.main .btnTry:active {
+  background: #2360ff;
+}
+.main .btnTry .btnLearn {
+  width: 15.75rem;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  border-radius: 1.0625rem;
+  background: #3C72FF;
+  border: none;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+.main .btnTry .btnLearn:hover {
+  background: #5684ff;
+}
+.main .btnTry .btnLearn:active {
+  background: #2360ff;
+}
+.main .btnTry .btnLearn div {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .blueDater {
+  display: flex;
+  margin-top: 87px;
+  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
+  margin-left: 20px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Raleway;
+  font-size: 76px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 104.4%; /* 79.344px */
+  text-align: left;
+}
+.main .horizontal2 {
+  display: flex;
+  align-items: center;
+}
+.main .textFuture {
+  color: #1F2D49;
+  margin-left: 20px;
+  font-family: Raleway;
+  font-size: 4.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.4%;
+  text-align: left;
+}
+.main .paragraph {
+  text-align: left;
+  display: flex;
+  color: rgba(31, 45, 73, 0.86);
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 108.4%;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.2s;
+  padding-left: 30px;
+}
+
+.blueDaltter {
+  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Raleway;
+  font-size: 76px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 104.4%;
+}
+
+.clicks {
+  color: #cbdaff;
+  font-family: Raleway;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 114.9%;
+  width: 29.5rem;
+}
+
+.card {
+  justify-content: center;
+  display: flex;
+  width: 21.9375rem;
+  height: 28.25rem;
+  flex-shrink: 0;
+  border-radius: 3rem;
+  background: #E4ECFF;
+  padding-top: 5em;
+  margin-right: 2.12em;
+  align-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.card .discountStandart {
+  color: #7A8AA9;
+  margin: auto;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 104.4%; /* 20.88px */
+}
+.card .SaveMoney {
+  width: 99px;
+  height: 25px;
+  border-radius: 20px;
+  background: #BDC9E7;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.card .SaveMoney .saveMoneyText {
+  color: #67799E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 104.4%;
+}
+
+.textP {
+  color: #1F2D49;
+  font-family: Raleway;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.4%;
+  margin-right: 40px;
+  margin-bottom: 15px;
+}
+
+.Standard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Standard h3 {
+  padding-top: 5em;
+  margin-right: 11em;
+}
+
+.container1 {
+  justify-content: center;
+  display: flex;
+  border: 1px solid red;
+  margin: 0 0 172px 0;
+}
+
+.textSure {
+  color: #1F2D49;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.4%; /* 41.76px */
+}
+
+.inputEmails {
+  width: 30.25rem;
+  height: 5.25rem;
+  flex-shrink: 0;
+  border-radius: 1.6875rem 0rem 0rem 1.6875rem;
+  background: #E4ECFF;
+  border: none;
+  margin: 0 0 0 21px;
+}
+
+.btnBracket {
+  width: 5.25rem;
+  height: 5.25rem;
+  flex-shrink: 0;
+  border-radius: 0rem 1.6875rem 1.6875rem 0rem;
+  background: #779DFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.email {
+  display: contents;
+}
+
+.card2 {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+.card2 .BtnPlusText {
+  border: 1px solid red;
+  margin: 194px 418px 217px 0px;
+}
+.card2 img {
+  border: 1px solid red;
+}
+.card2 .mainTextDrawer {
+  color: #1F2D49;
+  font-family: Raleway;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 104.4%; /* 66.816px */
+  text-align: left;
+}
+.card2 .blueDater {
+  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Raleway;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 104.4%;
+  text-align: left;
+}
+.card2 .clicks {
+  color: #1F2D49;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 114.9%; /* 22.98px */
+  text-align: left;
+}
+.card2 .btnTryMore {
+  width: 15.75rem;
+  display: flex;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  border-radius: 1.0625rem;
+  background: #3C72FF;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+.card2 .btnTryMore h2 {
+  color: #FFF;
+  margin: 0;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.secondLeft img {
+  padding: 40px;
+  margin: 217px 108px 197px 400px;
+}
+
+.mainTextIndex {
+  margin-bottom: 80px;
+  color: #3C72FF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 104.4%; /* 50.112px */
+  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.standartDolar {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.listChecked {
+  padding-right: 6px;
+  color: rgba(31, 45, 73, 0.69);
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.4%; /* 25.056px */
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Check {
+  padding-right: 6px;
+}
+
+.btnTryNow {
+  width: 15.75rem;
+  margin-left: 20px;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  border-radius: 1.0625rem;
+  background: #3C72FF;
+  border: none;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+.btnTryNow p {
+  color: #FFF;
+  text-align: center;
+  margin: 0;
+  font-family: Raleway;
+  align-items: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Personal {
+  max-width: 279px;
+  text-align: center;
+  color: rgba(31, 45, 73, 0.69);
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  height: 165px;
+  line-height: 104.4%;
+  margin: 34px auto 39px;
+  max-width: 240px;
+}
+
+.emailLeave {
+  color: #1F2D49;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 104.4%;
+  margin: 0 0 21px 0;
+}
+
+.EmailPlusText {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=Main.module.css.map */
