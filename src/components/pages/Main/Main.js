@@ -45,7 +45,7 @@ function Main() {
                     <p className={styles.clicks}>All you need is just a few clicks - and your clients <br /> will be in your hands. Forget about tens of different <br />  services for one ad.</p>
 
                     <button className={styles.btnTryMore}>
-                        <h2>Learn more</h2>
+                        <h2>Try it now</h2>
                     </button>
                 </div>
                 </div>

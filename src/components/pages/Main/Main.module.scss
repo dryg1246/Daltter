@@ -45,7 +45,7 @@
   justify-content: center;
   text-decoration: none;
   transition: .2s;
-  padding-left: 10px
+  padding-left: 10px;
 }
 
   .mainTextBody{
@@ -60,7 +60,7 @@
     background: #E4ECFF;
     border: none;
     cursor: pointer;
-    transition: background 0.1s ease-in-out;
+    transition: all 0.3s ease;
 
     h2 {
       color: #3C72FF;
@@ -74,6 +74,7 @@
       line-height: normal;
     }
 
+
   }
   .btnTry {
     width: 15.75rem;
@@ -84,12 +85,12 @@
     background: #3C72FF;
     border: none;
     cursor: pointer;
-    transition: background 0.1s ease-in-out;
+    transition: all 0.3s ease;
 
     h2 {
       color: #FFF;
       text-align: center;
-     margin: 0;
+      margin: 0;
       font-family: Raleway;
       align-items: center;
       font-size: 1.5rem;
@@ -99,11 +100,13 @@
     }
 
     &:hover {
-      background: lighten(#3C72FF, 5%);
-    }
+      background-color: transparent;
+      border: 2px solid blue;
+      color: blue; /* Синий текст при наведении */
 
-    &:active {
-      background: darken(#3C72FF, 5%);
+      h2 {
+        color: blue; /* Синий текст при наведении */
+      }
     }
 
     .btnLearn {
@@ -114,15 +117,18 @@
       background: #3C72FF;
       border: none;
       cursor: pointer;
-      transition: background 0.1s ease-in-out;
+      transition: all 0.3s ease;
+
 
 
       &:hover {
-        background: lighten(#3C72FF, 5%);
-      }
+        background-color: transparent;
+        border: 2px solid blue;
+        color: blue; /* Синий текст при наведении */
 
-      &:active {
-        background: darken(#3C72FF, 5%);
+        h2 {
+          color: blue; /* Синий текст при наведении */
+        }
       }
 
       div {
@@ -308,6 +314,7 @@
 
   outline: none;
   cursor: pointer;
+
 }
 
 .email{
@@ -373,6 +380,7 @@
     text-align: left;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 
     h2{
       color: #FFF;
@@ -383,6 +391,17 @@
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+    }
+
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid blue;
+      color: blue; /* Синий текст при наведении */
+
+      h2 {
+        color: blue; /* Синий текст при наведении */
+      }
     }
   }
 
@@ -453,6 +472,17 @@
   border: none;
   cursor: pointer;
   transition: background 0.1s ease-in-out;
+
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid blue;
+    color: blue; /* Синий текст при наведении */
+
+    p {
+      color: blue; /* Синий текст при наведении */
+    }
+  }
 
   p {
     color: #FFF;

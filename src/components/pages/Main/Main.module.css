@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .main {
   justify-content: center;
   display: flex;
@@ -53,7 +54,7 @@
   background: #E4ECFF;
   border: none;
   cursor: pointer;
-  transition: background 0.1s ease-in-out;
+  transition: all 0.3s ease;
 }
 .main .btnWhyUs h2 {
   color: #3C72FF;
@@ -75,7 +76,7 @@
   background: #3C72FF;
   border: none;
   cursor: pointer;
-  transition: background 0.1s ease-in-out;
+  transition: all 0.3s ease;
 }
 .main .btnTry h2 {
   color: #FFF;
@@ -89,10 +90,12 @@
   line-height: normal;
 }
 .main .btnTry:hover {
-  background: #5684ff;
+  background-color: transparent;
+  border: 2px solid blue;
+  color: blue; /* Синий текст при наведении */
 }
-.main .btnTry:active {
-  background: #2360ff;
+.main .btnTry:hover h2 {
+  color: blue; /* Синий текст при наведении */
 }
 .main .btnTry .btnLearn {
   width: 15.75rem;
@@ -102,13 +105,15 @@
   background: #3C72FF;
   border: none;
   cursor: pointer;
-  transition: background 0.1s ease-in-out;
+  transition: all 0.3s ease;
 }
 .main .btnTry .btnLearn:hover {
-  background: #5684ff;
+  background-color: transparent;
+  border: 2px solid blue;
+  color: blue; /* Синий текст при наведении */
 }
-.main .btnTry .btnLearn:active {
-  background: #2360ff;
+.main .btnTry .btnLearn:hover h2 {
+  color: blue; /* Синий текст при наведении */
 }
 .main .btnTry .btnLearn div {
   color: #FFF;
@@ -344,6 +349,7 @@
   text-align: left;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 .card2 .btnTryMore h2 {
   color: #FFF;
@@ -354,6 +360,14 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.card2 .btnTryMore:hover {
+  background-color: transparent;
+  border: 2px solid blue;
+  color: blue; /* Синий текст при наведении */
+}
+.card2 .btnTryMore:hover h2 {
+  color: blue; /* Синий текст при наведении */
 }
 
 .mainContainer {
@@ -421,6 +435,14 @@
   border: none;
   cursor: pointer;
   transition: background 0.1s ease-in-out;
+}
+.btnTryNow:hover {
+  background-color: transparent;
+  border: 2px solid blue;
+  color: blue; /* Синий текст при наведении */
+}
+.btnTryNow:hover p {
+  color: blue; /* Синий текст при наведении */
 }
 .btnTryNow p {
   color: #FFF;

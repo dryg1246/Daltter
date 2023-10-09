@@ -10,8 +10,8 @@ function Footer() {
                 </div>
                 <div className={styles.police}>
                     <nav>Register | </nav>
-                    <nav> Terms of service |</nav>
-                    <nav>Privacy policy |</nav>
+                    <nav> Terms of service | </nav>
+                    <nav>Privacy policy | </nav>
                     <nav>Login </nav>
                 </div>
             </div>
