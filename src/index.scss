@@ -1,7 +1,31 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
-  font-family: Raleway;
+  text-decoration: none;
+}
+
+Header{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+
+
+Header main footer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .body {

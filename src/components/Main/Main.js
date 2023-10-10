@@ -3,7 +3,8 @@ import styles from "./Main.module.scss";
 
 function Main() {
     return (
-        <div>
+
+        <div className="">
             <div className={styles.main}>
                 <div className={styles.card1}>
 
@@ -90,7 +91,7 @@ function Main() {
                             </div>
                             <div  className="d-flex">
                                 <div>
-                                    <img  className={styles.Check} src="/img/check.png" alt=""/>
+                                    <img className={styles.Check} src="/img/check.png" alt=""/>
                                 </div>
                                 <div>
                                     <span>Without queues</span>
@@ -150,7 +151,7 @@ function Main() {
                                 </div>
                                 <div  className="d-flex">
                                     <div>
-                                        <img  className={styles.Check} src="/img/check.png" alt=""/>
+                                        <img className={styles.Check} src="/img/check.png" alt=""/>
                                     </div>
                                     <div>
                                         <span>Without queues</span>
