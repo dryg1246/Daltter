@@ -1,0 +1,127 @@
+.header {
+  border-bottom: 1px solid rgba(82, 128, 198, 0.12);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+
+
+  .headerContainer {
+    box-sizing: border-box;
+    display: flex;
+    height: 80px;
+    max-width: 1120px;
+    width: 100%;
+  }
+
+  .logo {
+    margin-top: 16px;
+    margin-right: 11.58px;
+    cursor: pointer;
+  }
+
+  .dallterText {
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 29px;
+    cursor: pointer;
+  }
+
+
+  .features {
+    height: 23px;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 246.37px;
+    margin-top: 32px;
+    margin-right: 55px;
+    font-family: Raleway;
+    cursor: pointer;
+  }
+
+  .pricing {
+    height: 23px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 32px;
+    margin-right: 55px;
+    cursor: pointer;
+  }
+
+  .contact {
+    width: 104px;
+    height: 23px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 32px;
+    margin-right: 138px;
+    cursor: pointer;
+  }
+
+  .login {
+    width: 102.105px;
+    height: 38px;
+    border-radius: 17px;
+    background: #E4ECFF;
+    color: #3C72FF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-color: #E4ECFF;
+    border-width: 0;
+    margin-right: 15.9px;
+    margin-top: 21px;
+    cursor: pointer;
+  }
+
+  .singUp {
+    width: 123.158px;
+    height: 38px;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 17px;
+    background: #3C72FF;
+    border-width: 0;
+    margin-top: 21px;
+    cursor: pointer;
+
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid blue;
+      color: blue; /* Синий текст при наведении */
+
+      h2 {
+        color: blue; /* Синий текст при наведении */
+      }
+    }
+  }
+}
+button {
+  margin-right: 1em; /* 16px converted to em */
+}
