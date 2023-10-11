@@ -14,11 +14,11 @@ function Header(props) {
                 </Link>
                 <div className="d-flex text-decoration-none">
                     <Link to="/Features"> <div  className={styles.features} >Features</div></Link>
-                    <Link to="/Features"> <div  className={styles.pricing}>Pricing</div> </Link>
-                    <Link to="/Features"> <div  className={styles.contact}>Contact Us</div> </Link>
+                    <Link to="/Pricing"> <div  className={styles.pricing}>Pricing</div> </Link>
+                    <Link to="/ContactUs"> <div  className={styles.contact}>Contact Us</div> </Link>
                     <div  className="d-flex">
                         <Link to="/login">
-                        <button  onClick={() => alert(123)} className={styles.login}>
+                        <button className={styles.login}>
                             Login
                         </button>
                        </Link>
