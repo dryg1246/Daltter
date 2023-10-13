@@ -49,9 +49,6 @@ Header main footer {
   list-style-type: none;
   align-items: stretch;
 }
-.body .element::-webkit-scrollbar {
-  width: 0 !important;
-}
 
 ul {
   list-style-type: none;

@@ -4,6 +4,7 @@
 }
 
 .main_first {
+  padding-top: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -10,7 +10,6 @@
 
 .footer {
   display: flex;
-  width: auto;
   flex-direction: column;
   margin-top: 180px;
   justify-content: center;
@@ -27,7 +26,7 @@
     @include def(700, 20px, 23.48px)
   }
 }
-footer_text {
+.footer_text {
   display: flex;
   gap: 1.19rem;
   margin-bottom: 50px;
