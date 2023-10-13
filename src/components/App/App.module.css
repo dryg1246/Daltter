@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.bigScreen {
+  font-size: 24px;
+  /* Другие стили для больших экранов */
+}
+
+.smallScreen {
+  font-size: 16px;
+  /* Другие стили для маленьких экранов */
+}
+
+/*# sourceMappingURL=App.module.css.map */
