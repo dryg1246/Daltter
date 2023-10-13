@@ -4,31 +4,41 @@ import {Link} from "react-router-dom";
 
 function Header(props) {
     return (
+        <header>
         <div className={styles.header}>
-            <div className={styles.headerContainer}>
                 <Link to="/">
-                    <div  className="d-flex text-decoration-none">
-                        <img className={styles.logo} width={51} height={49} src="/img/logo.png"/>
-                        <h1 className={styles.dallterText}>daltter</h1>
+                    <div className={styles.logo_header}>
+                        <img  width={51} height={49} src="/img/logo.png"/>
+                        <h1>daltter</h1>
                     </div>
                 </Link>
-                <div className="d-flex text-decoration-none">
-                    <Link to="/Features"> <div  className={styles.features} >Features</div></Link>
-                    <Link to="/Pricing"> <div  className={styles.pricing}>Pricing</div> </Link>
-                    <Link to="/ContactUs"> <div  className={styles.contact}>Contact Us</div> </Link>
-                    <div  className="d-flex">
+            <div className={styles.links_button}>
+                <div className={styles.links_header}>
+                    <Link to="/Features">
+                        <nav>Features</nav>
+                    </Link>
+                    <Link to="/Pricing">
+                        <nav>Pricing</nav>
+                    </Link>
+                    <Link to="/ContactUs">
+                        <nav>Contact Us</nav>
+                    </Link>
+                </div>
+                    <div className={styles.buttons_header}>
                         <Link to="/login">
-                        <button className={styles.login}>
-                            Login
-                        </button>
-                       </Link>
-                        <button className={styles.singUp}>
-                            Sign UP
-                        </button>
+                            <button className={styles.btn_login}>
+                                Login
+                            </button>
+                        </Link>
+                        <Link to="/SingUp">
+                            <button className={styles.btn_singUp}>
+                                Sign UP
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
-        </div>
+</header>
     );
 }
 

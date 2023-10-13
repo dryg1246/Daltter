@@ -1,20 +1,39 @@
-.footer {
-  width: 1920px;
-  height: 213px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 180px;
-  border-top: 1px solid rgba(82, 128, 198, 0.12);
-  background: #FFF;
+@mixin def($f, $a, $b){
+  font-weight: $f;
+  font-size: $a;
+  line-height: $b;
+}
+.line {
+  border-right: 1px solid #0000008a;
 }
 
-.police{
+
+.footer {
   display: flex;
+  width: auto;
+  flex-direction: column;
+  margin-top: 180px;
   justify-content: center;
-  color: rgba(0,0,0,.43);
-  font-family: Raleway;
-  font-size: 24px;
-  font-weight: 500;
-  padding-right: 38px;
+  align-items: center;
+  border-top: 1px solid rgba(82,128,198,.12);
+  height: 213px;
+}
+.footer_logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  & p {
+    margin-left: 1rem;
+    @include def(700, 20px, 23.48px)
+  }
+}
+footer_text {
+  display: flex;
+  gap: 1.19rem;
+  margin-bottom: 50px;
+  & a{
+    text-decoration: none;
+    @include def(500, 24px, 28.18px);
+    color: #00000080;
+  }
 }

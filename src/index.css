@@ -1,7 +1,17 @@
 @charset "UTF-8";
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
   text-decoration: none;
+}
+
+input {
+  outline: none;
+  font-size: 20px;
 }
 
 Header {
@@ -31,15 +41,16 @@ Header main footer {
   margin: 0 auto;
   max-width: 1920px;
   min-height: 100%;
-  overflow: hidden;
-  overflow: scroll;
+  width: 100%;
+  overflow-y: scroll;
   box-sizing: border-box;
   font-family: "Raleway", system-ui;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background: #FFF;
   list-style-type: none;
   align-items: stretch;
+}
+.body .element::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 ul {

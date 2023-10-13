@@ -1,178 +1,321 @@
 @charset "UTF-8";
 .main {
-  justify-content: center;
-  display: flex;
-  background: #FFFFFF;
-  margin-top: 10.37rem;
+  flex: 1 1 auto;
 }
-.main .card1 {
-  margin: 26px 35px 154px 87px;
-  border: 1px solid red;
-  width: 520px;
+
+.main_first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1120px;
+  margin: 5rem auto 0;
+}
+
+.hello_right {
+  display: flex;
+}
+
+.hello_left {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.btn_first {
+  display: flex;
+}
+
+.btn_try {
+  display: inline-block;
+  border: none;
+  background: #3C72FF;
+  color: #fff;
+  padding: 0.7rem 4.375rem;
+  text-decoration: none;
+  border-radius: 17px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.18px;
+}
+
+.btn_why {
+  display: inline-block;
+  border: none;
+  background: #E4ECFF;
+  color: #3C72FF;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.18px;
+}
+
+.daltter_main {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 800;
+  font-size: 76px;
+  line-height: 79.34px;
+}
+
+.dallter_text {
+  color: #3C72FF;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.email_main {
+  margin-bottom: 29px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 21.68px;
+}
+
+.main_second {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1120px;
+  max-height: 507px;
+  margin: 180px auto 0;
+  gap: 108px;
+}
+
+.second_left {
+  display: flex;
+}
+
+.second_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.second_right span {
+  color: #3C72FF;
+  font-style: italic;
+}
+
+.second_main {
+  margin: 0;
+  text-align: left;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 66.82px;
+}
+
+.second_text {
+  margin: 0;
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22.98px;
+}
+
+.second_btn {
+  align-items: center;
+  background-color: #3c72ff;
+  border-radius: 17px;
+  display: flex;
+  height: 49px;
+  justify-content: center;
+  margin-top: 0px;
+  max-width: 252px;
+  width: 100vw;
+  border: none;
+}
+.second_btn .second_try_button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.main_third h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 50.11px;
+  color: #3C72FF;
+  margin-top: 197px;
+}
+
+.plans {
+  margin-top: 197px;
+}
+
+.main_fourth .main_standart {
+  height: 509px;
+  max-width: 351px;
+  width: 100%;
+}
+.main_fourth .main_professional {
+  height: 509px;
+  max-width: 351px;
+  width: 100%;
+}
+.main_fourth .main_personal {
+  height: 509px;
+  max-width: 351px;
+  width: 100%;
+}
+.card_container {
+  gap: 2.12rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.leave_email {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  text-align: center;
+  align-items: center;
+  gap: 21px;
 }
-.main .card2 {
-  border: 1px solid red;
+
+.email_address {
+  background-color: #E4ECFF;
+  border-top-left-radius: 27px;
+  border-bottom-left-radius: 27px;
+  border: none;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 29.23px;
+  padding: 1rem 2rem;
+  color: rgba(0, 0, 0, 0.476);
 }
-.main .mainTextBody {
+
+.email-input {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.email-input a {
+  color: #fff;
+  text-decoration: none;
+  background: #779DFF;
+  border-top-right-radius: 27px;
+  border-bottom-right-radius: 27px;
+  padding: 1rem 1.5rem;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 37.58px;
+  font-family: "Inter", sans-serif;
+}
+.email-input .mainTextBody {
   color: #1F2D49;
-  font-family: Raleway;
   font-size: 4.75em; /* 76px converted to em */
-  font-style: normal;
   font-weight: 700;
   line-height: 1.368; /* 104.4% converted to em */
+  font-weight: 700;
+  font-size: 4.75em;
+  line-height: 1.368;
 }
-.main .mainTextDrawer {
+.email-input .mainTextDrawer {
   color: #1F2D49;
 }
-.main .aboveBlocks {
+.email-input .aboveBlocks {
   justify-content: center;
-  padding: 30px;
 }
-.main .mainBtn {
+.email-input .mainBtn {
   align-items: center;
   display: flex;
-  font-family: Raleway;
   font-size: 24px;
   font-weight: 700;
-  height: 49px;
-  justify-content: center;
   text-decoration: none;
   transition: 0.2s;
-  padding-left: 10px;
 }
-.main .mainTextBody {
+.email-input .mainTextBody {
   align-items: center;
 }
-.main .btnWhyUs {
-  width: 141px;
-  height: 49px;
-  flex-shrink: 0;
+.email-input .btnWhyUs {
   border-radius: 6px;
   background: #E4ECFF;
   border: none;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
-.main .btnWhyUs h2 {
+.email-input .btnWhyUs h2 {
   color: #3C72FF;
   text-align: center;
-  margin: 0;
-  text-align: center;
-  font-family: Raleway;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
-.main .btnTry {
-  width: 15.75rem;
-  margin-left: 20px;
-  height: 3.0625rem;
-  flex-shrink: 0;
+.email-input .btnTry {
   border-radius: 1.0625rem;
   background: #3C72FF;
   border: none;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
-.main .btnTry h2 {
+.email-input .btnTry h2 {
   color: #FFF;
   text-align: center;
-  margin: 0;
-  font-family: Raleway;
   align-items: center;
   font-size: 1.5rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
-.main .btnTry:hover {
+.email-input .btnTry:hover {
   background-color: transparent;
   border: 2px solid blue;
   color: blue; /* Синий текст при наведении */
 }
-.main .btnTry:hover h2 {
+.email-input .btnTry:hover h2 {
   color: blue; /* Синий текст при наведении */
 }
-.main .btnTry .btnLearn {
-  width: 15.75rem;
-  height: 3.0625rem;
-  flex-shrink: 0;
+.email-input .btnTry .btnLearn {
   border-radius: 1.0625rem;
   background: #3C72FF;
   border: none;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
-.main .btnTry .btnLearn:hover {
+.email-input .btnTry .btnLearn:hover {
   background-color: transparent;
   border: 2px solid blue;
   color: blue; /* Синий текст при наведении */
 }
-.main .btnTry .btnLearn:hover h2 {
+.email-input .btnTry .btnLearn:hover h2 {
   color: blue; /* Синий текст при наведении */
 }
-.main .btnTry .btnLearn div {
+.email-input .btnTry .btnLearn div {
   color: #FFF;
   text-align: center;
-  font-family: Raleway;
   font-size: 1.5rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
-.main .blueDater {
+.email-input .blueDater {
   display: flex;
-  margin-top: 87px;
   background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-  margin-left: 20px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Raleway;
   font-size: 76px;
   font-style: italic;
   font-weight: 800;
   line-height: 104.4%; /* 79.344px */
   text-align: left;
 }
-.main .horizontal2 {
+.email-input .horizontal2 {
   display: flex;
   align-items: center;
 }
-.main .textFuture {
+.email-input .textFuture {
   color: #1F2D49;
-  margin-left: 20px;
-  font-family: Raleway;
   font-size: 4.75rem;
   font-style: normal;
   font-weight: 700;
   line-height: 104.4%;
   text-align: left;
 }
-.main .paragraph {
+.email-input .paragraph {
   text-align: left;
   display: flex;
   color: rgba(31, 45, 73, 0.86);
-  font-family: Raleway;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
   line-height: 108.4%;
-  justify-content: center;
   text-decoration: none;
   transition: 0.2s;
-  padding-left: 30px;
 }
 
 .blueDaltter {
   background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Raleway;
   font-size: 76px;
   font-style: italic;
   font-weight: 800;
@@ -181,40 +324,77 @@
 
 .clicks {
   color: #cbdaff;
-  font-family: Raleway;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
   line-height: 114.9%;
-  width: 29.5rem;
+}
+
+.main_fourth {
+  display: flex;
 }
 
 .card {
-  justify-content: center;
+  background-color: #e4ecff;
+  border-radius: 48px;
   display: flex;
-  width: 21.9375rem;
-  height: 28.25rem;
-  flex-shrink: 0;
-  border-radius: 3rem;
-  background: #E4ECFF;
-  padding-top: 5em;
-  margin-right: 2.12em;
-  align-content: space-between;
-  flex-wrap: wrap;
-  align-items: baseline;
+  width: 351px;
+  height: 452px;
+  justify-content: center;
+  flex-direction: column;
 }
 .card .discountStandart {
   color: #7A8AA9;
-  margin: auto;
-  font-family: Inter;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 104.4%; /* 20.88px */
 }
+.card .standartDolar {
+  margin-top: 6px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+  color: #1F2D49;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+.card .standartDolar .standartDolar2 {
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 700;
+  color: #1F2D49;
+}
+.card .discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.card .discount .discountStandart {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20.88px;
+  text-decoration: line-through;
+  color: #7A8AA9;
+  margin: 0;
+}
+.card .discount .SaveMoneyText {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16.7px;
+  color: #67799E;
+  background-color: #BDC9E7;
+  padding: 0.2rem;
+  border-radius: 20px;
+  margin: 0;
+}
 .card .SaveMoney {
-  width: 99px;
-  height: 25px;
   border-radius: 20px;
   background: #BDC9E7;
   display: flex;
@@ -223,23 +403,23 @@
   justify-content: center;
   align-items: stretch;
 }
-.card .SaveMoney .saveMoneyText {
-  color: #67799E;
-  font-size: 16px;
-  font-style: normal;
+.card .SaveMoney .SaveMoneyText {
+  font-family: "Inter", sans-serif;
   font-weight: 500;
-  line-height: 104.4%;
+  font-size: 16px;
+  line-height: 16.7px;
+  color: #67799E;
+  background-color: #BDC9E7;
+  padding: 0.2rem;
+  border-radius: 20px;
+  margin: 0;
 }
 
 .textP {
-  color: #1F2D49;
+  color: #1f2d49;
   font-family: Raleway;
-  font-size: 2.5rem;
-  font-style: normal;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 104.4%;
-  margin-right: 40px;
-  margin-bottom: 15px;
 }
 
 .Standard {
@@ -247,21 +427,14 @@
   justify-content: space-between;
 }
 
-.Standard h3 {
-  padding-top: 5em;
-  margin-right: 11em;
-}
-
 .container1 {
   justify-content: center;
   display: flex;
   border: 1px solid red;
-  margin: 0 0 172px 0;
 }
 
 .textSure {
   color: #1F2D49;
-  font-family: Raleway;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -269,24 +442,25 @@
 }
 
 .inputEmails {
-  width: 30.25rem;
-  height: 5.25rem;
   flex-shrink: 0;
   border-radius: 1.6875rem 0rem 0rem 1.6875rem;
   background: #E4ECFF;
   border: none;
-  margin: 0 0 0 21px;
+}
+
+.plans-container {
+  margin-top: 41px;
+  margin-bottom: 41px;
 }
 
 .btnBracket {
-  width: 5.25rem;
-  height: 5.25rem;
-  flex-shrink: 0;
   border-radius: 0rem 1.6875rem 1.6875rem 0rem;
   background: #779DFF;
   border: none;
   outline: none;
-  cursor: pointer;
+  width: 5.25rem;
+  height: 5.25rem;
+  flex-shrink: 0;
 }
 
 .email {
@@ -301,28 +475,15 @@
   flex-direction: row;
   align-items: center;
 }
-.card2 .BtnPlusText {
-  border: 1px solid red;
-  margin: 194px 418px 217px 0px;
-}
-.card2 img {
-  border: 1px solid red;
-}
 .card2 .mainTextDrawer {
   color: #1F2D49;
-  font-family: Raleway;
   font-size: 64px;
-  font-style: normal;
   font-weight: 800;
   line-height: 104.4%; /* 66.816px */
   text-align: left;
 }
 .card2 .blueDater {
   background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Raleway;
   font-size: 64px;
   font-style: italic;
   font-weight: 800;
@@ -331,7 +492,6 @@
 }
 .card2 .clicks {
   color: #1F2D49;
-  font-family: Raleway;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -339,14 +499,10 @@
   text-align: left;
 }
 .card2 .btnTryMore {
-  width: 15.75rem;
   display: flex;
-  height: 3.0625rem;
-  flex-shrink: 0;
   border-radius: 1.0625rem;
   background: #3C72FF;
   border: none;
-  cursor: pointer;
   text-align: left;
   justify-content: center;
   align-items: center;
@@ -354,13 +510,9 @@
 }
 .card2 .btnTryMore h2 {
   color: #FFF;
-  margin: 0;
   text-align: center;
-  font-family: Raleway;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 .card2 .btnTryMore:hover {
   background-color: transparent;
@@ -376,90 +528,74 @@
   justify-content: center;
 }
 
-.secondLeft img {
-  padding: 40px;
-  margin: 217px 108px 197px 400px;
-}
-
 .mainTextIndex {
-  margin-bottom: 80px;
   color: #3C72FF;
   text-align: center;
-  font-family: Raleway;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 104.4%; /* 50.112px */
-  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.standartDolar {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  line-height: 104.4%;
 }
 
 .listChecked {
-  padding-right: 6px;
+  margin-top: 34px;
   color: rgba(31, 45, 73, 0.69);
-  font-family: Raleway;
   font-size: 24px;
-  font-style: normal;
   font-weight: 700;
   line-height: 104.4%; /* 25.056px */
   display: flex;
   justify-content: center;
-  padding: 20px 30px;
   align-content: space-around;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.Check {
-  padding-right: 6px;
+.btnTryNow {
+  align-items: center;
+  background-color: #3c72ff;
+  border-radius: 48px;
+  color: #fff;
+  display: flex;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 700;
+  height: 49px;
+  justify-content: center;
+  max-width: 296px;
+  text-decoration: none;
+  transition: 0.2s;
+  width: 100%;
 }
 
-.btnTryNow {
-  width: 15.75rem;
-  margin-left: 20px;
-  height: 3.0625rem;
-  flex-shrink: 0;
-  border-radius: 1.0625rem;
-  background: #3C72FF;
-  border: none;
-  cursor: pointer;
-  transition: background 0.1s ease-in-out;
-}
-.btnTryNow:hover {
-  background-color: transparent;
-  border: 2px solid blue;
-  color: blue; /* Синий текст при наведении */
-}
-.btnTryNow:hover p {
-  color: blue; /* Синий текст при наведении */
-}
-.btnTryNow p {
-  color: #FFF;
-  text-align: center;
-  margin: 0;
-  font-family: Raleway;
+.plans_container_block_card_price {
   align-items: center;
-  font-size: 1.5rem;
+  color: #1f2d49;
+  display: flex;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: 6px;
+}
+.plans_container_block_card_price .plans_block_price_text {
+  align-items: center;
+  color: #1f2d49;
+  display: flex;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: 6px;
+}
+.plans_container_block_card_price .plans_block_price_text .price_text_big {
+  color: #1F2D49;
+  text-align: center;
+  font-family: Inter;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 104.4%;
 }
 
-.Personal {
-  max-width: 279px;
-  text-align: center;
+.plans_container_block_card_desc {
   color: rgba(31, 45, 73, 0.69);
   font-family: Raleway;
   font-size: 24px;
@@ -468,25 +604,398 @@
   line-height: 104.4%;
   margin: 34px auto 39px;
   max-width: 240px;
+  width: 100%;
+}
+
+.plans_container_block_card_oldprice {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 174px;
+  width: 100%;
+}
+
+.plans_container_block_card_inner {
+  margin-top: 41px;
+  max-width: 296px;
+  width: 100%;
+}
+
+.plans_container_block_card {
+  background-color: #e4ecff;
+  border-radius: 48px;
+  display: flex;
+  height: 452px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.plans_container_block {
+  height: 509px;
+  max-width: 351px;
+  width: 100%;
+}
+
+.plans_container_block_title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.plans_container {
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+}
+
+.list_checked {
+  align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+  gap: 6px;
+}
+
+.Personal {
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.7385rem;
+}
+
+.plans_container_blocks {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.plans_container_block_card_button {
+  align-items: center;
+  background-color: #3c72ff;
+  border-radius: 48px;
+  border: none;
+  color: #fff;
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  height: 49px;
+  justify-content: center;
+  max-width: 296px;
+  text-decoration: none;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.plans_container_block_card_oldprice_left {
+  color: #7a8aa9;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.plans_container_block_card_oldprice_right {
+  align-items: center;
+  background-color: #bdc9e7;
+  border-radius: 20px;
+  color: #67799e;
+  display: flex;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  height: 25px;
+  justify-content: center;
+  max-width: 99px;
+  width: 100%;
 }
 
 .emailLeave {
   color: #1F2D49;
   text-align: center;
-  font-family: Raleway;
   font-size: 40px;
-  font-style: normal;
   font-weight: 500;
   line-height: 104.4%;
-  margin: 0 0 21px 0;
 }
 
 .EmailPlusText {
+  gap: 21px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+}
+
+.main_fifth {
+  margin-top: 172px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main_fifth .emailLeave {
+  color: #1F2D49;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 104.4%;
+}
+.main_fifth .EmailPlusText {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.main_fifth .EmailPlusText .inputEmails {
+  width: 30.25rem;
+  height: 5.25rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.main_fifth .EmailPlusText .inputEmails a {
+  color: #fff;
+  text-decoration: none;
+  background: #779DFF;
+  border-top-right-radius: 27px;
+  border-bottom-right-radius: 27px;
+  padding: 1rem 1.5rem;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 37.58px;
+  font-family: "Inter", sans-serif;
+}
+
+.main-third {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-third h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 50.11px;
+  color: #3C72FF;
+  margin-top: 197px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.card-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card1 h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 41.76px;
+  margin: 0;
+}
+
+.card1-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  width: 351px;
+  height: auto;
+  background-color: #E4ECFF;
+  border-radius: 48px;
+  text-align: center;
+}
+
+.price-addit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.price-addit .price-number {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20.88px;
+  text-decoration: line-through;
+  color: #7A8AA9;
+  margin: 0;
+}
+.price-addit .price-percent {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16.7px;
+  color: #67799E;
+  background-color: #BDC9E7;
+  padding: 0.2rem;
+  border-radius: 20px;
+  margin: 0;
+}
+
+.price-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price-main .text-1 {
+  margin-top: 6px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+  color: #1F2D49;
+}
+.price-main .text-2 {
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 700;
+  color: #1F2D49;
+}
+
+.plans-container {
+  margin-top: 41px;
+  margin-bottom: 41px;
+}
+
+.main_third h1 {
+  margin: 10rem 0 8rem;
+}
+.main_third .card1_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  width: 351px;
+  height: auto;
+  background-color: #E4ECFF;
+  border-radius: 48px;
+  text-align: center;
+}
+.main_third .plans_container {
+  margin-top: 41px;
+  margin-bottom: 41px;
+}
+.main_third .price_addit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.main_third .price_addit .price_number {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20.88px;
+  text-decoration: line-through;
+  color: #7A8AA9;
+  margin: 0;
+}
+.main_third .price_addit .price_rectangle {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16.7px;
+  color: #67799E;
+  background-color: #BDC9E7;
+  padding: 0.2rem;
+  border-radius: 20px;
+  margin: 0;
+}
+.main_third .price_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_third .price_main .text_small {
+  margin-top: 6px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+  color: #1F2D49;
+}
+.main_third .price_main .text_big {
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 700;
+  color: #1F2D49;
+}
+.main_third .btn_try_now {
+  align-items: center;
+  background-color: #3c72ff;
+  border-radius: 48px;
+  color: #fff;
+  display: flex;
+  border: none;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 700;
+  height: 49px;
+  justify-content: center;
+  max-width: 296px;
+  text-decoration: none;
+  width: 100%;
+}
+.main_third .preferences {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 175px;
+  align-content: center;
+  align-items: baseline;
+  margin: 34px 50px;
+}
+.main_third .preferences .personal_text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27.82px;
+  color: rgba(31, 45, 73, 0.69);
+  text-align: center;
+}
+.main_third .preferences .links_check {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.main_third .preferences .links_check p {
+  text-align: left;
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 25.06px;
+  color: rgba(31, 45, 73, 0.6980392157);
+}
+.main_third .preferences .links_check .text_x {
+  padding: 0.2rem;
+}
+.main_third .third_btn_contact {
+  align-items: center;
+  border: none;
+  background-color: #3c72ff;
+  margin: 0 auto;
+  border-radius: 48px;
+  color: #fff;
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  height: 49px;
+  justify-content: center;
+  max-width: 296px;
+  text-decoration: none;
+  transition: 0.2s;
+  width: 100%;
+}
+.main_third .third_btn_contact a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.18px;
 }
 
 /*# sourceMappingURL=Main.module.css.map */

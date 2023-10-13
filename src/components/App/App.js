@@ -3,31 +3,28 @@ import "../../index.scss"
 import Main from "../Main/Main";
 import styles from './App.module.scss'
 import Footer from "../Footer/Footer";
-import {Features} from "../pages/Features";
-import {Pricing} from "../pages/Pricing"
-
-import {ContactUs} from "../pages/ContactUs"
+import { Features } from "../pages/Features";
+import { Pricing } from "../pages/Pricing"
+import { ContactUs } from "../pages/ContactUs"
 import { Routes, Route, Link } from "react-router-dom";
-import {useState} from "react";
-import {Home} from "../pages/Home";
-import Login from "../pages/Login/login";
-import {Error404NotFound} from "../pages/Error404NotFound";
+import { useState, useEffect } from "react";
+import { Home } from "../pages/Home";
+import Login from "../pages/Register/login";
+import { Error404NotFound } from "../pages/Error404NotFound";
+import SingUp from "../pages/Register/SingUp";
 
-
-function App() {
-    const [login, setLogin] = useState(false);
-
+const App = () => {
     return (
         <>
             <div className="container">
                 <Routes>
-
-                    <Route path="/Features" element={<Features />}  />
+                    <Route path="/Features" element={<Features />} />
                     <Route path="/Pricing" element={<Pricing />} />
                     <Route path="/ContactUs" element={<ContactUs />} />
                     <Route path="/Login" element={<Login />} />
+                    <Route path="/SingUp" element={<SingUp />} />
                     <Route path="/" element={<Home />} />
-                    <Route path="/404" element={<Error404NotFound/>} />
+                    <Route path="*" element={<Error404NotFound />} />
                 </Routes>
             </div>
         </>

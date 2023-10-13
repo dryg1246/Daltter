@@ -1,3 +1,4 @@
+
 .Header {
   display: flex;
   justify-content: center;
@@ -32,24 +33,24 @@
   cursor: pointer;
 }
 
-.BtnSingUp{
+.BtnSignUp{
   margin-left: 861px;
-    width: 123.158px;
-    height: 38px;
-    color: #FFF;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    border-radius: 17px;
-    background: #3C72FF;
-    border-width: 0;
-    margin-top: 21px;
-    cursor: pointer;
+  width: 123.158px;
+  height: 38px;
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 17px;
+  background: #3C72FF;
+  border-width: 0;
+  margin-top: 21px;
+  cursor: pointer;
 
-  .TextBtnSingUp{
+  .TextBtnSignUp{
     display: flex;
     margin: 0;
     justify-content: center;
@@ -57,15 +58,15 @@
 
 
 
-    &:hover {
-      background-color: transparent;
-      border: 2px solid blue;
-      color: blue; /* Синий текст при наведении */
+  &:hover {
+    background-color: transparent;
+    border: 2px solid blue;
+    color: blue; /* Синий текст при наведении */
 
-      h2 {
-        color: blue; /* Синий текст при наведении */
-      }
+    h2 {
+      color: blue; /* Синий текст при наведении */
     }
+  }
 }
 
 .inputsWrapper{
@@ -73,6 +74,17 @@
   flex-direction: column;
   align-items: center;
 
+  input::placeholder {
+    display: flex;
+    margin-right: 19px;
+    color: rgba(0, 0, 0, 0.40);
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+
+    font-weight: 500;
+    line-height: 104.4%; /* 20.88px */
+  }
   input{
     width: 365px;
     height: 51px;
@@ -82,12 +94,18 @@
 
   .EmailInput{
     margin: 61px 0 20px 0;
+
+    ::placeholder {
+      color: blue;
+      font-size: 1.5em;
+    }
   }
   .PasswordInput{
     margin: 0 0 27px
   }
 
   button{
+    border: none;
     width: 365px;
     height: 51px;
     border-radius: 17px;
@@ -116,3 +134,27 @@
   cursor: pointer;
 }
 
+
+.BtnLogin{
+  margin-left: 861px;
+  width: 123.158px;
+  height: 38px;
+  color: #3C72FF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 17px;
+  background-color: #cbdaff;
+  border-width: 0;
+  margin-top: 21px;
+  cursor: pointer;
+
+  .TextBtnLogin{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+  }
+}
