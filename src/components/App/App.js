@@ -10,8 +10,10 @@ import { Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Home } from "../pages/Home";
 import Login from "../pages/Register/login";
-import { Error404NotFound } from "../pages/Error404NotFound";
+import { Error404NotFound } from "../pages/Error/Error404NotFound";
 import SingUp from "../pages/Register/SingUp";
+import SingUpPassword from "../pages/Register/SingUpPassword";
+import PasswordRecovery from "../pages/Register/PasswordRecovery";
 
 const App = () => {
     return (
@@ -23,8 +25,11 @@ const App = () => {
                     <Route path="/ContactUs" element={<ContactUs />} />
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SingUp" element={<SingUp />} />
+                    <Route path="/PasswordRecovery" element={<PasswordRecovery />} />
+                    <Route path="/Password" element={<SingUpPassword />} />
                     <Route path="/" element={<Home />} />
                     <Route path="*" element={<Error404NotFound />} />
+
                 </Routes>
             </div>
         </>

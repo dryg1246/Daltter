@@ -32,7 +32,7 @@ function Header(props) {
                         </Link>
                         <Link to="/SingUp">
                             <button className={styles.btn_singUp}>
-                                Sign UP
+                                Sign up
                             </button>
                         </Link>
                     </div>

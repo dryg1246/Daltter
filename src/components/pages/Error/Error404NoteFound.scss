@@ -1,0 +1,33 @@
+@mixin def($f, $a, $b){
+  font-weight: $f;
+  font-size: $a;
+  line-height: $b;
+}
+
+.error{
+  font-size: 4rem;
+  font-family: Inter;
+}
+
+.btn_go_back{
+  margin: 0 auto;
+  align-items: center;
+  background-color: #3c72ff;
+  border-radius: 48px;
+  color: #fff;
+  display: flex;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  height: 63px;
+  justify-content: center;
+  max-width: 359px;
+  text-decoration: none;
+  transition: 0.2s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.container_error{
+  margin-top: 180px;
+}

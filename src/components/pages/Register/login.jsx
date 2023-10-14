@@ -1,46 +1,51 @@
 import React from 'react';
-import styles from "./register.module.scss";
+import "./register..scss"
 import { Link } from "react-router-dom";
-import SingUp from "./SingUp";
 
 function Login() {
-
     return (
         <>
-            <header className={styles.Header}>
-                <Link to="/">
-                    <div className={styles.HeaderLogo}>
-                        <img src="/img/logo.png" width={51} height={49} className={styles.HeaderImgLogo} alt="Logo" />
-                        <h2>daltter</h2>
-                    </div>
-                </Link>
-                <div className="d-flex">
-                    <Link to="/SingUp">
-                        <button  className={styles.BtnSignUp}>
-                            <p className={styles.TextBtnSignUp}>Sign Up</p>
-                        </button>
+            <header>
+                <div className="header">
+                    <Link to="/">
+                        <div className="logo_header">
+                            <img src="/img/logo.png" width={51} height={49} alt="Logo" />
+                            <h1>daltter</h1>
+                        </div>
                     </Link>
+                    <div className="">
+                        <Link to="/SingUp">
+                            <div className="buttons_header">
+                                <button className="BtnSignUp">
+                                    <p className="TextBtnSignUp">Sign Up</p>
+                                </button>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </header>
-
-            <div className="wrapper">
-                <img src="/img/logo.png" width={96} height={90} className={styles.HeaderImgLogoWrapper} alt="Logo" />
-                <div className={styles.inputsWrapper}>
-                    <input className={styles.EmailInput} type="email" placeholder="Email Address" />
-                    <input className={styles.PasswordInput} type="password" placeholder="Password" />
+            <div className="container_singUp">
+                <div className="wrapper_login">
+                    <div className="object_insides">
+                    <img src="/img/logo.png" width={96} height={90} alt="Logo" />
+                    <div className="inputsWrapper">
+                        <input className="EmailInput" type="email" placeholder="Email Address" />
+                        <input className="PasswordInputLogin" type="password" placeholder="Password" />
                         <button>
                             <div>Login</div>
                         </button>
-                    <div className={styles.ForgetPasswordWrapper}> Forget password?</div>
-                    <Link to="/">
-                        <div>Go back </div>
-                    </Link>
+                       <Link to="/PasswordRecovery"> <div className="ForgetPasswordWrapper"> Forget password?</div> </Link>
+                        <Link to="/">
+                            <div className="link_go_back">Go back </div>
+                        </Link>
+                    </div>
+                </div>
                 </div>
             </div>
 
-            <footer className="footer">
-                <div>
-                    Don’t have an account? <Link to="/SignUp">Sign Up</Link>
+            <footer className="footer_register">
+                <div className="footer_container">
+                    <Link to="/SignUp">Don’t have an account? Sign Up</Link>
                 </div>
             </footer>
         </>

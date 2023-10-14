@@ -9,6 +9,11 @@ header {
   top: 0;
   background-color: #FFFFFF;
 }
+@media (max-width: 768px) {
+  header {
+    height: 60px;
+  }
+}
 
 .header {
   justify-content: space-between;
@@ -23,6 +28,11 @@ header {
   display: flex;
   gap: 8.41rem;
 }
+@media (max-width: 768px) {
+  .links_button {
+    gap: 1rem;
+  }
+}
 
 .logo_header {
   display: flex;
@@ -35,11 +45,21 @@ header {
   font-size: 20px;
   line-height: 23.48px;
 }
+@media (max-width: 768px) {
+  .logo_header p {
+    margin-left: 0;
+  }
+}
 .logo_header h1 {
   color: #000;
   font-weight: 800;
   font-size: 20px;
   line-height: 23.48px;
+}
+@media (max-width: 768px) {
+  .logo_header h1 {
+    font-size: 18px;
+  }
 }
 
 .links_header {
@@ -55,15 +75,31 @@ header {
   font-size: 20px;
   line-height: 23.48px;
 }
+@media (max-width: 768px) {
+  .links_header nav {
+    display: none;
+  }
+}
+@media (max-width: 980px) {
+  .links_header nav {
+    display: none;
+  }
+}
 
 .buttons_header {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .buttons_header {
+    gap: 0.5rem;
+  }
+}
 
 .btn_login {
   display: inline-block;
+  cursor: pointer;
   background: #E4ECFF;
   color: #3C72FF;
   padding: 0.7rem 1.8rem;
@@ -74,8 +110,17 @@ header {
   font-size: 16px;
   line-height: 18.78px;
 }
+@media (max-width: 768px) {
+  .btn_login {
+    padding: 0.7rem 1rem;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.48px;
+  }
+}
 
 .btn_singUp {
+  cursor: pointer;
   border-radius: 1.0625rem;
   display: inline-block;
   background: #3C72FF;
@@ -86,6 +131,14 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 18.78px;
+}
+@media (max-width: 768px) {
+  .btn_singUp {
+    padding: 0.7rem 1rem;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.48px;
+  }
 }
 
 /*# sourceMappingURL=Header.module.css.map */
