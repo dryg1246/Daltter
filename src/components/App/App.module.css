@@ -16,8 +16,7 @@
 }
 @media (max-width: 265px) {
   .main {
-    width: auto;
-    height: auto;
+    padding-top: 230px !important;
   }
 }
 

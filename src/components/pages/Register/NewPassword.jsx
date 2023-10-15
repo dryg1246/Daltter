@@ -1,8 +1,7 @@
-import React from 'react';
-import "./register..scss"
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
+import React from "react";
 
-function SingUp() {
+function NewPassword() {
     return (
         <>
             <header>
@@ -14,7 +13,7 @@ function SingUp() {
                         </div>
                     </Link>
                     <div className="">
-                        <Link to="/login">
+                        <Link to="/SingUp">
                             <div className="buttons_header">
                                 <button className="BtnLogin">
                                     <p className="TextBtnSignUp">Login</p>
@@ -24,35 +23,33 @@ function SingUp() {
                     </div>
                 </div>
             </header>
-
             <div className="container_singUp">
-                <div className="wrapper_singUp">
+                <div className="wrapper_login_newPassword">
                     <div className="object_insides">
                         <img src="/img/logo.png" width={96} height={90} alt="Logo" />
                         <div className="inputsWrapper">
-                            <input className="EmailInput" type="password" id="password-input" placeholder="Password" name="password"/>
-                            <a href="#" className="password-control"></a>
-                            <input className="PasswordInputSingUp" type="password" placeholder="Repeat Password" />
+                            <input className="EmailInput" type="password" placeholder="New Password" />
+                            <input className="PasswordInputLogin" type="password" placeholder="New Password Again" />
+
                             <button>
-                                <div>Continue</div>
+                                <Link to="/SuccesfulRecovery">
+                                <div className="input_text">Reset</div>
+                                </Link>
                             </button>
-                            <div className="ForgetPasswordWrapper">By clicking the button, you agree to our Terms of <br/> Service and Privacy Policy.</div>
-                            <Link to="/">
-                                <div className="link_go_back">Go back </div>
+                            <Link to="/SingUp">
+                                <div className="link_go_back">Cancel</div>
                             </Link>
                         </div>
                     </div>
                 </div>
             </div>
+
             <footer className="footer_register">
                 <div className="footer_container">
-                    <nav className="footer_container_link">
-                        <Link to="/SignUp"> Already have an account? Login </Link>
-                    </nav>
                 </div>
             </footer>
         </>
     )
 }
 
-export default SingUp;
+export  default NewPassword;

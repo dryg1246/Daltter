@@ -4,16 +4,17 @@ import Main from "../Main/Main";
 import styles from './App.module.scss'
 import Footer from "../Footer/Footer";
 import { Features } from "../pages/Features";
-import { Pricing } from "../pages/Pricing"
-import { ContactUs } from "../pages/ContactUs"
-import { Routes, Route, Link } from "react-router-dom";
+import { Pricing } from "../pages/Pricing";
+import { ContactUs } from "../pages/ContactUs";
+import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Home } from "../pages/Home";
 import Login from "../pages/Register/login";
 import { Error404NotFound } from "../pages/Error/Error404NotFound";
 import SingUp from "../pages/Register/SingUp";
-import SingUpPassword from "../pages/Register/SingUpPassword";
 import PasswordRecovery from "../pages/Register/PasswordRecovery";
+import NewPassword from "../pages/Register/NewPassword";
+import SuccesfulRecovery from "../pages/Register/SuccesfulRecovery";
 
 const App = () => {
     return (
@@ -26,10 +27,10 @@ const App = () => {
                     <Route path="/Login" element={<Login />} />
                     <Route path="/SingUp" element={<SingUp />} />
                     <Route path="/PasswordRecovery" element={<PasswordRecovery />} />
-                    <Route path="/Password" element={<SingUpPassword />} />
+                    <Route path="/NewPassword" element={<NewPassword />} />
+                    <Route path="/SuccesfulRecovery" element={<SuccesfulRecovery />} />
                     <Route path="/" element={<Home />} />
                     <Route path="*" element={<Error404NotFound />} />
-
                 </Routes>
             </div>
         </>

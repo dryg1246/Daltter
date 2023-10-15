@@ -7,48 +7,17 @@
   flex: 1 1 auto;
 }
 
-.main_second {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1120px;
-  max-height: 507px;
-  margin: 180px auto 0;
-  gap: 108px;
-}
-@media (max-width: 500px) {
-  .main_second {
-    margin: 0 auto;
-  }
-}
 .main_first {
   padding-top: 15vh;
   display: flex;
+  gap: 34px;
   align-items: center;
   max-width: 1120px;
   margin: 5rem auto 0;
-  @media (max-width: 584px) {
-    margin: 0 auto 280px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
-  @media (max-width: 980px) {
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
+
 }
 
 .hello_right {
-  display: flex;
-  @media (max-width: 584x) {
-    display: none;
-    margin: 0 auto;
-  }
-  @media (max-width: 980px) {
-    display: none;
-  }
 }
 .hello_left {
   display: flex;
@@ -57,9 +26,6 @@
 }
 .btn_first {
   display: flex;
-  @media (max-width: 584px){
-    gap: 1rem;
-  }
 }
 .btn_try {
   display: inline-block;
@@ -70,6 +36,7 @@
   text-decoration: none;
   border-radius: 17px;
   @include def(700, 24px, 28.18px);
+
 }
 .btn_why {
   display: inline-block;
@@ -80,17 +47,11 @@
   text-decoration: none;
   border-radius: 6px;
   @include def(700, 24px, 28.18px);
-  @media (max-width: 584px) {
-    @include def(700, 20px, 24px);
-  }
 }
 .daltter_main {
   margin-top: 0;
   margin-bottom: 12px;
   @include def(800, 76px, 79.34px);
-  @media (max-width: 584px) {
-    @include def(700, 36px, 38.36px);
-  }
 }
 .dallter_text{
   color: #3C72FF;
@@ -98,11 +59,9 @@
   font-weight: 800;
 }
 .email_main {
-  margin-bottom: 29px;
-  @include def(600, 20px, 21.68px);
-  @media (max-width: 584px) {
-    @include def(500, 16px, 20px);
-  }
+  margin-top: 12px;
+  max-width: 403px;
+  width: 100%;
 }
 
 
@@ -115,24 +74,6 @@
   max-height: 507px;
   margin: 180px auto 0;
   gap: 108px;
-  @media (max-width: 584px) {
-    text-align: center;
-  }
-  @media (max-width: 980px) {
-    text-align: center;
-    font-size: 36px;
-    line-height: 104.4%;
-    display: flex;
-  }
-}
-.second_left {
-  display: flex;
-  @media (max-width: 980px) {
-    display: none;
-  }
-  @media (max-width: 584px) {
-    display: none;
-  }
 }
 .second_right {
   display: flex;
@@ -143,29 +84,16 @@
     color: #3C72FF;
     font-style: italic;
   }
-  @media (max-width: 584px) {
-    margin: 0 auto;
-  }
-
 }
 .second_main {
   margin: 0;
   text-align: left;
   @include def(800, 64px, 66.82px);
-  @media (max-width: 584px) {
-    text-align: center;
-    font-size: 36px;
-    line-height: 104.4%;
-  }
 }
 .second_text {
   margin: 0;
   text-align: left;
   @include def(600, 20px, 22.98px);
-  @media (max-width: 584px) {
-    text-align: center;
-    @include def(600, 14px, 114.9%)
-  }
 }
 .second_btn {
   display: flex;
@@ -186,8 +114,7 @@
   &:hover {
     // Изменение цвета при наведении
   }
-  @media (max-width: 584px) { // Применяем стили для экранов шириной до 768px
-    padding: 0.5rem 2rem; // Уменьшаем размер кнопки и отступ
+  @media (max-width: 1120px) { // Применяем стили для экранов шириной до 768px
     & .second_try_button {
       @include def(700, 18px, 1.368); // Уменьшаем размер шрифта
     }
@@ -233,6 +160,7 @@
 }
 
 .card_container{
+  margin: 80px;
   gap: 2.12rem;
   flex-wrap: wrap;
   display: flex;
@@ -247,12 +175,12 @@
   text-align: center;
   align-items: center;
   gap: 21px;
-  @media (max-width: 584px) {
+  @media (max-width: 1120px) {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
   }
-  @media (max-width: 980px) {
+  @media (max-width: 1120px) {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -297,14 +225,14 @@
   .aboveBlocks{
     justify-content: center;
   }
-.mainBtn{
-  align-items: center;
-  display: flex;
-  font-size: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: 0.2s;
-}
+  .mainBtn{
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s;
+  }
 
   .mainTextBody{
     align-items: center;
@@ -390,18 +318,18 @@
 
 
 
-  }
+}
 
-  .clicks {
-    color: #cbdaff;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 114.9%;
-  }
-  .main_fourth{
-    display: flex;
-  }
+.clicks {
+  color: #cbdaff;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 114.9%;
+}
+.main_fourth{
+  display: flex;
+}
 .card {
   background-color: #e4ecff;
   border-radius: 48px;
@@ -439,28 +367,28 @@
       color: #1F2D49;
     }
   }
-.discount{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  & .discountStandart{
-    font-family: 'Inter', sans-serif;
-    @include def(500, 20px, 20.88px);
-    text-decoration: line-through;
-    color: #7A8AA9;
-    margin: 0;
+  .discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    & .discountStandart{
+      font-family: 'Inter', sans-serif;
+      @include def(500, 20px, 20.88px);
+      text-decoration: line-through;
+      color: #7A8AA9;
+      margin: 0;
+    }
+    & .SaveMoneyText{
+      font-family: 'Inter', sans-serif;
+      @include def(500, 16px, 16.7px);
+      color: #67799E;
+      background-color: #BDC9E7;
+      padding: 0.2rem;
+      border-radius: 20px;
+      margin: 0;
+    }
   }
-  & .SaveMoneyText{
-    font-family: 'Inter', sans-serif;
-    @include def(500, 16px, 16.7px);
-    color: #67799E;
-    background-color: #BDC9E7;
-    padding: 0.2rem;
-    border-radius: 20px;
-    margin: 0;
-  }
-}
   .SaveMoney{
     border-radius: 20px;
     background: #BDC9E7;
@@ -470,23 +398,22 @@
     justify-content: center;
     align-items: stretch;
 
-   .SaveMoneyText{
-     font-family: "Inter", sans-serif;
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 16.7px;
-     color: #67799E;
-     background-color: #BDC9E7;
-     padding: 0.2rem;
-     border-radius: 20px;
-     margin: 0;
-   }
+    .SaveMoneyText{
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16.7px;
+      color: #67799E;
+      background-color: #BDC9E7;
+      padding: 0.2rem;
+      border-radius: 20px;
+      margin: 0;
+    }
   }
 }
 
 .textP {
   color: #1f2d49;
-  font-family: Raleway;
   font-size: 40px;
   font-weight: 700;
 }
@@ -519,10 +446,6 @@
   border-radius: 1.6875rem 0rem 0rem 1.6875rem;
   background: #E4ECFF;
   border: none;
-}
-.plans-container{
-  margin-top: 41px;
-  margin-bottom: 41px;
 }
 
 .btnBracket{
@@ -611,7 +534,7 @@
 
 .secondLeft {
   img {
-     }
+  }
 }
 
 .mainTextIndex {
@@ -631,71 +554,6 @@
     margin-top: 197px;
     margin-bottom: 0;
     text-align: center;
-  }
-}
-.card-container{
-  margin-top: 80px;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-.card1 {
-  & h2{
-    text-align: center;
-    @include def(700, 40px, 41.76px);
-    margin: 0;
-  }
-}
-.card1-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  width: 351px;
-  height: auto;
-  background-color: #E4ECFF;
-  border-radius: 48px;
-  text-align: center;
-}
-.price-addit{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  & .price-number{
-    font-family: 'Inter', sans-serif;
-    @include def(500, 20px, 20.88px);
-    text-decoration: line-through;
-    color: #7A8AA9;
-    margin: 0;
-  }
-  & .price-percent{
-    font-family: 'Inter', sans-serif;
-    @include def(500, 16px, 16.7px);
-    color: #67799E;
-    background-color: #BDC9E7;
-    padding: 0.2rem;
-    border-radius: 20px;
-    margin: 0;
-  }
-}
-.price-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  & .text-1{
-    margin-top: 6px;
-    font-family: 'Inter';
-    font-size: 20px;
-    font-weight: 700;
-    color: #1F2D49;
-  }
-  & .text-2{
-    font-family: 'Inter';
-    font-size: 40px;
-    font-weight: 700;
-    color: #1F2D49;
   }
 }
 .plans-container{
@@ -724,25 +582,81 @@
     }
   }
 }
-.third-btn-try {
-  margin-top: 27px;
+.price-addit {
   display: flex;
-  background-color: #3C72FF;
-  padding: 10px 92px;
-  border-radius: 48px;
-  & a{
-    text-decoration: none;
-    color: #fff;
-    @include def(700, 24px, 28.18px);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  & .price-number {
+    font-family: 'Inter', sans-serif;
+    @include def(500, 20px, 20.88px);
+    text-decoration: line-through;
+    color: #7A8AA9;
+    margin: 0;
+  }
+
+  & .price-percent {
+    font-family: 'Inter', sans-serif;
+    @include def(500, 16px, 16.7px);
+    color: #67799E;
+    background-color: #BDC9E7;
+    padding: 0.2rem;
+    border-radius: 20px;
+    margin: 0;
+  }
+
+  @media (max-width: 1120px) {
+    & .price-number {
+      font-size: 16px; // Уменьшаем размер цены на мобильных устройствах
+    }
   }
 }
-.third-card-text{
-  @include def(700, 24px, 27.82px);
-  color: #1f2d49aa;
+
+.price-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .text-1{
+    margin-top: 6px;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 700;
+    color: #1F2D49;
+  }
+  & .text-2{
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 700;
+    color: #1F2D49;
+  }
+}
+
+.preferences {
+  height: 165px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 175px;
+  align-content: center;
+  align-items: baseline;
+  margin: 34px;
+  color: rgba(31, 45, 73, 0.69);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 104.4%;
   max-width: 279px;
-  height: 188px;
+  width: 100%;
+
+  & .personal_text {
+    @include def(700, 24px, 104%);
+    color: rgba(31, 45, 73, 0.69);
+  }
 }
 .third-btn-contact {
+  cursor: pointer;
   align-items: center;
   border: none;
   background-color: #3c72ff;
@@ -765,8 +679,8 @@
     @include def(700, 24px, 28.18px);
   }
 
-  @media (max-width: 584px) {
-    margin: 0px 30px;
+  @media (max-width: 1120px) {
+    margin: 0 30px;
     width: 90%; // Уменьшаем ширину кнопки на мобильных устройствах
   }
 }
@@ -830,16 +744,19 @@
 }
 
 .card1 {
+  display: flex;
   border-radius: 3rem;
   text-align: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
 
   & h2 {
     @include def(700, 40px, 41.76px);
     margin: 0;
   }
 
-  @media (max-width: 584px) {
-    width: 100%; // Делаем карточку занимающей всю ширину на мобильных устройствах
+  @media (max-width: 1120px) {
     display: flex;
     margin: 0 30px;
     align-items: center;
@@ -860,36 +777,6 @@
   text-align: center;
 }
 
-.price-addit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-
-  & .price-number {
-    font-family: 'Inter', sans-serif;
-    @include def(500, 20px, 20.88px);
-    text-decoration: line-through;
-    color: #7A8AA9;
-    margin: 0;
-  }
-
-  & .price-percent {
-    font-family: 'Inter', sans-serif;
-    @include def(500, 16px, 16.7px);
-    color: #67799E;
-    background-color: #BDC9E7;
-    padding: 0.2rem;
-    border-radius: 20px;
-    margin: 0;
-  }
-
-  @media (max-width: 584px) {
-    & .price-number {
-      font-size: 16px; // Уменьшаем размер цены на мобильных устройствах
-    }
-  }
-}
 
 .price-main {
   display: flex;
@@ -911,79 +798,21 @@
     color: #1F2D49;
   }
 
-  @media (max-width: 584px) {
+  @media (max-width: 1120px) {
     & .text-1 {
       font-size: 18px; // Уменьшаем размер текста на мобильных устройствах
     }
   }
 }
 
-.plans-container {
-  margin-top: 41px;
-  margin-bottom: 41px;
-}
 
-@media (max-width: 500px) {
-  .plans-container {
-    margin: 20px; // Уменьшаем отступы для мобильных устройств
-  }
-}
-
-.preferences {
-  height: 165px;
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 175px;
-  align-content: center;
-  align-items: baseline;
-  margin: 34px;
-  color: rgba(31, 45, 73, 0.69);
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 104.4%;
-  max-width: 279px;
-  width: 100%;
-
-  & .personal_text {
-    @include def(700, 24px, 104%);
-    color: rgba(31, 45, 73, 0.69);
-  }
-
-  & .links_check {
-    display: flex;
-    gap: 6px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 12px;
-
-    & p {
-      text-align: left;
-      margin: 0;
-      @include def(700, 24px, 25.06px);
-      color: #1f2d49b2;
-    }
-
-    & .text_x {
-      padding: 0.2rem;
-    }
-  }
-
-  @media (max-width: 584px) {
-    margin: 20px;
-    & .links_check {
-      margin-bottom: 10px;
-    }
-  }
-}
 
 .email_address {
   width: 30.25rem;
   height: 5.25rem;
 }
 
-@media (max-width: 500pxs) {
+@media (max-width: 1120px) {
   .email_address {
     width: 100%; // Занимает всю доступную ширину на мобильных устройствах
     display: flex;
@@ -1034,13 +863,13 @@
 }
 
 .email_address{
-    width: 30.25rem;
-    height: 5.25rem;
-    @media (max-width: 584px) {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+  width: 30.25rem;
+  height: 5.25rem;
+  @media (max-width: 1120px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

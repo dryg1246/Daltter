@@ -9,9 +9,18 @@ header {
   top: 0;
   background-color: #FFFFFF;
 }
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
   header {
-    height: 60px;
+    max-width: 84% !important;
+  }
+  header header nav {
+    display: none;
+  }
+  header header .buttons_header {
+    max-width: 102px !important;
+  }
+  header header .buttons_header .btn_singUp {
+    display: none !important;
   }
 }
 
@@ -23,21 +32,26 @@ header {
   align-items: center;
   width: 100%;
 }
-
-.links_button {
-  display: flex;
-  gap: 8.41rem;
-}
-@media (max-width: 768px) {
-  .links_button {
-    gap: 1rem;
+@media (max-width: 1120px) {
+  .header {
+    max-width: 84% !important;
   }
 }
 
+.links_button {
+  display: flex;
+  gap: 6.41rem;
+}
 .logo_header {
   display: flex;
   gap: 12px;
   align-items: center;
+}
+@media (max-width: 1120px) {
+  .logo_header {
+    width: 33.684px;
+    height: 33.387px;
+  }
 }
 .logo_header p {
   margin-left: 1rem;
@@ -45,7 +59,7 @@ header {
   font-size: 20px;
   line-height: 23.48px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
   .logo_header p {
     margin-left: 0;
   }
@@ -56,7 +70,7 @@ header {
   font-size: 20px;
   line-height: 23.48px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
   .logo_header h1 {
     font-size: 18px;
   }
@@ -67,6 +81,11 @@ header {
   gap: 3.41rem;
   display: flex;
 }
+@media (max-width: 1120px) {
+  .links_header {
+    gap: 6.41rem;
+  }
+}
 .links_header nav {
   color: black;
   text-decoration: none;
@@ -75,12 +94,7 @@ header {
   font-size: 20px;
   line-height: 23.48px;
 }
-@media (max-width: 768px) {
-  .links_header nav {
-    display: none;
-  }
-}
-@media (max-width: 980px) {
+@media (max-width: 1120px) {
   .links_header nav {
     display: none;
   }
@@ -91,7 +105,7 @@ header {
   gap: 1rem;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
   .buttons_header {
     gap: 0.5rem;
   }
@@ -110,15 +124,6 @@ header {
   font-size: 16px;
   line-height: 18.78px;
 }
-@media (max-width: 768px) {
-  .btn_login {
-    padding: 0.7rem 1rem;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.48px;
-  }
-}
-
 .btn_singUp {
   cursor: pointer;
   border-radius: 1.0625rem;
@@ -132,12 +137,9 @@ header {
   font-size: 16px;
   line-height: 18.78px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
   .btn_singUp {
-    padding: 0.7rem 1rem;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.48px;
+    display: none;
   }
 }
 

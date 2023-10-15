@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Main..scss";
-
+import Card from "../Card/Card";
+import "../Adaptive.scss"
 function Main() {
     return (
         <div className="main">
@@ -37,116 +38,48 @@ function Main() {
             </div>
             <div className="main-third">
                 <h1>We have several different <br/> plans to suit all customers:</h1>
-                <div className="card-container">
-                    <div className="card1">
-                        <h2>Standart</h2>
-                        <div className='card1-container'>
-                            <div className="plans-container">
-                                <div className="price">
-                                    <div className="price-addit">
-                                        <p className='price-number'>$20.00</p>
-                                        <p className='price-percent'>SAVE 75%</p>
-                                    </div>
-                                    <div className="price-main">
-                                        <span className='text-1'>$<span className='text-2'>5.00</span>/100 ads</span>
-                                    </div>
+            <div className="card_container">
+                <Card
+                 mainText="Standart"
+                 price="$20.00"
+                 save="SAVE 75%"
+                 textPrice="5.00"
+                 imgCheck="/img/check.png"
+                />
+                <Card
+                    mainText="Professional"
+                    price="$45.00"
+                    save="SAVE 67%"
+                    textPrice="15.00"
+                    imgCheck="/img/plans-false.svg"
+                />
+                <div className="card1">
+                    <h2>Personal*</h2>
+                    <div className='card1-container'>
+                        <div className="plans-container">
+                            <div className="price">
+                                <div className="price-addit">
+                                    <p className='price-number'>$??.??</p>
+                                    <p className='price-percent'>SAVE ??%</p>
                                 </div>
-                                <div className="preferences">
-                                    <div className='links_check'>
-                                        <img src="/img/check.png" alt="v" />
-                                        <p>Without queues</p>
-                                    </div>
-                                    <div className='links_check'>
-                                        <img src="/img/check.png" alt="v" />
-                                        <p>Detailed statistics</p>
-                                    </div>
-                                    <div className='links_check'>
-                                        <img src="/img/check.png" alt="v" />
-                                        <p>Guarantee</p>
-                                    </div>
-                                    <div className='links_check'>
-                                        <img src="/img/plans-false.svg" alt="x" />
-                                        <p>Customization</p>
-                                    </div>
-                                    <div className='links_check'>
-                                        <img src="/img/plans-false.svg" alt="x" />
-                                        <p>Clients-filters</p>
-                                    </div>
-                                </div>
-                                <div className="third-btn-try">
-                                    <a href="#">Try it now</a>
+                                <div className="price-main">
+                                    <span className='text-1'>$<span className='text-2'>???</span>/???</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="card1">
-                        <h2>Professional</h2>
-                        <div className='card1-container'>
-                            <div className="plans-container">
-                                <div className="price">
-                                    <div className="price-addit">
-                                        <p className='price-number'>$45.00</p>
-                                        <p className='price-percent'>SAVE 67%</p>
-                                    </div>
-                                    <div className="price-main">
-                                        <span className='text-1'>$<span className='text-2'>15.00</span>/100 ads</span>
-                                    </div>
-                                </div>
-                                <div className="preferences">
-                                    <div className='links_check'>
-                                        <img src="/img/check.png" alt="v" />
-                                        <p>Without queues</p>
-                                    </div>
-                                    <div className='links_check'>
-                                        <img src="/img/check.png" alt="v" />
-                                        <p>Detailed statistics</p>
-                                    </div>
-                                    <div className='links_check'>
-                                        <img src="/img/check.png" alt="v" />
-                                        <p>Guarantee</p>
-                                    </div>
-                                    <div className='links_check'>
-                                        <img src="/img/check.png" alt="v" />
-                                        <p>Customization</p>
-                                    </div>
-                                    <div className='links_check'>
-                                        <img src="/img/check.png" alt="v" />
-                                        <p>Clients-filters</p>
-                                    </div>
-                                </div>
-                                <div className="third-btn-try">
-                                    <a href="#">Try it now</a>
+                            <div className="preferences">
+                                <div className='third-card-text'>
+                                    *Personal plan created for big companies and special clients,
+                                    who want different conditions or bigger amounts of ads
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="card1">
-                        <h2>Personal*</h2>
-                        <div className='card1-container'>
-                            <div className="plans-container">
-                                <div className="price">
-                                    <div className="price-addit">
-                                        <p className='price-number'>$??.??</p>
-                                        <p className='price-percent'>SAVE ??%</p>
-                                    </div>
-                                    <div className="price-main">
-                                        <span className='text-1'>$<span className='text-2'>???</span>/???</span>
-                                    </div>
-                                </div>
-                                <div className="preferences">
-                                    <div className='third-card-text'>
-                                        *Personal plan created for big companies and special clients,
-                                        who want different conditions or bigger amounts of ads
-                                    </div>
-                                </div>
-                                <div className="third-btn-contact">
-                                    <a href="#">Contact us</a>
-                                </div>
+                            <div className="third-btn-contact">
+                                <a href="#">Contact us</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+                </div>
             <div className="main_fourth">
                 <h1>Not sure if our service is right for you?</h1>
                 <div className="leave_email">

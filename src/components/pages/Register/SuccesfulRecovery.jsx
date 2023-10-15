@@ -1,9 +1,7 @@
-import React from 'react';
-import "./register..scss"
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
+import React from "react";
 
-function PasswordRecovery() {
-
+function SuccesfulRecovery() {
     return (
         <>
             <header>
@@ -30,11 +28,10 @@ function PasswordRecovery() {
                     <div className="object_insides">
                         <img src="/img/logo.png" width={96} height={90} alt="Logo" />
                         <div className="inputsWrapper">
-                            <input className="EmailInput" type="email" placeholder="Email Address" />
+                            <p>Your password was successfuly changed.</p>
                             <button>
-                                <Link to="/NewPassword">
-
-                             <div className="input_text">Send recovery link</div> </Link>
+                                <Link to="/Login">
+                                    <div className="input_text">Login</div> </Link>
                             </button>
                             <Link to="/">
                                 <div className="link_go_back">Go back </div>
@@ -52,4 +49,4 @@ function PasswordRecovery() {
     )
 }
 
-export default PasswordRecovery;
+export default SuccesfulRecovery;

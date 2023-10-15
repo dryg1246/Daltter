@@ -1,6 +1,7 @@
 import styles from './Header.module.scss'
 import app from "../App/App";
 import {Link} from "react-router-dom";
+import "../Adaptive.scss"
 
 function Header(props) {
     return (
@@ -8,7 +9,7 @@ function Header(props) {
         <div className={styles.header}>
                 <Link to="/">
                     <div className={styles.logo_header}>
-                        <img  width={51} height={49} src="/img/logo.png"/>
+                        <img width={51} height={49} src="/img/logo.png"/>
                         <h1>daltter</h1>
                     </div>
                 </Link>
