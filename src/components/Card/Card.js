@@ -1,6 +1,14 @@
 import "./Card.scss"
 
 
+const Preference = ({ image, alt, text }) => (
+    <div className="links_check">
+        <img src={image} alt={alt} />
+        <p>{text}</p>
+    </div>
+)
+
+
 function Card(props) {
         return (
             <div className="card-container">
@@ -34,10 +42,7 @@ function Card(props) {
                                     <img src={props.imgCheck} alt="x" />
                                     <p>Customization</p>
                                 </div>
-                                <div className='links_check'>
-                                    <img src={props.imgCheck} alt="x" />
-                                    <p>Clients-filters</p>
-                                </div>
+                                <Preference image={props.imgCheck} alt="x" text="Clients-filters" />
                             </div>
                             <div className="third-btn-try">
                                 <a href="#">Try it now</a>

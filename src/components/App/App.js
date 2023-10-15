@@ -1,21 +1,16 @@
-import Header from "../Header/Header";
 import "../../index.scss"
-import Main from "../Main/Main";
-import styles from './App.module.scss'
-import Footer from "../Footer/Footer";
-import { Features } from "../pages/Features";
-import { Pricing } from "../pages/Pricing";
-import { ContactUs } from "../pages/ContactUs";
+import { Features } from "../../pages/Features";
+import { Pricing } from "../../pages/Pricing";
+import { ContactUs } from "../../pages/ContactUs";
 import { Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { Home } from "../pages/Home";
-import Login from "../pages/Register/login";
-import { Error404NotFound } from "../pages/Error/Error404NotFound";
-import SingUp from "../pages/Register/SingUp";
-import PasswordRecovery from "../pages/Register/PasswordRecovery";
-import NewPassword from "../pages/Register/NewPassword";
-import SuccesfulRecovery from "../pages/Register/SuccesfulRecovery";
-import Password from "../pages/Register/Password";
+import { Home } from "../../pages/Home";
+import Login from "../../pages/Register/login";
+import { Error404NotFound } from "../../pages/Error/Error404NotFound";
+import SingUp from "../../pages/Register/SingUp";
+import PasswordRecovery from "../../pages/Register/PasswordRecovery";
+import NewPassword from "../../pages/Register/NewPassword";
+import SuccesfulRecovery from "../../pages/Register/SuccesfulRecovery";
+import Password from "../../pages/Register/Password";
 
 const App = () => {
     return (
