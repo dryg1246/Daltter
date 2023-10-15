@@ -1,9 +1,9 @@
 import React from 'react';
-import "./register..scss"; // Fix the SCSS import path
+import "./register..scss";
 import { Link } from "react-router-dom";
 
 function isEmpty(str) {
-    return str.trim() === ''; // Trim the string and check if it's empty
+    return str.trim() === '';
 }
 
 function checkform(event) {
@@ -14,19 +14,18 @@ function checkform(event) {
     for (let i = 0; i < form.elements.length; i++) {
         if (form.elements[i].getAttribute("required") !== null) {
             if (isEmpty(form.elements[i].value)) {
-                errMSG += "  " + form.elements[i].name + "\n";
+                errMSG += "The " + form.elements[i].name + " must support\n";
             }
         }
     }
 
     if (errMSG) {
-        alert("Не заполнены обязательные поля:\n" + errMSG);
+        alert("Required fields not filled in:\n" + errMSG);
     } else {
-        // Submit the form or perform any other desired action
     }
 }
 
-function Login() { // Define the Login component
+function Login() {
     return (
         <>
             <header>
@@ -38,7 +37,7 @@ function Login() { // Define the Login component
                         </div>
                     </Link>
                     <div className="">
-                        <Link to="/SignUp"> {/* Fixed "SingUp" to "SignUp" */}
+                        <Link to="/SingUp">
                             <div className="buttons_header">
                                 <button className="BtnSignUp">
                                     <p className="TextBtnSignUp">Sign Up</p>
@@ -69,7 +68,7 @@ function Login() { // Define the Login component
 
             <footer className="footer_register">
                 <div className="footer_container">
-                    <Link to="/SignUp">Don’t have an account? Sign Up</Link>
+                    <Link to="/SingUp">Don’t have an account? Sign Up</Link>
                 </div>
             </footer>
         </>

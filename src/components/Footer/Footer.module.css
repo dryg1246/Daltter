@@ -1,5 +1,5 @@
-.line {
-  border-right: 1px solid rgba(0, 0, 0, 0.5411764706);
+footer {
+  width: 100%;
 }
 
 .footer {
@@ -26,7 +26,7 @@
 
 .footer_text {
   display: flex;
-  gap: 1.19rem;
+  gap: 1rem;
   margin-bottom: 50px;
 }
 .footer_text a {
@@ -35,6 +35,10 @@
   font-size: 24px;
   line-height: 28.18px;
   color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.line {
+  border-right: 1px solid rgba(0, 0, 0, 0.5411764706);
 }
 
 /*# sourceMappingURL=Footer.module.css.map */

@@ -11,7 +11,6 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  cursor: pointer;
 }
 .card1-container {
   display: flex;
@@ -160,9 +159,21 @@
   background-color: #3C72FF;
   padding: 10px 92px;
   border-radius: 48px;
-  & a{
+  border: 1px solid transparent;
+  transition: all 0.3s; /* Добавим анимацию для плавных изменений */
+
+  & a {
     text-decoration: none;
     color: #fff;
     @include def(700, 24px, 28.18px);
+  }
+
+  /* При наведении на кнопку */
+  &:hover {
+    background-color: transparent; /* Сделаем фон прозрачным */
+    border: 1px solid blue; /* Синяя обводка */
+    & a {
+      color: blue; /* Синий текст */
+    }
   }
 }

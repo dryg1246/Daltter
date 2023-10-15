@@ -1,14 +1,11 @@
+
 @mixin def($f, $a, $b){
   font-weight: $f;
   font-size: $a;
   line-height: $b;
 }
-.line {
-  border-right: 1px solid #0000008a;
-}
-
 footer{
-
+  width: 100%;
 }
 .footer {
   display: flex;
@@ -30,11 +27,14 @@ footer{
 }
 .footer_text {
   display: flex;
-  gap: 1.19rem;
+  gap: 1rem;
   margin-bottom: 50px;
   & a{
     text-decoration: none;
     @include def(500, 24px, 28.18px);
     color: #00000080;
   }
+}
+.line {
+  border-right: 1px solid #0000008a;
 }

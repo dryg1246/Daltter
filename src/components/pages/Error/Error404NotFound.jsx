@@ -14,7 +14,7 @@ export const Error404NotFound = () => {
         </Link>
             <h1 className="error">404 Not Found</h1>
                 <Link to="/">
-                    <button className="btn_go_back">Go back </button>
+                    <button className="btn_go_back">НАХУЙ НА ГЛАВНУЮ </button>
                 </Link>
             </div>
             </div>

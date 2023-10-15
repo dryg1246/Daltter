@@ -29,7 +29,7 @@ function Main() {
                     <img src="/img/Second-left.svg" alt=""/>
                 </div>
                 <div className="second_right">
-                    <h1 className="second_main">Our service is fully <br/> automated</h1>
+                    <h1 className="second_main">Our <span>service</span> is fully <br/> automated</h1>
                     <p className="second_text">All you need is just a few clicks - and your clients <br/> will be in your hands. Forget about tens different <br/> services for one ad.</p>
                     <button className="second_btn">
                         <h2 className="second_try_button"> Try it now</h2>
@@ -40,11 +40,11 @@ function Main() {
                 <h1>We have several different <br/> plans to suit all customers:</h1>
             <div className="card_container">
                 <Card
-                 mainText="Standart"
-                 price="$20.00"
-                 save="SAVE 75%"
-                 textPrice="5.00"
-                 imgCheck="/img/check.png"
+                    mainText="Standart"
+                    price="$20.00"
+                    save="SAVE 75%"
+                    textPrice="5.00"
+                    imgCheck="/img/check.png"
                 />
                 <Card
                     mainText="Professional"
@@ -54,11 +54,11 @@ function Main() {
                     imgCheck="/img/plans-false.svg"
                 />
                 <div className="card1">
-                    <h2>Personal*</h2>
-                    <div className='card1-container'>
-                        <div className="plans-container">
-                            <div className="price">
-                                <div className="price-addit">
+                                <h2>Personal*</h2>
+                                <div className='card1-container'>
+                                    <div className="plans-container">
+                                        <div className="price">
+                                            <div className="price-addit">
                                     <p className='price-number'>$??.??</p>
                                     <p className='price-percent'>SAVE ??%</p>
                                 </div>

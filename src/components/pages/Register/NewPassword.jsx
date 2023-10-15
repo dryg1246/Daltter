@@ -36,7 +36,7 @@ function NewPassword() {
                                 <div className="input_text">Reset</div>
                                 </Link>
                             </button>
-                            <Link to="/SingUp">
+                            <Link to="/login">
                                 <div className="link_go_back">Cancel</div>
                             </Link>
                         </div>

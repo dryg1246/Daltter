@@ -14,7 +14,7 @@ function Card(props) {
                                     <p className='price-percent'>{props.save}</p>
                                 </div>
                                 <div className="price-main">
-                                    <spanF className='text-1'>$<span className='text-2'>{props.textPrice}</span>/100 ads</spanF>
+                                    <span className='text-1'>$<span className='text-2'>{props.textPrice}</span>/100 ads</span>
                                 </div>
                             </div>
                             <div className="preferences">

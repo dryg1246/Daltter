@@ -35,7 +35,7 @@ function SingUp() {
                         <button>
                             <Link to="/Password"><div>Continue</div></Link>
                         </button>
-                        <div className="ForgetPasswordWrapper">By clicking the button, you agree to our Terms of <br/> Service and Privacy Policy.</div>
+                        <Link to="*">  <div className="ForgetPasswordWrapper">By clicking the button, you agree to our Terms of <br/> Service and Privacy Policy.</div> </Link>
                         <Link to="/">
                             <div className="link_go_back">Go back </div>
                         </Link>

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .main {
   flex: 1 1 auto;
 }
@@ -24,20 +23,28 @@
 
 .btn_try {
   display: inline-block;
-  border: none;
+  border: 1px solid transparent;
   background: #3C72FF;
   color: #fff;
   padding: 0.7rem 4.375rem;
   text-decoration: none;
   border-radius: 17px;
+  cursor: pointer;
   font-weight: 700;
   font-size: 24px;
   line-height: 28.18px;
+  transition: all 0.3s;
+}
+.btn_try:hover {
+  background-color: transparent;
+  border: 1px solid blue;
+  color: blue;
 }
 
 .btn_why {
   display: inline-block;
   border: none;
+  cursor: pointer;
   background: #E4ECFF;
   color: #3C72FF;
   padding: 0.7rem 1.5rem;
@@ -56,16 +63,14 @@
   line-height: 79.34px;
 }
 
-.dallter_text {
-  color: #3C72FF;
-  font-style: italic;
-  font-weight: 800;
-}
-
 .email_main {
   margin-top: 12px;
   max-width: 403px;
   width: 100%;
+  color: rgba(31, 45, 73, 0.86);
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .main_second {
@@ -87,49 +92,52 @@
   color: #3C72FF;
   font-style: italic;
 }
-
-.second_main {
+.second_right .second_main {
   margin: 0;
   text-align: left;
   font-weight: 800;
   font-size: 64px;
   line-height: 66.82px;
 }
-
-.second_text {
+.second_right .second_text {
   margin: 0;
   text-align: left;
   font-weight: 600;
   font-size: 20px;
   line-height: 22.98px;
 }
-
-.second_btn {
-  display: flex;
+.second_right .second_btn {
   align-items: center;
-  justify-content: center;
   background-color: #3c72ff;
+  border: 1px solid transparent;
   border-radius: 17px;
-  border: none;
-  max-width: 100%;
-  width: auto;
+  display: flex;
+  height: 49px;
+  justify-content: center;
+  max-width: 252px;
+  width: 100%;
+  transition: all 0.3s;
   cursor: pointer;
-}
-.second_btn .second_try_button {
-  color: #fff;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.368;
 }
-@media (max-width: 1120px) {
-  .second_btn .second_try_button {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.368;
-  }
+.second_right .second_btn:hover {
+  background-color: transparent;
+  border: 1px solid blue;
+  color: blue;
+}
+.second_right .second_btn:hover h2 {
+  color: blue;
+}
+.second_right .second_try_button {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.368;
 }
 
-.main_third h1 {
+.main-third h1 {
   font-weight: 800;
   font-size: 48px;
   line-height: 50.11px;
@@ -137,25 +145,6 @@
   margin-top: 197px;
 }
 
-.plans {
-  margin-top: 197px;
-}
-
-.main_fourth .main_standart {
-  height: 509px;
-  max-width: 351px;
-  width: 100%;
-}
-.main_fourth .main_professional {
-  height: 509px;
-  max-width: 351px;
-  width: 100%;
-}
-.main_fourth .main_personal {
-  height: 509px;
-  max-width: 351px;
-  width: 100%;
-}
 .card_container {
   margin: 80px;
   gap: 2.12rem;
@@ -167,24 +156,15 @@
 
 .leave_email {
   display: flex;
-  flex-direction: row;
   text-align: center;
   align-items: center;
   gap: 21px;
 }
-@media (max-width: 1120px) {
-  .leave_email {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 1120px) {
-  .leave_email {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
+
+.dallter_text {
+  color: #3C72FF;
+  font-style: italic;
+  font-weight: 800;
 }
 
 .email_address {
@@ -199,121 +179,7 @@
   color: rgba(0, 0, 0, 0.476);
 }
 
-.email-input {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-.email-input a {
-  color: #fff;
-  text-decoration: none;
-  background: #779DFF;
-  border-top-right-radius: 27px;
-  border-bottom-right-radius: 27px;
-  padding: 1rem 1.5rem;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 37.58px;
-  font-family: "Inter", sans-serif;
-}
-.email-input .mainTextBody {
-  color: #1F2D49;
-  font-size: 4.75em; /* 76px converted to em */
-  font-weight: 700;
-  line-height: 1.368; /* 104.4% converted to em */
-  font-weight: 700;
-  font-size: 4.75em;
-  line-height: 1.368;
-}
-.email-input .mainTextDrawer {
-  color: #1F2D49;
-}
-.email-input .aboveBlocks {
-  justify-content: center;
-}
-.email-input .mainBtn {
-  align-items: center;
-  display: flex;
-  font-size: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: 0.2s;
-}
-.email-input .mainTextBody {
-  align-items: center;
-}
-.email-input .btnWhyUs {
-  border-radius: 6px;
-  background: #E4ECFF;
-  border: none;
-  transition: all 0.3s ease;
-}
-.email-input .btnWhyUs h2 {
-  color: #3C72FF;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-}
-.email-input .btnTry {
-  border-radius: 1.0625rem;
-  background: #3C72FF;
-  border: none;
-  transition: all 0.3s ease;
-}
-.email-input .btnTry h2 {
-  color: #FFF;
-  text-align: center;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.email-input .btnTry:hover {
-  background-color: transparent;
-  border: 2px solid blue;
-  color: blue; /* Синий текст при наведении */
-}
-.email-input .btnTry:hover h2 {
-  color: blue; /* Синий текст при наведении */
-}
-.email-input .btnTry .btnLearn {
-  border-radius: 1.0625rem;
-  background: #3C72FF;
-  border: none;
-  transition: all 0.3s ease;
-}
-.email-input .btnTry .btnLearn:hover {
-  background-color: transparent;
-  border: 2px solid blue;
-  color: blue; /* Синий текст при наведении */
-}
-.email-input .btnTry .btnLearn:hover h2 {
-  color: blue; /* Синий текст при наведении */
-}
-.email-input .btnTry .btnLearn div {
-  color: #FFF;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.email-input .blueDater {
-  display: flex;
-  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-  font-size: 76px;
-  font-style: italic;
-  font-weight: 800;
-  line-height: 104.4%; /* 79.344px */
-  text-align: left;
-}
-
-.clicks {
-  color: #cbdaff;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 114.9%;
-}
-
-.main_fourth {
+.email_input {
   display: flex;
 }
 
@@ -326,122 +192,11 @@
   justify-content: center;
   flex-direction: column;
 }
-.card .discountStandart {
-  color: #7A8AA9;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 104.4%; /* 20.88px */
-}
-.card .standartDolar {
-  margin-top: 6px;
-  font-family: "Inter";
-  font-size: 20px;
-  font-weight: 700;
-  color: #1F2D49;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  align-items: flex-end;
-}
-.card .standartDolar .standartDolar2 {
-  font-family: "Inter";
-  font-size: 40px;
-  font-weight: 700;
-  color: #1F2D49;
-}
-.card .discount {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.card .discount .discountStandart {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20.88px;
-  text-decoration: line-through;
-  color: #7A8AA9;
-  margin: 0;
-}
-.card .discount .SaveMoneyText {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16.7px;
-  color: #67799E;
-  background-color: #BDC9E7;
-  padding: 0.2rem;
-  border-radius: 20px;
-  margin: 0;
-}
-.card .SaveMoney {
-  border-radius: 20px;
-  background: #BDC9E7;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-}
-.card .SaveMoney .SaveMoneyText {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16.7px;
-  color: #67799E;
-  background-color: #BDC9E7;
-  padding: 0.2rem;
-  border-radius: 20px;
-  margin: 0;
-}
 
 .textP {
   color: #1f2d49;
   font-size: 40px;
   font-weight: 700;
-}
-
-.Standard {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container1 {
-  justify-content: center;
-  display: flex;
-  border: 1px solid red;
-}
-
-.textSure {
-  color: #1F2D49;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 104.4%; /* 41.76px */
-}
-
-.inputEmails {
-  flex-shrink: 0;
-  border-radius: 1.6875rem 0rem 0rem 1.6875rem;
-  background: #E4ECFF;
-  border: none;
-}
-
-.btnBracket {
-  border-radius: 0rem 1.6875rem 1.6875rem 0rem;
-  background: #779DFF;
-  border: none;
-  outline: none;
-  width: 5.25rem;
-  height: 5.25rem;
-  flex-shrink: 0;
-}
-
-.email {
-  display: contents;
 }
 
 .card2 {
@@ -451,64 +206,6 @@
   flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
-}
-.card2 .mainTextDrawer {
-  color: #1F2D49;
-  font-size: 64px;
-  font-weight: 800;
-  line-height: 104.4%; /* 66.816px */
-  text-align: left;
-}
-.card2 .blueDater {
-  background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-  font-size: 64px;
-  font-style: italic;
-  font-weight: 800;
-  line-height: 104.4%;
-  text-align: left;
-}
-.card2 .clicks {
-  color: #1F2D49;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 114.9%; /* 22.98px */
-  text-align: left;
-}
-.card2 .btnTryMore {
-  display: flex;
-  border-radius: 1.0625rem;
-  background: #3C72FF;
-  border: none;
-  text-align: left;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
-}
-.card2 .btnTryMore h2 {
-  color: #FFF;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-}
-.card2 .btnTryMore:hover {
-  background-color: transparent;
-  border: 2px solid blue;
-  color: blue; /* Синий текст при наведении */
-}
-.card2 .btnTryMore:hover h2 {
-  color: blue; /* Синий текст при наведении */
-}
-
-.mainContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.mainTextIndex {
-  color: #3C72FF;
-  text-align: center;
-  line-height: 104.4%;
 }
 
 .main-third {
@@ -526,66 +223,30 @@
   text-align: center;
 }
 
-.plans-container {
-  margin-top: 41px;
-  margin-bottom: 41px;
-}
-
-.preferences {
-  margin-top: 34px;
+.card1 {
   display: flex;
+  border-radius: 3rem;
+  text-align: center;
+  align-items: center;
+  margin: auto;
   flex-direction: column;
-  justify-content: center;
-  min-height: 175px;
 }
-.preferences .third-text {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  justify-content: left;
-  margin-bottom: 12px;
-}
-.preferences .third-text p {
-  margin: 0;
+.card1 h2 {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 25.06px;
-  color: rgba(31, 45, 73, 0.6980392157);
-}
-.preferences .third-text .text-x {
-  padding: 0.2rem;
+  font-size: 40px;
+  line-height: 41.76px;
+  margin: 0;
 }
 
-.price-addit {
+.card1-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.price-addit .price-number {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20.88px;
-  text-decoration: line-through;
-  color: #7A8AA9;
-  margin: 0;
-}
-.price-addit .price-percent {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16.7px;
-  color: #67799E;
-  background-color: #BDC9E7;
-  padding: 0.2rem;
-  border-radius: 20px;
-  margin: 0;
-}
-@media (max-width: 1120px) {
-  .price-addit .price-number {
-    font-size: 16px;
-  }
+  margin-top: 15px;
+  max-width: 140%;
+  height: auto;
+  background-color: #E4ECFF;
+  border-radius: 48px;
+  text-align: center;
 }
 
 .price-main {
@@ -624,174 +285,7 @@
   max-width: 279px;
   width: 100%;
 }
-.preferences .personal_text {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 104%;
-  color: rgba(31, 45, 73, 0.69);
-}
 
-.third-btn-contact {
-  cursor: pointer;
-  align-items: center;
-  border: none;
-  background-color: #3c72ff;
-  margin: 0 auto;
-  border-radius: 48px;
-  color: #fff;
-  display: flex;
-  font-size: 24px;
-  font-weight: 700;
-  height: 49px;
-  justify-content: center;
-  max-width: 296px;
-  text-decoration: none;
-  transition: 0.2s;
-  width: 100%;
-}
-.third-btn-contact a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28.18px;
-}
-@media (max-width: 1120px) {
-  .third-btn-contact {
-    margin: 0 30px;
-    width: 90%;
-  }
-}
-
-.main_fifth {
-  margin-top: 172px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.main_fifth .emailLeave {
-  color: #1F2D49;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 104.4%;
-}
-.main_fifth .EmailPlusText {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-.main_fifth .EmailPlusText .inputEmails {
-  width: 30.25rem;
-  height: 5.25rem;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-.main_fifth .EmailPlusText .inputEmails a {
-  color: #fff;
-  text-decoration: none;
-  background: #779DFF;
-  border-top-right-radius: 27px;
-  border-bottom-right-radius: 27px;
-  padding: 1rem 1.5rem;
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 37.58px;
-  font-family: "Inter", sans-serif;
-}
-
-.main-third {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.main-third h1 {
-  font-weight: 800;
-  font-size: 48px;
-  line-height: 50.11px;
-  color: #3C72FF;
-  margin-top: 197px;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-.card1 {
-  display: flex;
-  border-radius: 3rem;
-  text-align: center;
-  align-items: center;
-  margin: auto;
-  flex-direction: column;
-}
-.card1 h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 41.76px;
-  margin: 0;
-}
-@media (max-width: 1120px) {
-  .card1 {
-    display: flex;
-    margin: 0 30px;
-    align-items: center;
-    flex-direction: column;
-    justify-content: right;
-  }
-}
-
-.card1-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  max-width: 140%;
-  height: auto;
-  background-color: #E4ECFF;
-  border-radius: 48px;
-  text-align: center;
-}
-
-.price-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.price-main .text-1 {
-  margin-top: 6px;
-  font-family: "Inter";
-  font-size: 20px;
-  font-weight: 700;
-  color: #1F2D49;
-}
-.price-main .text-2 {
-  font-family: "Inter";
-  font-size: 40px;
-  font-weight: 700;
-  color: #1F2D49;
-}
-@media (max-width: 1120px) {
-  .price-main .text-1 {
-    font-size: 18px;
-  }
-}
-
-.email_address {
-  width: 30.25rem;
-  height: 5.25rem;
-}
-
-@media (max-width: 1120px) {
-  .email_address {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .third_btn_contact {
   align-items: center;
   border: none;
@@ -817,8 +311,9 @@
   line-height: 28.18px;
 }
 
-.email_input {
-  display: flex;
+.email_address {
+  width: 30.25rem;
+  height: 5.25rem;
 }
 
 .main_fourth {
@@ -839,17 +334,43 @@
   line-height: 41.76px;
 }
 
-.email_address {
-  width: 30.25rem;
-  height: 5.25rem;
+.third-btn-contact {
+  cursor: pointer;
+  align-items: center;
+  border: none;
+  background-color: #3c72ff;
+  margin: 0 auto;
+  border-radius: 48px;
+  color: #fff;
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  height: 49px;
+  justify-content: center;
+  max-width: 296px;
+  text-decoration: none;
+  transition: 0.2s;
+  width: 100%;
+  /* Hover effect */
+}
+.third-btn-contact a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.18px;
+}
+.third-btn-contact:hover {
+  background-color: transparent;
+  border: 1px solid blue;
+}
+.third-btn-contact:hover a {
+  color: blue;
 }
 @media (max-width: 1120px) {
-  .email_address {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .third-btn-contact {
+    margin: 0 30px;
+    width: 90%;
   }
 }
 

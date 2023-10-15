@@ -14,7 +14,7 @@
   }
 
   .dalter_main {
-    height: calc(150px + 140 * ((100vw - 320px) / 1600)) !important;
+
   }
   .hello_right {
     display: none;
@@ -38,6 +38,9 @@
 .email_main{
   font-size: calc(13.6px + 1.0625vw)!important;
 }
+  .leave_email{
+    flex-direction: column;
+  }
   .daltter_main{
     margin-top: 99px;
     @include def(700, 36px, 38.36px);

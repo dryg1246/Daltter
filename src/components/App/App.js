@@ -15,6 +15,7 @@ import SingUp from "../pages/Register/SingUp";
 import PasswordRecovery from "../pages/Register/PasswordRecovery";
 import NewPassword from "../pages/Register/NewPassword";
 import SuccesfulRecovery from "../pages/Register/SuccesfulRecovery";
+import Password from "../pages/Register/Password";
 
 const App = () => {
     return (
@@ -28,6 +29,7 @@ const App = () => {
                     <Route path="/SingUp" element={<SingUp />} />
                     <Route path="/PasswordRecovery" element={<PasswordRecovery />} />
                     <Route path="/NewPassword" element={<NewPassword />} />
+                    <Route path="/Password" element={<Password />} />
                     <Route path="/SuccesfulRecovery" element={<SuccesfulRecovery />} />
                     <Route path="/" element={<Home />} />
                     <Route path="*" element={<Error404NotFound />} />

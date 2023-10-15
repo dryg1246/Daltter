@@ -1,4 +1,5 @@
 import styles from './Footer.module.scss'
+import {Link} from "react-router-dom";
 
 function Footer() {
     return (
@@ -9,13 +10,15 @@ function Footer() {
                     <p>daltter</p>
                 </div>
                 <div className={styles.footer_text}>
-                    <nav>Register  </nav>
-                    <div  className={styles.line}></div>
-                    <nav> Terms of service  </nav>
-                    <div className={styles.line}></div>
-                    <nav>Privacy policy  </nav>
-                    <div className={styles.line}></div>
-                    <nav>Login </nav>
+
+                    <Link to="*"> <nav>Register  </nav> </Link>
+                     <div  className={styles.line}></div>
+                        <Link to="*"> <nav> Terms of service  </nav></Link>
+                           <div className={styles.line}></div>
+                                <Link to="*"> <nav>Privacy policy  </nav></Link>
+                                   <div className={styles.line}></div>
+                                        <Link to="*"> <nav>Login </nav></Link>
+
                 </div>
             </div>
     </footer>

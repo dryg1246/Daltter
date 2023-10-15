@@ -1,9 +1,10 @@
-@mixin def($f, $a, $b){
+@mixin def($f, $a, $b) {
   font-weight: $f;
   font-size: $a;
   line-height: $b;
 }
-.main{
+
+.main {
   flex: 1 1 auto;
 }
 
@@ -14,33 +15,41 @@
   align-items: center;
   max-width: 1120px;
   margin: 5rem auto 0;
-
 }
 
-.hello_right {
-}
 .hello_left {
   display: flex;
   text-align: left;
   flex-direction: column;
 }
+
 .btn_first {
   display: flex;
 }
+
 .btn_try {
   display: inline-block;
-  border: none;
+  border: 1px solid transparent;
   background: #3C72FF;
   color: #fff;
   padding: 0.7rem 4.375rem;
   text-decoration: none;
   border-radius: 17px;
+  cursor: pointer;
   @include def(700, 24px, 28.18px);
+  transition: all 0.3s;
 
+  &:hover {
+    background-color: transparent;
+    border: 1px solid blue;
+    color: blue;
+  }
 }
+
 .btn_why {
   display: inline-block;
   border: none;
+  cursor: pointer;
   background: #E4ECFF;
   color: #3C72FF;
   padding: 0.7rem 1.5rem;
@@ -48,24 +57,22 @@
   border-radius: 6px;
   @include def(700, 24px, 28.18px);
 }
+
 .daltter_main {
   margin-top: 0;
   margin-bottom: 12px;
   @include def(800, 76px, 79.34px);
 }
-.dallter_text{
-  color: #3C72FF;
-  font-style: italic;
-  font-weight: 800;
-}
+
 .email_main {
   margin-top: 12px;
   max-width: 403px;
   width: 100%;
+  color: rgba(31, 45, 73, 0.86);
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 600;
 }
-
-
-
 
 .main_second {
   display: flex;
@@ -75,91 +82,70 @@
   margin: 180px auto 0;
   gap: 108px;
 }
+
 .second_right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  & span{
+
+  & span {
     color: #3C72FF;
     font-style: italic;
   }
-}
-.second_main {
-  margin: 0;
-  text-align: left;
-  @include def(800, 64px, 66.82px);
-}
-.second_text {
-  margin: 0;
-  text-align: left;
-  @include def(600, 20px, 22.98px);
-}
-.second_btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #3c72ff;
-  border-radius: 17px;
-  border: none;
-  max-width: 100%; // Ширина кнопки будет максимально возможной
-  width: auto;
-  cursor: pointer; // Добавим стандартный курсор для кнопки
 
-  & .second_try_button {
-    color: #fff;
-    @include def(700, 20px, 1.368); // Процентное значение для шрифта
+  .second_main {
+    margin: 0;
+    text-align: left;
+    @include def(800, 64px, 66.82px);
   }
 
-  &:hover {
-    // Изменение цвета при наведении
+  .second_text {
+    margin: 0;
+    text-align: left;
+    @include def(600, 20px, 22.98px);
   }
-  @media (max-width: 1120px) { // Применяем стили для экранов шириной до 768px
-    & .second_try_button {
-      @include def(700, 18px, 1.368); // Уменьшаем размер шрифта
+
+  .second_btn {
+    align-items: center;
+    background-color: #3c72ff;
+    border: 1px solid transparent;
+    border-radius: 17px;
+    display: flex;
+    height: 49px;
+    justify-content: center;
+    max-width: 252px;
+    width: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+    @include def(700, 20px, 1.368);
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid blue;
+      color: blue;
+
+      h2 {
+        color: blue;
+      }
     }
   }
+
+  .second_try_button {
+    color: #FFF;
+    @include def(700, 20px, 1.368);
+  }
 }
 
-
-
-.main_third {
-
-  & h1{
+.main-third {
+  & h1 {
     @include def(800, 48px, 50.11px);
     color: #3C72FF;
     margin-top: 197px;
   }
 }
 
-
-.plans{
-  margin-top: 197px;
-}
-
-
-
-.main_fourth {
-  .main_standart{
-    height: 509px;
-    max-width: 351px;
-    width: 100%;
-  }
-  .main_professional{
-    height: 509px;
-    max-width: 351px;
-    width: 100%;
-  }
-  .main_personal{
-    height: 509px;
-    max-width: 351px;
-    width: 100%;
-  }
-  & p{
-  }
-}
-
-.card_container{
+.card_container {
   margin: 80px;
   gap: 2.12rem;
   flex-wrap: wrap;
@@ -168,23 +154,16 @@
   align-content: center;
 }
 
-
 .leave_email {
   display: flex;
-  flex-direction: row;
   text-align: center;
   align-items: center;
   gap: 21px;
-  @media (max-width: 1120px) {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  @media (max-width: 1120px) {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
+}
+.dallter_text {
+  color: #3C72FF;
+  font-style: italic;
+  font-weight: 800;
 }
 .email_address {
   background-color: #E4ECFF;
@@ -195,141 +174,11 @@
   padding: 1rem 2rem;
   color: rgba(0, 0, 0, 0.476);
 }
-.email-input {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  & a{
-    color: #fff;
-    text-decoration: none;
-    background: #779DFF;
-    border-top-right-radius: 27px;
-    border-bottom-right-radius: 27px;
-    padding: 1rem 1.5rem;
-    @include def(900, 36px, 37.58px);
-    font-family: 'Inter', sans-serif;
-  }
 
-  .mainTextBody {
-    color: #1F2D49;
-    font-size: 4.75em; /* 76px converted to em */
-    font-weight: 700;
-    line-height: 1.368; /* 104.4% converted to em */
-    @include def(700, 4.75em, 1.368);
-  }
-
-  .mainTextDrawer {
-    color: #1F2D49;
-  }
-
-  .aboveBlocks{
-    justify-content: center;
-  }
-  .mainBtn{
-    align-items: center;
-    display: flex;
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: 0.2s;
-  }
-
-  .mainTextBody{
-    align-items: center;
-
-  }
-  .btnWhyUs{
-    border-radius: 6px;
-    background: #E4ECFF;
-    border: none;
-    transition: all 0.3s ease;
-
-    h2 {
-      color: #3C72FF;
-      text-align: center;
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-
-  }
-  .btnTry {
-    border-radius: 1.0625rem;
-    background: #3C72FF;
-    border: none;
-    transition: all 0.3s ease;
-
-    h2 {
-      color: #FFF;
-      text-align: center;
-      align-items: center;
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-
-    &:hover {
-      background-color: transparent;
-      border: 2px solid blue;
-      color: blue; /* Синий текст при наведении */
-
-      h2 {
-        color: blue; /* Синий текст при наведении */
-      }
-    }
-
-    .btnLearn {
-      border-radius: 1.0625rem;
-      background: #3C72FF;
-      border: none;
-      transition: all 0.3s ease;
-
-
-
-      &:hover {
-        background-color: transparent;
-        border: 2px solid blue;
-        color: blue; /* Синий текст при наведении */
-
-        h2 {
-          color: blue; /* Синий текст при наведении */
-        }
-      }
-
-      div {
-        color: #FFF;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 700;
-      }
-
-    }
-  }
-  .blueDater {
-    display: flex;
-    background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-    font-size: 76px;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 104.4%; /* 79.344px */
-    text-align: left;
-  }
-
-
-
-
-
-}
-
-.clicks {
-  color: #cbdaff;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 114.9%;
-}
-.main_fourth{
+.email_input {
   display: flex;
 }
+
 .card {
   background-color: #e4ecff;
   border-radius: 48px;
@@ -337,79 +186,7 @@
   width: 351px;
   height: 452px;
   justify-content: center;
-
   flex-direction: column;
-
-  .discountStandart{
-    color: #7A8AA9;
-    font-size: 20px;;
-    font-weight: 500;
-    line-height: 104.4%; /* 20.88px */
-  }
-
-  .standartDolar{
-    margin-top: 6px;
-    font-family: "Inter";
-    font-size: 20px;
-    font-weight: 700;
-    color: #1F2D49;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: flex-end;
-
-    .standartDolar2{
-      font-family: "Inter";
-      font-size: 40px;
-      font-weight: 700;
-      color: #1F2D49;
-    }
-  }
-  .discount{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    & .discountStandart{
-      font-family: 'Inter', sans-serif;
-      @include def(500, 20px, 20.88px);
-      text-decoration: line-through;
-      color: #7A8AA9;
-      margin: 0;
-    }
-    & .SaveMoneyText{
-      font-family: 'Inter', sans-serif;
-      @include def(500, 16px, 16.7px);
-      color: #67799E;
-      background-color: #BDC9E7;
-      padding: 0.2rem;
-      border-radius: 20px;
-      margin: 0;
-    }
-  }
-  .SaveMoney{
-    border-radius: 20px;
-    background: #BDC9E7;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-
-    .SaveMoneyText{
-      font-family: "Inter", sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 16.7px;
-      color: #67799E;
-      background-color: #BDC9E7;
-      padding: 0.2rem;
-      border-radius: 20px;
-      margin: 0;
-    }
-  }
 }
 
 .textP {
@@ -417,138 +194,22 @@
   font-size: 40px;
   font-weight: 700;
 }
-.Standard {
-  display: flex;
-  justify-content: space-between;
-}
 
-.Standard h3 {
-
-}
-
-.container1{
-  justify-content: center;
-  display: flex;
-  border: 1px solid red;
-}
-
-
-.textSure{
-  color: #1F2D49;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 104.4%; /* 41.76px */
-}
-
-.inputEmails{
-  flex-shrink: 0;
-  border-radius: 1.6875rem 0rem 0rem 1.6875rem;
-  background: #E4ECFF;
-  border: none;
-}
-
-.btnBracket{
-  border-radius: 0rem 1.6875rem 1.6875rem 0rem;
-  background: #779DFF;
-  border: none;
-  outline: none;
-  width: 5.25rem;
-  height: 5.25rem;
-  flex-shrink: 0;
-}
-
-.email{
-  display: contents;
-}
-
-.card2{
+.card2 {
   display: flex;
   align-content: space-between;
   justify-content: center;
   flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
-
-  .BtnPlusText{
-  }
-  .mainTextDrawer {
-    color: #1F2D49;
-    font-size: 64px;
-    font-weight: 800;
-    line-height: 104.4%; /* 66.816px */
-    text-align: left;
-  }
-  .blueDater{
-    background: linear-gradient(262deg, #3C72FF 42.69%, #0065FC 91.14%);
-    font-size: 64px;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 104.4%;
-    text-align: left;
-  }
-
-  .clicks{
-    color: #1F2D49;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 114.9%; /* 22.98px */
-    text-align: left;
-  }
-  .btnTryMore {
-    display: flex;
-    border-radius: 1.0625rem;
-    background: #3C72FF;
-    border: none;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-
-    h2{
-      color: #FFF;
-      text-align: center;
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-
-    &:hover {
-      background-color: transparent;
-      border: 2px solid blue;
-      color: blue; /* Синий текст при наведении */
-
-      h2 {
-        color: blue; /* Синий текст при наведении */
-      }
-    }
-  }
-
 }
-.mainContainer {
-  display: flex;
-  justify-content: center;
-
-}
-
-.secondLeft {
-  img {
-  }
-}
-
-.mainTextIndex {
-  color: #3C72FF;
-  text-align: center;
-  line-height: 104.4%;
-}
-
 
 .main-third {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  & h1{
+
+  & h1 {
     @include def(800, 48px, 50.11px);
     color: #3C72FF;
     margin-top: 197px;
@@ -556,61 +217,30 @@
     text-align: center;
   }
 }
-.plans-container{
-  margin-top: 41px;
-  margin-bottom: 41px;
-}
-.preferences{
-  margin-top: 34px;
+
+.card1 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 175px;
-  & .third-text{
-    display: flex;
-    gap: 6px;
-    align-items: center;
-    justify-content: left;
-    margin-bottom: 12px;
-    & p{
-      margin: 0;
-      @include def(700, 24px, 25.06px);
-      color: #1f2d49b2;
-    }
-    & .text-x{
-      padding: 0.2rem;
-    }
-  }
-}
-.price-addit {
-  display: flex;
-  justify-content: center;
+  border-radius: 3rem;
+  text-align: center;
   align-items: center;
-  gap: 1rem;
+  margin: auto;
+  flex-direction: column;
 
-  & .price-number {
-    font-family: 'Inter', sans-serif;
-    @include def(500, 20px, 20.88px);
-    text-decoration: line-through;
-    color: #7A8AA9;
+  & h2 {
+    @include def(700, 40px, 41.76px);
     margin: 0;
   }
+}
 
-  & .price-percent {
-    font-family: 'Inter', sans-serif;
-    @include def(500, 16px, 16.7px);
-    color: #67799E;
-    background-color: #BDC9E7;
-    padding: 0.2rem;
-    border-radius: 20px;
-    margin: 0;
-  }
-
-  @media (max-width: 1120px) {
-    & .price-number {
-      font-size: 16px; // Уменьшаем размер цены на мобильных устройствах
-    }
-  }
+.card1-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  max-width: 140%;
+  height: auto;
+  background-color: #E4ECFF;
+  border-radius: 48px;
+  text-align: center;
 }
 
 .price-main {
@@ -618,14 +248,15 @@
   align-items: center;
   justify-content: center;
 
-  & .text-1{
+  & .text-1 {
     margin-top: 6px;
     font-family: 'Inter';
     font-size: 20px;
     font-weight: 700;
     color: #1F2D49;
   }
-  & .text-2{
+
+  & .text-2 {
     font-family: 'Inter';
     font-size: 40px;
     font-weight: 700;
@@ -649,12 +280,53 @@
   line-height: 104.4%;
   max-width: 279px;
   width: 100%;
+}
 
-  & .personal_text {
-    @include def(700, 24px, 104%);
-    color: rgba(31, 45, 73, 0.69);
+.third_btn_contact {
+  align-items: center;
+  border: none;
+  background-color: #3c72ff;
+  margin: 0 auto;
+  border-radius: 48px;
+  color: #fff;
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  height: 49px;
+  justify-content: center;
+  max-width: 296px;
+  text-decoration: none;
+  transition: .2s;
+  width: 100%;
+
+  & a {
+    text-decoration: none;
+    color: #fff;
+    @include def(700, 24px, 28.18px);
   }
 }
+
+.email_address {
+  width: 30.25rem;
+  height: 5.25rem;
+}
+
+.main_fourth {
+  margin-top: 10.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & h1 {
+    @include def(700, 40px, 41.76px);
+  }
+
+  & p {
+    @include def(500, 40px, 41.76px);
+  }
+}
+
 .third-btn-contact {
   cursor: pointer;
   align-items: center;
@@ -679,197 +351,17 @@
     @include def(700, 24px, 28.18px);
   }
 
-  @media (max-width: 1120px) {
-    margin: 0 30px;
-    width: 90%; // Уменьшаем ширину кнопки на мобильных устройствах
-  }
-}
-
-
-.main_fifth{
-  margin-top: 172px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  .emailLeave{
-    color: #1F2D49;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 104.4%;
-  }
-
-  .EmailPlusText{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-
-    .inputEmails {
-      width: 30.25rem;
-      height: 5.25rem;
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      & a{
-        color: #fff;
-        text-decoration: none;
-        background: #779DFF;
-        border-top-right-radius: 27px;
-        border-bottom-right-radius: 27px;
-        padding: 1rem 1.5rem;
-        @include def(900, 36px, 37.58px);
-        font-family: 'Inter', sans-serif;
-      }
+  /* Hover effect */
+  &:hover {
+    background-color: transparent;
+    border: 1px solid blue;
+    & a {
+      color: blue;
     }
   }
-}
-.main-third {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  & h1{
-    @include def(800, 48px, 50.11px);
-    color: #3C72FF;
-    margin-top: 197px;
-    margin-bottom: 0;
-    text-align: center;
-  }
-}
-
-.card-container{
-
-}
-
-.card1 {
-  display: flex;
-  border-radius: 3rem;
-  text-align: center;
-  align-items: center;
-  margin: auto;
-  flex-direction: column;
-
-  & h2 {
-    @include def(700, 40px, 41.76px);
-    margin: 0;
-  }
 
   @media (max-width: 1120px) {
-    display: flex;
     margin: 0 30px;
-    align-items: center;
-    flex-direction: column;
-    justify-content: right;
-
-  }
-}
-
-.card1-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  max-width: 140%;
-  height: auto;
-  background-color: #E4ECFF;
-  border-radius: 48px;
-  text-align: center;
-}
-
-
-.price-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  & .text-1 {
-    margin-top: 6px;
-    font-family: 'Inter';
-    font-size: 20px;
-    font-weight: 700;
-    color: #1F2D49;
-  }
-
-  & .text-2 {
-    font-family: 'Inter';
-    font-size: 40px;
-    font-weight: 700;
-    color: #1F2D49;
-  }
-
-  @media (max-width: 1120px) {
-    & .text-1 {
-      font-size: 18px; // Уменьшаем размер текста на мобильных устройствах
-    }
-  }
-}
-
-
-
-.email_address {
-  width: 30.25rem;
-  height: 5.25rem;
-}
-
-@media (max-width: 1120px) {
-  .email_address {
-    width: 100%; // Занимает всю доступную ширину на мобильных устройствах
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.third_btn_contact{
-  align-items: center;
-  border: none;
-  background-color: #3c72ff;
-  margin: 0 auto;
-  border-radius: 48px;
-  color: #fff;
-  display: flex;
-  font-size: 24px;
-  font-weight: 700;
-  height: 49px;
-  justify-content: center;
-  max-width: 296px;
-  text-decoration: none;
-  transition: .2s;
-  width: 100%;
-  & a{
-    text-decoration: none;
-    color: #fff;
-    @include def(700, 24px, 28.18px);
-  }
-}
-.email_input {
-  display: flex;
-
-}
-.main_fourth{
-  margin-top: 10.75rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  & h1 {
-    @include def(700, 40px, 41.76px);
-  }
-  & p{
-    @include def(500, 40px, 41.76px);
-  }
-}
-
-.email_address{
-  width: 30.25rem;
-  height: 5.25rem;
-  @media (max-width: 1120px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 90%;
   }
 }
