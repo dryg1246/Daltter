@@ -3,6 +3,7 @@ import React from "react";
 
 const BtnSingUp = (props) => {
     return (
+        <>
         <Link to="/SingUp">
             <div className="buttons_header">
                 <button className="BtnSignUp">
@@ -10,6 +11,7 @@ const BtnSingUp = (props) => {
                 </button>
             </div>
         </Link>
+        </>
     )
 }
 

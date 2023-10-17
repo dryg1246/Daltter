@@ -2,7 +2,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "./Error404NoteFound.scss"
-import styles from "../Register/register..scss";
+import styles from "../Register/register.scss";
 export const Error404NotFound = () => {
     return (
 

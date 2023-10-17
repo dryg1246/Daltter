@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../Register/register..scss";
+import "../../Register/register.scss";
 import LoginHeader from "../../../componets/auth/login/Login-Header";
 import LoginMain from "../../../componets/auth/login/Login-Main";
 import LoginFooter from "../../../componets/auth/login/Login-Footer";
