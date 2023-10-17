@@ -1,0 +1,126 @@
+header {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: 1px solid rgba(82, 128, 198, 0.12);
+  position: fixed;
+  top: 0;
+  background-color: #FFFFFF;
+}
+header .header {
+  justify-content: space-between;
+  display: flex;
+  max-width: 1120px;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+}
+header .links_button {
+  display: flex;
+  gap: 8.41rem;
+}
+header .logo_header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+header .logo_header p {
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23.48px;
+}
+header .logo_header h1 {
+  color: #000;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23.48px;
+}
+header .links_header {
+  align-items: center;
+  gap: 3.41rem;
+  display: flex;
+}
+header .links_header nav {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23.48px;
+}
+header .buttons_header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+header .btn_login {
+  cursor: pointer;
+  border-radius: 1.0625rem;
+  display: inline-block;
+  background: #E4ECFF;
+  color: #3C72FF;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.78px;
+}
+header .btn_singUp {
+  cursor: pointer;
+  border-radius: 1.0625rem;
+  display: inline-block;
+  background: #3C72FF;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.78px;
+}
+header .BtnSignUp {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 1.0625rem;
+  display: inline-block;
+  background: #3C72FF;
+  color: #fff;
+  padding: 0.7rem 1.8rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.78px;
+}
+header .TextBtnSignUp {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+header .btn_login {
+  cursor: pointer;
+  border-radius: 1.0625rem;
+  display: inline-block;
+  background: #3C72FF;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.78px;
+}
+header:hover {
+  background-color: transparent;
+  border: 1px solid blue;
+  color: blue;
+}
+header:hover h2 {
+  color: blue;
+}
+
+/*# sourceMappingURL=auth.css.map */
