@@ -1,19 +1,19 @@
-
-@mixin def($f, $a, $b){
+@mixin def($f, $a, $b) {
   font-weight: $f;
   font-size: $a;
   line-height: $b;
 }
 
 
-.inputsWrapper{
+.inputsWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-p{
-  margin: 3.56rem 0 2.5rem;
-}
+  p {
+    margin: 3.56rem 0 2.5rem;
+  }
+
   input::placeholder {
     display: flex;
     margin-right: 19px;
@@ -26,7 +26,7 @@ p{
     line-height: 104.4%; /* 20.88px */
   }
 
-  input{
+  input {
     background-color: transparent;
     width: 365px;
     height: 51px;
@@ -34,7 +34,7 @@ p{
     border: 2px solid rgba(60, 114, 255, 0.24);
   }
 
-  .EmailInput{
+  .EmailInput {
     margin: 3.44rem 0 1.69rem 0;
     padding-left: 19px;
 
@@ -43,11 +43,13 @@ p{
       font-size: 1.5em;
     }
   }
-  .PasswordInputSingUp{
+
+  .PasswordInputSingUp {
     margin: 0 0 2.81rem;
     padding-left: 19px;
   }
-  .PasswordInputLogin{
+
+  .PasswordInputLogin {
     margin: 0 0 27px;
     padding-left: 19px;
   }
@@ -75,13 +77,13 @@ p{
       border: 1px solid blue;
       color: blue;
 
-      div{
+      div {
         color: blue;
       }
     }
   }
 
-  .ForgetPasswordWrapper{
+  .ForgetPasswordWrapper {
     color: rgba(0, 0, 0, 0.4);
     font-family: Raleway;
     font-size: 0.875rem;
@@ -93,13 +95,13 @@ p{
   }
 }
 
-.HeaderImgLogoWrapper{
+.HeaderImgLogoWrapper {
   margin-top: 30px;
   cursor: pointer;
 }
 
 
-.BtnLogin{
+.BtnLogin {
   cursor: pointer;
   border-radius: 1.0625rem;
   display: inline-block;
@@ -111,20 +113,22 @@ p{
   font-size: 16px;
   line-height: 18.78px;
 
-  .TextBtnSignUp{
+  .TextBtnSignUp {
     display: flex;
     margin: 0;
     justify-content: center;
   }
 }
-.footer_register{
-  border-top: 1px solid rgba(82,128,198,.12);
+
+.footer_register {
+  border-top: 1px solid rgba(82, 128, 198, .12);
   bottom: 0;
   height: 60px;
   position: fixed;
   width: 100%;
 }
-.wrapper_login_newPassword{
+
+.wrapper_login_newPassword {
   display: flex;
   align-items: center;
   background: #FFF;
@@ -135,7 +139,8 @@ p{
   border-radius: 24px;
   background: rgba(228, 236, 255, 0.35);
 }
-.wrapper_login{
+
+.wrapper_login {
   display: flex;
   align-items: center;
   background: #FFF;
@@ -146,7 +151,8 @@ p{
   border-radius: 24px;
   background: rgba(228, 236, 255, 0.35);
 }
-.wrapper_login_recovery{
+
+.wrapper_login_recovery {
   display: flex;
   align-items: center;
   background: #FFF;
@@ -158,7 +164,7 @@ p{
   background: rgba(228, 236, 255, 0.35);
 }
 
-.wrapper_singUp{
+.wrapper_singUp {
   display: flex;
   align-items: center;
   background: #FFF;
@@ -169,15 +175,17 @@ p{
   border-radius: 24px;
   background: rgba(228, 236, 255, 0.35);
 }
-.footer_container_link{
 
-  color: rgba(0,0,0,.35);
+.footer_container_link {
+
+  color: rgba(0, 0, 0, .35);
   font-size: 1.25rem;
   font-weight: 500;
   text-decoration: none;
 }
-.footer_container{
-  color: rgba(0,0,0,.35);
+
+.footer_container {
+  color: rgba(0, 0, 0, .35);
   font-size: 1.25rem;
   opacity: 21%;
   font-weight: 500;
@@ -189,15 +197,16 @@ p{
   justify-content: center;
   width: 100%;
 }
-.container_singUp{
+
+.container_singUp {
   margin-top: calc(50vh - 365px);
 }
 
-.object_insides{
+.object_insides {
   margin-top: 3.81rem;
 }
 
-.link_go_back{
+.link_go_back {
   color: rgba(0, 0, 0, 0.21);
 
   font-family: Raleway;
@@ -216,9 +225,10 @@ p{
   height: 20px;
 }
 
-.wrapper_login_recovery{
+.wrapper_login_recovery {
 
 }
-.wrapper_login{
+
+.wrapper_login {
 
 }
