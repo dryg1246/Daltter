@@ -1,7 +1,6 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import LogoHeaderSingUp from "../login/widget/singupwidget/headerwidget/LogoHeaderSingUp";
-import BtnHeaderSingUp from "../login/widget/singupwidget/headerwidget/BtnHeaderSingUp";
+import LogoHeaderSingUp from "../widget/singupwidget/headerwidget/LogoHeaderSingUp";
+import BtnHeaderSingUp from "../widget/singupwidget/headerwidget/BtnHeaderSingUp";
 
 function SingUpHeader() {
     return (

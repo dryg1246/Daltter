@@ -1,6 +1,5 @@
-import {Link} from "react-router-dom";
 import React from "react";
-import FormMainLogin from "./widget/loginwidget/mainwidget/FormMainLogin";
+import FormMainLogin from "../widget/loginwidget/mainwidget/FormMainLogin";
 
 function LoginMain(props) {
     return (

@@ -1,7 +1,6 @@
-import {Link} from "react-router-dom";
 import React from "react";
-import BtnSingUp from "./widget/loginwidget/headerwidget/BtnSingUp";
-import LogoHeader from "./widget/loginwidget/headerwidget/LogoHeader";
+import BtnSingUp from "../widget/loginwidget/headerwidget/BtnSingUp";
+import LogoHeader from "../widget/loginwidget/headerwidget/LogoHeader";
 
 
 function LoginHeader() {
@@ -9,9 +8,9 @@ function LoginHeader() {
         <>
             <header>
                 <div className="header">
-                     <LogoHeader
-                         title="daltter"
-                         imageLogo="/img/logo.png"
+                    <LogoHeader
+                        title="daltter"
+                        imageLogo="/img/logo.png"
                      />
                      <BtnSingUp
                          BtnSingUpText="Sing Up"

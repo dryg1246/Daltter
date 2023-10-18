@@ -1,6 +1,5 @@
-import {Link} from "react-router-dom";
 import React from "react";
-import LogoHeaderSingUp from "../login/widget/singupwidget/mainwidget/FormSingUpMain";
+import LogoHeaderSingUp from "../widget/singupwidget/mainwidget/FormSingUpMain";
 
 const SingUpMain = (props) => {
     return (
