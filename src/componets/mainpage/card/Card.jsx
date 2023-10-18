@@ -1,4 +1,5 @@
 import "./Card.scss"
+
 const Preference = ({ image, alt, text }) => (
     <div className="links_check">
         <img src={image} alt={alt} />
@@ -28,11 +29,26 @@ function Card(props) {
                                 <Price price={props.price} save={props.save} textPrice={props.textPrice}/>
                             </div>
                             <div className="preferences">
-                                <Preference image={props.imgCheck} alt="x" text="Without queues" />
-                                <Preference image={props.imgCheck} alt="x" text="Detailed statistics" />
-                                <Preference image={props.imgCheck} alt="x" text="Guarantee" />
-                                <Preference image={props.imgFalse} alt="x" text="Customization" />
-                                <Preference image={props.imgFalse} alt="x" text="Clients-filters" />
+                                {props.mainText === "Personal*" ?
+                                    <div className="third-card-text">*Personal plan created for big companies and
+                                        special clients,
+                                        who want different conditions or bigger amounts of ads </div>
+                                    :
+                                    <div className="preferences">
+                                        <Preference image={props.imgCheck} alt="x" text="Without queues"/>
+                                        <Preference image={props.imgCheck} alt="x" text="Detailed statistics"/>
+                                        <Preference image={props.imgCheck} alt="x" text="Guarantee"/>
+                                        {props.mainText === "Professional" ?
+                                            <div><Preference image={props.imgCheck} alt="x" text="Customization"/>
+                                                <Preference image={props.imgCheck} alt="x" text="Clients-filters"/>
+                                            </div>
+                                            :
+                                            <div><Preference image={props.imgFalse} alt="x" text="Customization"/>
+                                                <Preference image={props.imgFalse} alt="x" text="Clients-filters"/>
+                                            </div>
+                                        }
+                                    </div>
+                                }
                             </div>
                             <div className="third-btn-try">
                                 <a>{props.TryNow}</a>

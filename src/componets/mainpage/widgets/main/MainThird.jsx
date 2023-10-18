@@ -23,31 +23,12 @@ const MainSecond = (props) => {
                     imgCheck="/img/check.png"
                     imgFalse="/img/plans-false.svg"
                 />
-                <div className="card1">
-                    <h2>Personal*</h2>
-                    <div className='card1-container'>
-                        <div className="plans-container">
-                            <div className="price">
-                                <div className="price-addit">
-                                    <p className='price-number'>$??.??</p>
-                                    <p className='price-percent'>SAVE ??%</p>
-                                </div>
-                                <div className="price-main">
-                                    <span className='text-1'>$<span className='text-2'>???</span>/???</span>
-                                </div>
-                            </div>
-                            <div className="preferences">
-                                <div className='third-card-text'>
-                                    *Personal plan created for big companies and special clients,
-                                    who want different conditions or bigger amounts of ads
-                                </div>
-                            </div>
-                            <div className="third-btn-contact">
-                                <a href="src/features/main/componets/mainpage/main/Main#Main.jsx">Contact us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Card
+                    mainText="Personal*"
+                    price="$45.00"
+                    save="SAVE 67%"
+                    textPrice="15.00"
+                />
             </div>
         </div>
     )
