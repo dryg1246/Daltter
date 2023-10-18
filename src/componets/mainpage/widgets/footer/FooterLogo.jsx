@@ -1,5 +1,4 @@
 import styles from "../../footer/Footer.module.scss";
-import {Link} from "react-router-dom";
 
 const FooterLogo = (props) => {
     return (

@@ -1,8 +1,8 @@
 import styles from './Header.module.scss'
 import "../../../adaptive/mainpage/Adaptive.scss"
-import ButtonsHeader from "../widget/header/ButtonsHeader";
-import LinksHeader from "../widget/header/LinksHeader";
-import LogoHeader from "../widget/header/LogoHeader";
+import ButtonsHeader from "../widgets/header/ButtonsHeader";
+import LinksHeader from "../widgets/header/LinksHeader";
+import LogoHeader from "../widgets/header/LogoHeader";
 
 
 function Header(props) {

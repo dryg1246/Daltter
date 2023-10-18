@@ -1,6 +1,6 @@
 import styles from './Footer.module.scss'
-import FooterLogo from "../widget/footer/FooterLogo";
-import FooterText from "../widget/footer/FooterText";
+import FooterLogo from "../widgets/footer/FooterLogo";
+import FooterText from "../widgets/footer/FooterText";
 
 function Footer() {
     return (
