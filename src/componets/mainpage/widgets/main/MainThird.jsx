@@ -14,20 +14,25 @@ const MainSecond = (props) => {
                     TryNow="Try it now"
                     imgCheck="/img/check.png"
                     imgFalse="/img/plans-false.svg"
+                    adds="/100 ads"
                 />
                 <Card
                     mainText="Professional"
                     price="$45.00"
+                    TryNow="Try it now"
                     save="SAVE 67%"
                     textPrice="15.00"
                     imgCheck="/img/check.png"
                     imgFalse="/img/plans-false.svg"
+                    adds="/100 ads"
                 />
                 <Card
                     mainText="Personal*"
-                    price="$45.00"
-                    save="SAVE 67%"
-                    textPrice="15.00"
+                    price="$??.??"
+                    TryNow="Try it now"
+                    save="SAVE ??%"
+                    textPrice="???"
+                    adds="/100 ads"
                 />
             </div>
         </div>

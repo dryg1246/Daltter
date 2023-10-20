@@ -6,14 +6,14 @@ const Preference = ({ image, alt, text }) => (
         <p>{text}</p>
     </div>
 )
-const Price = ({ price, save, textPrice }) => (
+const Price = ({ price, save, textPrice, adds}) => (
  <>
         <div className="price-addit">
             <p className='price-number'>{price}</p>
             <p className='price-percent'>{save}</p>
         </div>
         <div className="price-main">
-            <span className='text-1'>$<span className='text-2'>{textPrice}</span>/100 ads</span>
+            <span className='text-1'>$<span className='text-2'>{textPrice}</span>{adds}</span>
         </div>
  </>
 )
@@ -26,9 +26,8 @@ function Card(props) {
                     <div className='card1-container'>
                         <div className="plans-container">
                             <div className="price">
-                                <Price price={props.price} save={props.save} textPrice={props.textPrice}/>
+                                <Price price={props.price} save={props.save} textPrice={props.textPrice} adds={props.adds}/>
                             </div>
-                            <div className="preferences">
                                 {props.mainText === "Personal*" ?
                                     <div className="third-card-text">*Personal plan created for big companies and
                                         special clients,
@@ -49,7 +48,6 @@ function Card(props) {
                                         }
                                     </div>
                                 }
-                            </div>
                             <div className="third-btn-try">
                                 <a>{props.TryNow}</a>
                             </div>

@@ -5,7 +5,7 @@ function LoginMain(props) {
     return (
         <>
             <div className="container_singUp">
-                <FormMainLogin imageLogo={props.imageLogo} Login="Login" ForgetPassword="Forget password?" GoBack="Go back"/>
+                <FormMainLogin imageLogo="/img/logo.png" Login="Login" ForgetPassword="Forget password?" GoBack="Go back"/>
             </div>
         </>
     );

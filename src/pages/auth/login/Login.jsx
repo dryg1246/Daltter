@@ -8,7 +8,7 @@ function Login() {
     return (
         <>
             <LoginHeader/>
-            <LoginMain imageLogo="/img/logo.png"/>
+            <LoginMain />
             <LoginFooter
             />
         </>

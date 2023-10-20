@@ -1,11 +1,11 @@
 import React from "react";
-import LogoHeaderSingUp from "../widget/singupwidget/mainwidget/FormSingUpMain";
+import FormSingUpMain from "../widget/singupwidget/mainwidget/FormSingUpMain";
 
 const SingUpMain = (props) => {
     return (
         <>
             <div className="container_singUp">
-                <LogoHeaderSingUp />
+                <FormSingUpMain  />
             </div>
         </>
     )

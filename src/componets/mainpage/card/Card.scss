@@ -104,7 +104,19 @@
   }
 }
 
+.third-card-text{
+  color: rgba(31, 45, 73, 0.69);
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115.9%;
+  margin: 1.6rem 2.37rem 3.6rem
+
+}
+
 .preferences {
+
   height: 165px;
   display: flex;
   text-align: left;
@@ -113,13 +125,27 @@
   min-height: 175px;
   align-content: center;
   align-items: baseline;
-  margin: 34px;
-  color: rgba(31, 45, 73, 0.69);
   font-size: 24px;
   font-weight: 700;
   line-height: 104.4%;
-  max-width: 279px;
   width: 100%;
+  color: rgba(31,45,73,.69);
+  margin: 2.19rem 2.37rem 2.44rem 2.94rem;
+  max-width: 17.4375rem;
+  .preferences1{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+    color: rgba(31, 45, 73, 0.69);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 104.4%;
+    max-width: 279px;
+    width: 100%;
+  }
 
   & .personal_text {
     @include def(700, 24px, 104%);
@@ -154,10 +180,12 @@
 }
 
 .third-btn-try {
-  margin-top: 27px;
   display: flex;
   background-color: #3C72FF;
-  padding: 10px 92px;
+  padding: 11px 86px 10px;
+  margin: 0 28px;
+  text-align: center;
+  justify-content: center;
   border-radius: 48px;
   border: 1px solid transparent;
   transition: all 0.3s; /* Добавим анимацию для плавных изменений */

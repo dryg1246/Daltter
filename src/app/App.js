@@ -8,10 +8,10 @@ import { Home } from "../pages/Home";
 import Login from "../pages/auth/login/Login";
 import { Error404NotFound } from "../pages/Error/Error404NotFound";
 import SingUp from "../pages/auth/singup/SingUp";
-import PasswordRecovery from "../pages/Register/PasswordRecovery";
-import NewPassword from "../pages/Register/NewPassword";
-import SuccessfulRecovery from "../pages/Register/SuccessfulRecovery";
-import Password from "../pages/Register/Password";
+import PasswordRecovery from "../pages/auth/password/PasswordRecovery";
+import NewPassword from "../pages/auth/password/NewPassword";
+import SuccessfulRecovery from "../pages/auth/successful-recovery/SuccessfulRecovery";
+import Password from "../pages/auth/password/Password";
 
 
 const App = () => {

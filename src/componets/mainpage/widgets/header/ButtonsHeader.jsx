@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const ButtonsHeader = (props) => {
         return (
             <div className={styles.buttons_header}>
-                <Link to="/login">
+                <Link to="/Login">
                     <button className={styles.btn_login}>
                         Login
                     </button>
