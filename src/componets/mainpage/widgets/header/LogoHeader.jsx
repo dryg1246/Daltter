@@ -1,7 +1,7 @@
 import styles from "../../header/Header.module.scss";
 import {Link} from "react-router-dom";
 
-const LogoHeader = (props) => {
+const LogoHeader = ({DaltterText, imageHeader}) => {
     return (
         <Link to="/">
             <div className={styles.logo_header}>

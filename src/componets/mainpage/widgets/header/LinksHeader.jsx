@@ -1,17 +1,17 @@
 import styles from "../../header/Header.module.scss";
 import {Link} from "react-router-dom";
 
-const LinksHeader = (props) => {
+const LinksHeader = ({LinksFeatures, LinksPricing, LinksContact}) => {
     return (
         <div className={styles.links_header}>
             <Link to="/Features">
-                <nav>Features</nav>
+                <nav>{LinksFeatures}</nav>
             </Link>
             <Link to="/Pricing">
-                <nav>Pricing</nav>
+                <nav>{LinksPricing}</nav>
             </Link>
             <Link to="/ContactUs">
-                <nav>Contact Us</nav>
+                <nav>{LinksContact}</nav>
             </Link>
         </div>
     )

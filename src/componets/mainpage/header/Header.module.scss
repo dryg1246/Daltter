@@ -16,137 +16,115 @@ header {
   top: 0;
   background-color: #FFFFFF;
 
-  @media (max-width: 1120px) {
-    max-width: 84% !important;
-      header {
-.header{
-}
-        nav {
-          display: none;
-        }
+  .header {
+    justify-content: space-between;
+    display: flex;
+    max-width: 1120px;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+  }
 
-        .buttons_header {
-          max-width: 102px !important;
+  .links_button {
+    display: flex;
+    gap: 6.41rem;
+  }
 
-          .btn_singUp {
-            display: none !important;
-          }
-        }
+  .logo_header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    @media (max-width: 1120px) {
+      width: 33.684px;
+      height: 33.387px;
+    }
+
+    & p {
+      margin-left: 1rem;
+      @include def(700, 20px, 23.48px);
+
+      @media (max-width: 1120px) {
+        margin-left: 0;
       }
-  }
-}
+    }
 
-.header {
-  justify-content: space-between;
-  display: flex;
-  max-width: 1120px;
-  margin: 0 auto;
-  align-items: center;
-  width: 100%;
+    & h1 {
+      color: #000;
+      @include def(800, 20px, 23.48px);
 
-  @media (max-width: 1120px) {
-    max-width: 84%!important;
-  }
-}
-
-.links_button {
-  display: flex;
-  gap: 6.41rem;
-
-  @media (max-width: 1120px) {
-  }
-}
-
-.logo_header {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  @media (max-width: 1120px) {
-    width: 33.684px;
-    height: 33.387px;
-  }
-  & p {
-    margin-left: 1rem;
-    @include def(700, 20px, 23.48px);
-
-    @media (max-width: 1120px) {
-      margin-left: 0; // Убрать отступ для мобильных устройств
+      @media (max-width: 1120px) {
+        font-size: 18px; // Уменьшение размера шрифта для мобильных устройств
+      }
     }
   }
 
-  & h1 {
-    color: #000;
-    @include def(800, 20px, 23.48px);
-
+  .links_header {
+    align-items: center;
+    gap: 3.41rem;
+    display: flex;
     @media (max-width: 1120px) {
-      font-size: 18px; // Уменьшение размера шрифта для мобильных устройств
+      gap: 6.409999999999997rem
+    }
+
+    & nav {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      @include def(500, 20px, 23.48px);
+
+      @media (max-width: 1120px) {
+        display: none;
+
+      }
     }
   }
-}
 
-.links_header {
-  align-items: center;
-  gap: 3.41rem;
-  display: flex;
-  @media (max-width: 1120px) {
-    gap: 6.409999999999997rem
+  .buttons_header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    @media (max-width: 1120px) {
+      gap: 0.5rem; // Уменьшение расстояния между элементами для мобильных устройств
+    }
   }
-  & nav {
-    color: black;
+
+  .btn_login {
+    display: inline-block;
+    cursor: pointer;
+    background: #E4ECFF;
+    color: #3C72FF;
+    padding: 0.7rem 1.8rem;
     text-decoration: none;
-    text-align: center;
-    @include def(500, 20px, 23.48px);
+    border: none;
+    border-radius: 17px;
+    @include def(700, 16px, 18.78px);
+
+    @media (max-width: 1120px) {
+
+    }
+  }
+
+  .btn_singUp {
+    cursor: pointer;
+    border-radius: 1.0625rem;
+    display: inline-block;
+    background: #3C72FF;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 0.7rem 1.8rem;
+    text-decoration: none;
+    @include def(700, 16px, 18.78px);
+    transition: all 0.3s;
+
+    btn_singUphover {
+      background-color: transparent;
+      border: 1px solid blue;
+      color: blue;
+    }
 
     @media (max-width: 1120px) {
       display: none;
-
     }
-  }
-}
-
-.buttons_header {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-
-  @media (max-width: 1120px) {
-    gap: 0.5rem; // Уменьшение расстояния между элементами для мобильных устройств
-  }
-}
-
-.btn_login {
-  display: inline-block;
-  cursor: pointer;
-  background: #E4ECFF;
-  color: #3C72FF;
-  padding: 0.7rem 1.8rem;
-  text-decoration: none;
-  border: none;
-  border-radius: 17px;
-  @include def(700, 16px, 18.78px);
-
-  @media (max-width: 1120px) {
-    
-  }
-}
-
-.btn_singUp {
-  cursor: pointer;
-  border-radius: 1.0625rem;
-  display: inline-block;
-  background: #3C72FF;
-  color: #fff;
-  border: 1px solid transparent;
-  padding: 0.7rem 1.8rem;
-  text-decoration: none;
-  @include def(700, 16px, 18.78px);
-  transition: all 0.3s;
-  &:hover {
-    background-color: transparent;
-    border: 1px solid blue;
-    color: blue;
-  }
-  @media (max-width: 1120px) {
-   display: none;
   }
 }

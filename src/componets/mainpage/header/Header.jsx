@@ -9,10 +9,20 @@ function Header(props) {
     return (
         <header>
             <div className={styles.header}>
-                <LogoHeader/>
+                <LogoHeader
+                    DaltterText="Daltter"
+                    imageHeader="/img/logo.png"
+                />
                 <div className={styles.links_button}>
-                    <LinksHeader/>
-                    <ButtonsHeader/>
+                    <LinksHeader
+                        LinksContact="Contact Us"
+                        LinksFeatures="Features"
+                        LinksPricing="Pricing"
+                    />
+                    <ButtonsHeader
+                        ButtonOne="Login"
+                        ButtonTwo="Sing Up"
+                    />
                 </div>
             </div>
         </header>

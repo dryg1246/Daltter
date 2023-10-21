@@ -61,6 +61,7 @@
 .daltter_main {
   margin-top: 0;
   margin-bottom: 12px;
+  color: #1F2D49;
   @include def(800, 76px, 79.34px);
 }
 
@@ -96,6 +97,7 @@
 
   .second_main {
     margin: 0;
+    color: #1F2D49;
     text-align: left;
     @include def(800, 64px, 66.82px);
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../Register/register.scss"
+import "../../../componets/auth/auth.scss"
 import {Link} from "react-router-dom";
 import PasswordRecoveryMain from "../../../componets/auth/passwordrecovery/PasswordRecovery-Main";
 import PasswordRecoveryLogo from "../../../componets/auth/widget/passwordrecovery/headerwidget/PasswordRecoveryLogo";

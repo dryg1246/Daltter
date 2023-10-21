@@ -7,7 +7,7 @@ function Footer() {
         <footer>
             <div className={styles.footer}>
                 <FooterLogo
-                    DaltterText="Daltter"
+                    DaltterText="Daltter" imgFooter="/img/logo_black.png"
                 />
                 <FooterText/>
             </div>
