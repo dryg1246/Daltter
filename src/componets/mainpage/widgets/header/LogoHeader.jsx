@@ -5,8 +5,8 @@ const LogoHeader = ({DaltterText, imageHeader}) => {
     return (
         <Link to="/">
             <div className={styles.logo_header}>
-                <img width={51} height={49} src="/img/logo.png"/>
-                <h1>daltter</h1>
+                <img width={51} height={49} src={imageHeader}/>
+                <h1>{DaltterText}</h1>
             </div>
         </Link>
     )

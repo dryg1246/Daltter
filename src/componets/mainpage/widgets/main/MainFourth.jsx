@@ -1,9 +1,5 @@
 import React from "react";
-
-
-const MainFourth = ({ title, emailText, placeholder}) => {
-
-
+const MainFourthTwo = ({  title, emailText, placeholder}) => {
     return (
         <div className="main_fourth">
             <h1>{title}</h1>
@@ -17,6 +13,18 @@ const MainFourth = ({ title, emailText, placeholder}) => {
                 </div>
             </div>
         </div>
+    )
+}
+
+const MainFourth = ({ title, emailText, placeholder}) => {
+
+
+    return (
+        <MainFourthTwo
+        title={title}
+        emailText={emailText}
+        placeholder={placeholder}
+        />
     )
 }
 

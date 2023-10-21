@@ -9,7 +9,12 @@ function Footer() {
                 <FooterLogo
                     DaltterText="Daltter" imgFooter="/img/logo_black.png"
                 />
-                <FooterText/>
+                <FooterText
+                    registerText="Register"
+                    termsText="Terms of Service"
+                    privacyText="Privacy Policy"
+                    loginText="Login"
+                />
             </div>
         </footer>
     )
