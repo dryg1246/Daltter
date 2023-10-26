@@ -27,7 +27,6 @@ footer{
   .footer_text {
     display: flex;
     gap: 1rem;
-    margin-bottom: 50px;
     & a{
       text-decoration: none;
       @include def(500, 24px, 28.18px);
@@ -40,4 +39,45 @@ footer{
   .line {
     border-right: 1px solid #0000008a;
   }
+  .line1 {
+    border-right: 1px solid #0000008a;
+    @media (max-width: 1120px) {
+      border: none;
+    }
+    }
+  @media (max-width: 1120px) {
+    .two_lines {
+      gap: 1rem;
+      display: flex;
+      justify-content: center;
+
+      & a {
+        text-decoration: none;
+        @include def(500, 24px, 28.18px);
+        color: #00000080;
+      }
+    }
+  }
+  .two_lines {
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    & a {
+      text-decoration: none;
+      @include def(500, 24px, 28.18px);
+      color: #00000080;
+    }
+  }
+  @media (max-width: 1120px) {
+    .all_links{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  .all_links{
+    display: flex;
+    gap: 5px;
+  }
+
 }
