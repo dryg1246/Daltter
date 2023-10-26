@@ -22,6 +22,9 @@ header {
     margin: 0 auto;
     align-items: center;
     width: 100%;
+    @media (max-width: 1120px) {
+      max-width: 81% !important;
+    }
   }
 
   .links_button {
@@ -41,7 +44,10 @@ header {
 
     & h1 {
       color: #000;
-      @include def(800, 20px, 23.48px)
+      @include def(800, 20px, 23.48px);
+      @media (max-width: 1120px) {
+        @include def(800, 18px, 23.48px)
+      }
     }
   }
 
@@ -156,6 +162,9 @@ header {
     height: 51px;
     border-radius: 18px;
     border: 2px solid rgba(60, 114, 255, 0.24);
+    @media (max-width: 1120px) {
+      width: 229px;;
+    }
   }
 
   .EmailInput {
@@ -187,6 +196,13 @@ header {
     margin: 0 0 13px 0;
     transition: background-color 0.3s; /* Добавляем анимацию для плавных изменений */
 
+    @media (max-width: 1120px) {
+      margin-left: 8px;
+      width: 270px;
+      height: 37px;
+      margin-right: 9px;
+    }
+
     div {
       color: #FFF;
       text-align: center;
@@ -215,6 +231,11 @@ header {
     line-height: 104.4%;
     text-decoration-line: underline;
     margin: 0.81rem 0 3.25rem 0;
+
+    @media (max-width: 1120px) {
+      font-size: 10px;
+
+    }
   }
 }
 
@@ -261,6 +282,12 @@ header {
   height: 30.0625rem;
   border-radius: 24px;
   background: rgba(228, 236, 255, 0.35);
+  @media (max-width: 1120px) {
+
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+  }
 }
 
 .wrapper_login {
@@ -273,6 +300,11 @@ header {
   height: 34.0625rem;
   border-radius: 24px;
   background: rgba(228, 236, 255, 0.35);
+  @media (max-width: 1120px) {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+  }
 }
 
 .wrapper_login_recovery {
@@ -285,6 +317,11 @@ header {
   height: 25.875rem;
   border-radius: 24px;
   background: rgba(228, 236, 255, 0.35);
+  @media (max-width: 1120px) {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+  }
 }
 
 .wrapper_singUp {
@@ -297,6 +334,12 @@ header {
   height: 36.0625rem;
   border-radius: 24px;
   background: rgba(228, 236, 255, 0.35);
+
+  @media (max-width: 1120px) {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+  }
 }
 
 .footer_container_link {
@@ -335,6 +378,10 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 104.4%; /* 1.305rem */
+
+  @media (max-width: 1120px) {
+    font-size: 14px;
+  }
 }
 
 .password-control {

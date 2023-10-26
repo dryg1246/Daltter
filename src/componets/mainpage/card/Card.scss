@@ -30,25 +30,12 @@
       text-align: center;
       margin: 0;
     }
-
-    @media (max-width: 584px) {
-      display: flex;
-      margin: 0 30px;
-      align-items: center;
-      flex-direction: column;
-      justify-content: right;
-    }
   }
   .plans-container {
     margin-top: 41px;
     margin-bottom: 41px;
   }
 
-  @media (max-width: 500px) {
-    .plans-container {
-      margin: 20px; // Уменьшаем отступы для мобильных устройств
-    }
-  }
 
   .price-addit {
     display: flex;
@@ -72,12 +59,6 @@
       padding: 0.2rem;
       border-radius: 20px;
       margin: 0;
-    }
-
-    @media (max-width: 584px) {
-      & .price-number {
-        font-size: 16px; // Уменьшаем размер цены на мобильных устройствах
-      }
     }
   }
 
@@ -163,13 +144,6 @@
 
       & .text_x {
         padding: 0.2rem;
-      }
-    }
-
-    @media (max-width: 584px) {
-      margin: 20px;
-      & .links_check {
-        margin-bottom: 10px;
       }
     }
   }

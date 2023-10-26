@@ -5,7 +5,7 @@ const MainThird= ({ plans }) => {
 
     return (
         <div className="main-third">
-            <h1>We have several different <br/> plans to suit all customers:</h1>
+            <h1>We have several different plans to suit all customers:</h1>
             <div className="card_container">
                 {plans.map((plan, index) => (
                     <Card

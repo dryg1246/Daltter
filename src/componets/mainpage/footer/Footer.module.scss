@@ -33,6 +33,9 @@ footer{
       @include def(500, 24px, 28.18px);
       color: #00000080;
     }
+    @media (max-width: 1120px) {
+      @include def(500, 20px, 28.18px);
+    }
   }
   .line {
     border-right: 1px solid #0000008a;

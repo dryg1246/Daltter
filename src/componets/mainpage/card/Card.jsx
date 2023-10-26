@@ -4,7 +4,7 @@ import PlanCard from "../widgets/card/PlanCard";
 
 const Card = ({mainText, price, TryNow, save, textPrice, imgCheck, imgFalse, adds}) => {
     return (
-        <div className="card-container">
+        <div className="container">
             <PlanCard
                 mainText={mainText}
                 price={price}

@@ -25,6 +25,7 @@
 
 .btn_first {
   display: flex;
+  gap: 19px;
 }
 
 .btn_try {
@@ -144,6 +145,9 @@
     @include def(800, 48px, 50.11px);
     color: #3C72FF;
     margin-top: 197px;
+    width: 631px;
+
+    margin: auto;
   }
 }
 

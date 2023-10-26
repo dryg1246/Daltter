@@ -10,7 +10,7 @@ function Header(props) {
         <header>
             <div className={styles.header}>
                 <LogoHeader
-                    DaltterText="Daltter"
+                    DaltterText="daltter"
                     imageHeader="/img/logo.png"
                 />
                 <div className={styles.links_button}>

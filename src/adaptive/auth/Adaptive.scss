@@ -1,0 +1,13 @@
+@mixin def($f, $a, $b){
+  font-weight: $f;
+  font-size: $a;
+  line-height: $b;
+}
+
+
+@media (max-width: 1120px) {
+  .wrapper_singUp{
+    width: 0;
+    height: 0;
+  }
+}

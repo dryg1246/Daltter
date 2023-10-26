@@ -23,6 +23,9 @@ header {
     margin: 0 auto;
     align-items: center;
     width: 100%;
+    @media (max-width: 1120px) {
+      max-width: 81% !important;
+    }
   }
 
   .links_button {
